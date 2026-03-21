@@ -1,0 +1,69 @@
+/*
+
+<link rel="stylesheet" href="../../Style_cerebroLao.css">
+
+
+*/
+
+
+
+/* Fondo y fuente general */
+  body {
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+  }
+
+  /* Título principal (Morado) */
+  h1 {
+    color: #bd93f9 !important;
+    border-bottom: 2px solid #bd93f9;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  /* Subtítulos (Cian) */
+  h2, h3  {
+    color: #8be9fd !important;
+    border-bottom: 1px solid #44475a;
+    margin-top: 30px;
+  }
+
+  /* Bloques de código (Fondo oscuro y bordes) */
+  pre {
+    background-color: #1e1f29 !important;
+    border: 1px solid #6272a4 !important;
+    border-radius: 8px !important;
+    padding: 15px !important;
+  }
+
+  /* Texto resaltado como `require` (Verde) */
+  code:not(pre code) {
+    background-color: #44475a !important;
+    color: #50fa7b !important;
+    padding: 2px 6px !important;
+    border-radius: 4px;
+  }
+
+  /* Notas y citas (Rosa) */
+  blockquote {
+    border-left: 5px solid #ff79c6 !important;
+    background-color: #44475a !important;
+    color: #f8f8f2 !important;
+    padding: 10px 20px !important;
+    margin: 20px 0;
+  }
+
+  /* Estilo para las negritas (Amarillo/Naranja Dracula) */
+  strong, b {
+    color: #f1fa8c !important; /* Amarillo brillante */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #44475a; /* Sombra suave para que resalte más */
+  }
+
+  /* El resto de estilos que ya tenías */
+  body { background-color: #282a36 !important; color: #f8f8f2 !important; }
+  h1 { color: #bd93f9 !important; border-bottom: 2px solid #bd93f9; }
+  code:not(pre code) { background-color: #44475a !important; color: #50fa7b !important; }
+  
