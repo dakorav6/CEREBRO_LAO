@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="../../markdown_and_style/Style_cerebroLao.css">
-	
+
 
 - Instalación debemos Ejecuta el comando: `npm install -g typescript`
 - creación de archivo:  cualNom.ts
 - para ejecutarlo- terminal: debemos convertirlo a JS con => `tsc cualNom.ts`
 
-###  ¿Qué es TypeScript?
+#¿Qué es TypeScript?
 
 Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. **TypeScript** es ese mismo papel pero con líneas y márgenes (reglas).
 - **Tipado:** Le dices a la computadora qué tipo de dato es cada cosa (número, texto, etc.).
