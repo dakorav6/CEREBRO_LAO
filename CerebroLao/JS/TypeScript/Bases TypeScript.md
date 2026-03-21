@@ -20,6 +20,7 @@ Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. *
 **Paso 1: Inicializar el proyecto**
 - **Comando:** `npm init -y`
      **¿Para qué sirve?:** Crea el archivo `package.json`. Es el "DNI" de tu proyecto donde se anotan las librerías que vas a usar. El `-y` es para aceptar todo por defecto y no perder tiempo.
+  
 **Paso 2: Instalar TypeScript (Local)**
 - **Comando:** `npm install typescript --save-dev`
 	- **¿Para qué sirve?:** Descarga el compilador de TypeScript específicamente para este proyecto. Usamos `--save-dev` porque TypeScript solo se necesita para **desarrollar**; cuando el código ya está en internet funcionando (producción), solo se usa el JavaScript resultante.
