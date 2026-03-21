@@ -27,7 +27,7 @@ h1 {
 }
 
 /* Subtítulos (Cian) */
-h2 {
+h2 , h3 {
     color: #8be9fd !important;
     border-bottom: 1px solid #44475a;
     margin-top: 35px;
@@ -35,13 +35,7 @@ h2 {
 }
 
 /* Secciones específicas (Naranja) - ¡NUEVO ESTILO! */
-h3 {
-    color: #ffb86c !important;
-    margin-top: 25px;
-    font-style: italic;
-    border-left: 4px solid #ffb86c;
-    padding-left: 10px;
-}
+
 
 /* --- ELEMENTOS DE TEXTO --- */
 
