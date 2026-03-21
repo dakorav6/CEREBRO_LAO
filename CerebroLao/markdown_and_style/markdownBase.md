@@ -4,10 +4,9 @@
 
 ### 1. Enlaces Relativos (La forma nativa)
 
-´´´
 - [Ir a mis apuntes de TypeScript.js](../JS/TypeScript/Bases%20TypeScript.md)
 
-´´´
+
 
 ### 2 . Enlace a un arhivo en especifico 
 
@@ -16,4 +15,11 @@
 
 
 ### Cuadro de texto de codigo 
+
+```javascript
+const saludar = () => {
+    console.log("Hola desde Node.js");
+};
+```
+
 
