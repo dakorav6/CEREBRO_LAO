@@ -53,11 +53,10 @@ En TypeScript, siempre debes intentar decir qué tipo de información estás gua
 - **boolean:** Para `true` o `false`.
 - **any:** Significa "cualquier cosa" (evita usarlo, ¡porque quita la gracia de usar TypeScript!).
 
-```
+```typescript
 let nombre: string = "Alex"; 
 let edad: number = 25; 
 let esEstudiante: boolean = true;
-
 ```
 
 ### Interfaces (La estructura de tus objetos)
