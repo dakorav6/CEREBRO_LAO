@@ -6,7 +6,7 @@
 - globalThis es una variable global en toda nuestra aplicación 
 
 
-# Patrón de diseño de modulo
+# Patrón de diseño de modulo  
 
 Es un patrón que permite **encapsular código** en bloques reutilizables, **evitando contaminar el ámbito global** y ayudando a **organizar** tu aplicación.
 En Node.js esto se hace mediante archivos y la forma en que exportas/importas contenido entre ellos, es como cuando haciamos las funciones y para reutilizarlas teniamos que importar de otros archivos.
