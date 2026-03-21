@@ -6,63 +6,78 @@
 
 
 
-/* Fondo y fuente general */
-  body {
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
     background-color: #282a36 !important;
     color: #f8f8f2 !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 20px;
-  }
+    padding: 30px;
+    line-height: 1.6;
+}
 
-  /* Título principal (Morado) */
-  h1 {
+/* --- TÍTULOS (JERARQUÍA DRACULA) --- */
+
+/* Título principal (Morado) */
+h1 {
     color: #bd93f9 !important;
-    border-bottom: 2px solid #bd93f9;
+    border-bottom: 3px solid #bd93f9;
     padding-bottom: 10px;
     text-align: center;
-  }
+    margin-bottom: 40px;
+}
 
-  /* Subtítulos (Cian) */
-  h2, h3  {
+/* Subtítulos (Cian) */
+h2 {
     color: #8be9fd !important;
     border-bottom: 1px solid #44475a;
-    margin-top: 30px;
-  }
+    margin-top: 35px;
+    padding-bottom: 5px;
+}
 
-  /* Bloques de código (Fondo oscuro y bordes) */
-  pre {
-    background-color: #1e1f29 !important;
-    border: 1px solid #6272a4 !important;
-    border-radius: 8px !important;
-    padding: 15px !important;
-  }
+/* Secciones específicas (Naranja) - ¡NUEVO ESTILO! */
+h3 {
+    color: #ffb86c !important;
+    margin-top: 25px;
+    font-style: italic;
+    border-left: 4px solid #ffb86c;
+    padding-left: 10px;
+}
 
-  /* Texto resaltado como `require` (Verde) */
-  code:not(pre code) {
-    background-color: #44475a !important;
-    color: #50fa7b !important;
-    padding: 2px 6px !important;
-    border-radius: 4px;
-  }
+/* --- ELEMENTOS DE TEXTO --- */
 
-  /* Notas y citas (Rosa) */
-  blockquote {
+/* Negritas (Amarillo) */
+strong, b {
+    color: #f1fa8c !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #00000044;
+}
+
+/* Citas y notas (Rosa) */
+blockquote {
     border-left: 5px solid #ff79c6 !important;
     background-color: #44475a !important;
     color: #f8f8f2 !important;
-    padding: 10px 20px !important;
-    margin: 20px 0;
-  }
+    padding: 15px 20px !important;
+    margin: 25px 0;
+    border-radius: 0 8px 8px 0;
+}
 
-  /* Estilo para las negritas (Amarillo/Naranja Dracula) */
-  strong, b {
-    color: #f1fa8c !important; /* Amarillo brillante */
-    font-weight: bold;
-    text-shadow: 1px 1px 2px #44475a; /* Sombra suave para que resalte más */
-  }
+/* --- CÓDIGO --- */
 
-  /* El resto de estilos que ya tenías */
-  body { background-color: #282a36 !important; color: #f8f8f2 !important; }
-  h1 { color: #bd93f9 !important; border-bottom: 2px solid #bd93f9; }
-  code:not(pre code) { background-color: #44475a !important; color: #50fa7b !important; }
-  
+/* Bloques de código (Oscuro) */
+pre {
+    background-color: #1e1f29 !important;
+    border: 1px solid #6272a4 !important;
+    border-radius: 10px !important;
+    padding: 15px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Código en línea (Verde) */
+code:not(pre code) {
+    background-color: #44475a !important;
+    color: #50fa7b !important;
+    padding: 3px 8px !important;
+    border-radius: 5px;
+    font-family: 'Fira Code', monospace;
+}
