@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="CerebroLao/markdown_and_style/Style_cerebroLao.css">
+
+
 # 🧠 Mi Cerebro Digital
 # 📚 Mis Notas de Ingeniería y Vida
 
