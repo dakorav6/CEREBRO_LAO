@@ -5,19 +5,21 @@
 - creación de archivo:  cualNom.ts
 - para ejecutarlo- terminal: debemos convertirlo a JS con => `tsc cualNom.ts`
 
-#¿Qué es TypeScript?
+
+
+# ¿Qué es TypeScript?
 
 Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. **TypeScript** es ese mismo papel pero con líneas y márgenes (reglas).
 - **Tipado:** Le dices a la computadora qué tipo de dato es cada cosa (número, texto, etc.).
 - **Compilación:** El navegador no entiende TypeScript, así que usamos una herramienta para convertirlo a JavaScript normal.
 
-### En donde se usa TypeScript
+## En donde se usa TypeScript
 
 - **Frontend (Web): Se usa con React, Angular o Vue**  para crear interfaces donde los datos fluyan sin errores entre componentes.
 - **Backend (Servidores): Con **Node.js o NestJS** para asegurar que la base de datos y el servidor hablen el mismo "idioma".
 
 
-### Iniciar proyecto
+## Iniciar proyecto
 
 **Paso 1: Inicializar el proyecto**
 - **Comando:** `npm init -y`
@@ -44,7 +46,7 @@ Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. *
 
 -----
 
-### Tipos de datos básicos
+## Tipos de datos básicos
 
 En TypeScript, siempre debes intentar decir qué tipo de información estás guardando:
 
