@@ -3,8 +3,9 @@ theme:
   name: material
   language: es
   palette:
-    scheme: slate
+    scheme: slate # Esto activa el modo oscuro base
     primary: indigo
-plugins:
-  - search
-  
+    accent: indigo
+
+extra_css:
+  - stylesheets/extra.css
