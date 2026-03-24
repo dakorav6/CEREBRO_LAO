@@ -1,0 +1,10 @@
+site_name: Mi Cerebro Digital
+theme:
+  name: material
+  language: es
+  palette:
+    scheme: slate
+    primary: indigo
+plugins:
+  - search
+  
