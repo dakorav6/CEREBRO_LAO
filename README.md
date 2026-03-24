@@ -5,8 +5,6 @@
 # 📚 Mis Notas de Ingeniería y Vida
 
 
-* [🏛️ Frases y Pensamientos](./LAO/Frases%20y%20pensamientos.md)
-* [🔥 Bases de Angular](./JS/Angular/Bases%20Angular.md)
 
 
 ### 📂 FUENTES DE CONOCIMIENTO:
