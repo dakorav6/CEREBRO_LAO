@@ -1,11 +1,10 @@
 
+
 FUENTES:
 
 
+# POWER BI
 
-
-
-informacion basica
 - es una herramientas de visualizacion de datos creado por microsoft
 - creacion de dashboard interactivos con bussnis inteligen 
 	- Un **dashboard** (o tablero) es una herramienta visual que muestra los datos más importantes de un negocio en una sola pantalla. Su objetivo es que puedas entender qué está pasando de un solo vistazo.
