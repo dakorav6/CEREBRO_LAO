@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="../../../markdown_and_style/Style_cerebroLao.css">
+
 
 
 - Instalación debemos Ejecuta el comando: `npm install -g typescript`
