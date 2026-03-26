@@ -1,5 +1,8 @@
-<link rel="stylesheet" href="../../../markdown_and_style/Style_cerebroLao.css">
+<style>
+  @import url('Style_cerebroLao.css');
+</style>
 
+<link rel="stylesheet" href="Style_cerebroLao.css">
 
 
 - Instalación debemos Ejecuta el comando: `npm install -g typescript`
