@@ -45,11 +45,20 @@ Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. *
 
 **Paso 4: COMANDOS => Organización y Compilación**
 
-- **`mkdir src`**: Crea la carpeta donde vivirán tus archivos.
+- **`mkdir src`**: Crea la carpeta donde vivirán tus archivos. (aqui escribimos nuestro codigo TS)
     
-- **`npx tsc`**: Este es el comando más importante. Lee todo tu proyecto y "traduce" masivamente de TS a JS.
-    
+- **`npx tsc`**: Este es el comando más importante. Lee todo tu proyecto y "traduce" masivamente de TS a JS. PERO tiene que ejecutar el node para ejecutar el archivo....
+
 - **`node dist/nombrearchivo.js`**: Así es como pones a funcionar tu código en el servidor Node.js después de haberlo compilado.
+
+nota: Si no quieres estar escribiendo npx tsc y luego node archivo.js cada vez, puedes usar este comando combinado:
+
+
+```
+npx ts-node nombre_de_tu_archivo.ts
+
+```
+
 
 
 -----
