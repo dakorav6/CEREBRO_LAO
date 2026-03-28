@@ -51,8 +51,7 @@ Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. *
 
 - **`node dist/nombrearchivo.js`**: Así es como pones a funcionar tu código en el servidor Node.js después de haberlo compilado.
 
-nota: Si no quieres estar escribiendo npx tsc y luego node archivo.js cada vez, puedes usar este comando combinado:
-
+**nota:** Si no quieres estar escribiendo npx tsc y luego node archivo.js cada vez, puedes usar este comando combinado:
 
 ```
 npx ts-node nombre_de_tu_archivo.ts
