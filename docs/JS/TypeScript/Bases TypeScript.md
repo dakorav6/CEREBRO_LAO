@@ -37,7 +37,7 @@ Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. *
 	- **¿Para qué sirve?:** Genera el archivo de configuracion del TS  `tsconfig.json`. Aquí es donde debes buscar y modificar las líneas que mencionas:
     - `"rootDir": "./src"`: Aquí le dices a la IA y al compilador: "Busca mis archivos `.ts` en la carpeta `src`".
     - `"outDir": "./dist"`: Aquí le dices: "Cuando termines de traducir mi código a JavaScript, guárdalo en la carpeta `dist`".
-    -**Habilitar el uso de decoradores:** `"experimentalDecorators": true,`    que es decorador?
+    - **Habilitar el uso de decoradores:** `"experimentalDecorators": true,`    que es decorador?
 
 
 **Paso 4: COMANDOS => Organización y Compilación**
