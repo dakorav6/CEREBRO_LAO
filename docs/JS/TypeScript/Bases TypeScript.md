@@ -13,7 +13,9 @@
 
 # ¿Qué es TypeScript?
 
-Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. **TypeScript** es ese mismo papel pero con líneas y márgenes (reglas).
+Es un javaScript pero con tipado en los datos.
+
+
 - **Tipado:** Le dices a la computadora qué tipo de dato es cada cosa (número, texto, etc.).
 - **Compilación:** El navegador no entiende TypeScript, así que usamos una herramienta para convertirlo a JavaScript normal.
 
@@ -28,6 +30,8 @@ Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. *
 **Paso 1: Inicializar el proyecto**
 - **Comando:** `npm init -y`
      **¿Para qué sirve?:** Crea el archivo `package.json`. Es el "DNI" de tu proyecto donde se anotan las librerías que vas a usar. El `-y` es para aceptar todo por defecto y no perder tiempo.
+
+
 **Paso 2: Instalar TypeScript (Local)**
 - **Comando:** `npm install typescript --save-dev`
 	- **¿Para qué sirve?:** Descarga el compilador de TypeScript específicamente para este proyecto. Usamos `--save-dev` porque TypeScript solo se necesita para **desarrollar**; cuando el código ya está en internet funcionando (producción), solo se usa el JavaScript resultante.
@@ -36,20 +40,23 @@ Imagina que JavaScript es un papel en blanco donde puedes escribir lo que sea. *
 - **Comando:** `npx tsc --init`
 	- **¿Para qué sirve?:** Genera el archivo de configuracion del TS  `tsconfig.json`. Aquí es donde debes buscar y modificar las líneas que mencionas:
 
-- `"rootDir": "./src"`: Aquí le dices a la IA y al compilador: "Busca mis archivos `.ts` en la carpeta `src`".
+- `"rootDir": "./src"`: Dónde está tu código TS (src)
 
 - `"outDir": "./dist"`: Aquí le dices: "Cuando termines de traducir mi código a JavaScript, guárdalo en la carpeta `dist`".
 
 - **Habilitar el uso de decoradores:** `"experimentalDecorators": true,`    que es decorador?
 
 
-**Paso 4: COMANDOS => Organización y Compilación**
+**Paso 4:SRC, carpeta del los TS**
 
 - **`mkdir src`**: Crea la carpeta donde vivirán tus archivos. (aqui escribimos nuestro codigo TS)
     
-- **`npx tsc`**: Este es el comando más importante. Lee todo tu proyecto y "traduce" masivamente de TS a JS. PERO tiene que ejecutar el node para ejecutar el archivo....
 
-- **`node dist/nombrearchivo.js`**: Así es como pones a funcionar tu código en el servidor Node.js después de haberlo compilado.
+ ### Ejecucion del codigo. 
+
+1.  **`npx tsc`**: transforma de  TS a JS. PERO tiene que ejecutar el node para ejecutar el archivo....
+
+2. **`node dist/nombrearchivo.js`**: Así es como pones a funcionar tu código en el servidor Node.js después de haberlo compilado.
 
 **nota:** Si no quieres estar escribiendo npx tsc y luego node archivo.js cada vez, puedes usar este comando combinado:
 
