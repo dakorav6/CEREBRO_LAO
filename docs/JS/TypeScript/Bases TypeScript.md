@@ -75,6 +75,17 @@ let edad: number = 25;
 let esEstudiante: boolean = true;
 ```
 
+### Otro tipos:
+
+- **enun** : solo puede tener valores que se le impongan. 
+  - `enun estado{Aprobado , Rechasado , Pendiente}`
+  - 
+```
+enun diasLaborables{Lunes,martes,miercoles}
+let diaActual:diasLaborable=diasLaborables.Lunes;
+
+```
+
 ### Interfaces (La estructura de tus objetos)
 
 Esta es la base para trabajar de forma profesional. Una **Interface** es como un contrato o un molde para tus objetos.
