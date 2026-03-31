@@ -1,14 +1,3 @@
-<style>
-  @import url('Style_cerebroLao.css');
-</style>
-
-<link rel="stylesheet" href="Style_cerebroLao.css">
-
-
-- Instalación debemos Ejecuta el comando: `npm install -g typescript`
-- creación de archivo:  cualNom.ts
-- para ejecutarlo- terminal: debemos convertirlo a JS con => `tsc cualNom.ts`
-
 
 
 # ¿Qué es TypeScript?
@@ -19,7 +8,7 @@ Es un javaScript pero con tipado en los datos.
 - **Tipado:** Le dices a la computadora qué tipo de dato es cada cosa (número, texto, etc.).
 - **Compilación:** El navegador no entiende TypeScript, así que usamos una herramienta para convertirlo a JavaScript normal.
 
-## En donde se usa TypeScript
+### En donde se usa TypeScript
 
 - **Frontend (Web): Se usa con React, Angular o Vue**  para crear interfaces donde los datos fluyan sin errores entre componentes.
 - **Backend (Servidores): Con **Node.js o NestJS** para asegurar que la base de datos y el servidor hablen el mismo "idioma".
@@ -54,7 +43,9 @@ Es un javaScript pero con tipado en los datos.
 
  ### Ejecucion del codigo. 
 
-1.  **`npx tsc`**: transforma de  TS a JS. PERO tiene que ejecutar el node para ejecutar el archivo....
+1.  **`npx tsc`**: Compila todo el proyecto y transforma de  TS a JS. PERO luego tienes que ejecutar el node para ejecutar el archivo....
+  - Para compilar solo 1 archivo TS:
+   `tsc nombreArchivo.ts`
 
 2. **`node dist/nombrearchivo.js`**: Así es como pones a funcionar tu código en el servidor Node.js después de haberlo compilado.
 
