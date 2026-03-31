@@ -79,12 +79,30 @@ let esEstudiante: boolean = true;
 
 - **enun** : solo puede tener valores que se le impongan. 
   - `enun estado{Aprobado , Rechasado , Pendiente}`
-  - 
-```
-enun diasLaborables{Lunes,martes,miercoles}
-let diaActual:diasLaborable=diasLaborables.Lunes;
+  
+```typescript
+enun diasLaborables{lunes,martes,miercoles}
+let diaActual:diasLaborable=diasLaborables.lunes;
 
 ```
+
+### Funciones con tipos
+
+TypeScript te ayuda a que tus funciones siempre reciban y devuelvan lo que esperas. Así evitas el error de intentar sumar un número con un texto por accidente.
+
+```typescript
+function sumar(a: number, b: number): number {
+  return a + b;
+}
+
+// Si intentas hacer sumar(5, "10"), TypeScript te avisará del error antes de que corras el código.
+
+```
+otro ejemplo con `enun`
+
+
+
+
 
 ### Interfaces (La estructura de tus objetos)
 
@@ -103,19 +121,6 @@ const persona: Usuario = {
   nombre: "Maria",
   correo: "maria@ejemplo.com"
 };
-```
-
-### Funciones con tipos
-
-TypeScript te ayuda a que tus funciones siempre reciban y devuelvan lo que esperas. Así evitas el error de intentar sumar un número con un texto por accidente.
-
-```
-function sumar(a: number, b: number): number {
-  return a + b;
-}
-
-// Si intentas hacer sumar(5, "10"), TypeScript te avisará del error antes de que corras el código.
-
 ```
 
 ------
