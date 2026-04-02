@@ -101,7 +101,20 @@ function sumar(a: number, b: number): number {
 otro ejemplo con `enun`
 
 
+```typescript
 
+enun estado {Aprovado , Reprovado , Pendiente};
+let estadoActual:estado=estado.Aprobado ;
+
+
+
+function obtenerDescripcion(a:estado) {
+  return ;
+}
+
+// Si intentas hacer sumar(5, "10"), TypeScript te avisará del error antes de que corras el código.
+
+```
 
 
 ### Interfaces (La estructura de tus objetos)
