@@ -98,26 +98,51 @@ function sumar(a: number, b: number): number {
 // Si intentas hacer sumar(5, "10"), TypeScript te avisará del error antes de que corras el código.
 
 ```
-otro ejemplo con `enun`
+
+
+### Funcion sin retorno (void)
+
+En TypeScript, cuando una función no retorna ningún valor, se usa el tipo void.
+
+```typescript
+function mostrarMensaje(mensaje: string): void {
+  console.log(mensaje);
+}
+```
+
+### Arrow function (función flecha)
+
+usos:
+- Funciones cortas
+- Callbacks (muy común)
+- No necesitas this
 
 
 ```typescript
-
-enun estado {Aprovado , Reprovado , Pendiente};
-let estadoActual:estado=estado.Aprobado ;
-
-
-
-function obtenerDescripcion(a:estado) {
-  return ;
-}
-
-// Si intentas hacer sumar(5, "10"), TypeScript te avisará del error antes de que corras el código.
-
+const restar = (a: number, b: number): number => {
+  return a - b;
+};
+```
+Forma Corta
+```typescript
+const multiplicar = (a: number, b: number): number => a * b;
 ```
 
 
-### Interfaces (La estructura de tus objetos)
+
+### Parámetros opcionales
+
+```typescript
+function saludar(nombre?: string): string {
+  return `Hola, ${nombre ?? "invitado"}`;
+}
+```
+
+
+
+
+
+## Interfaces (La estructura de tus objetos)
 
 Esta es la base para trabajar de forma profesional. Una **Interface** es como un contrato o un molde para tus objetos.
 
