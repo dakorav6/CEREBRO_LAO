@@ -75,16 +75,64 @@ let edad: number = 25;
 let esEstudiante: boolean = true;
 ```
 
-### Otro tipos:
+## Estructura de datos:
 
-- **enun** : solo puede tener valores que se le impongan. 
+### ARRAY
+
+```typescript
+let numeros: number[] = [1, 2, 3, 4];
+
+let frutas: string[] = ["manzana", "pera", "uva"];
+```
+***Agregar elementos**=>  ```numeros.push(3); // [1, 2, 3]```
+
+
+### ENUN
+ solo puede tener valores que se le impongan. 
   - `enun estado{Aprobado , Rechasado , Pendiente}`
   
 ```typescript
 enun diasLaborables{lunes,martes,miercoles}
 let diaActual:diasLaborable=diasLaborables.lunes;
+```
+
+### Tuplas
+
+Una tupla es un array con:
+- número fijo de elementos
+- tipos definidos en posiciones específicas
+
+```typescript
+let persona: [string, number];
+
+persona = ["Juan", 25]; // ✅ correcto
+persona = [25, "Juan"]; // ❌ error
+
+//Otro Ejemplo:
+let persona: [string, number] = ["Ana", 30];
+
+console.log(persona[0]); // "Ana"
+console.log(persona[1]); // 30
+```
+**Truplas con una valor opcional**
+```typescript
+let producto: [string , string , number , number?];
+
+producto= ["001","Lapiz negro",0.25 ]
 
 ```
+
+***Tuplas con nombres (más legible 👍)***
+Esto ayuda a entender mejor el codigo.
+```typescript
+let usuario: [nombre: string, edad: number];
+
+usuario = ["Luis", 22];
+```
+**Diferencia con array normal**
+- puede cambiar el orden ❌
+- puede tener más elementos
+
 
 ### Funciones con tipos
 
@@ -130,7 +178,7 @@ const multiplicar = (a: number, b: number): number => a * b;
 
 
 
-### Parámetros opcionales
+### Funcion con  Parámetros opcionales
 
 ```typescript
 function saludar(nombre?: string): string {
