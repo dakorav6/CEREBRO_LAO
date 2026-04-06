@@ -133,8 +133,31 @@ usuario = ["Luis", 22];
 - puede cambiar el orden ❌
 - puede tener más elementos
 
+### ANY
 
-### Funciones con tipos
+any significa:
+👉 “puede ser cualquier tipo de dato”
+en otras palabras no hay validacion de tipos aqui (typeScript deja de ser)
+
+**Resumen claro**
+- any = cualquier tipo (sin control)
+- TypeScript deja de protegerte ⚠️
+- Úsalo lo menos posible
+- Mejor usar unknown cuando puedas `#PENDIENTE`
+
+
+```typescript
+let dato: any = 10;
+
+dato = "hola";
+dato = true;
+dato = [1, 2, 3];
+//Puede cambiar de tipo sin problema
+
+```
+
+
+## Funciones con tipos
 
 TypeScript te ayuda a que tus funciones siempre reciban y devuelvan lo que esperas. Así evitas el error de intentar sumar un número con un texto por accidente.
 
