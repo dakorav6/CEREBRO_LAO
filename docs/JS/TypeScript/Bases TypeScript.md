@@ -235,3 +235,13 @@ const persona: Usuario = {
 ------
 ## Bases para el Bakend
 
+
+
+
+
+----
+## Otras cosas 
+
+### typeof
+retorna una palabra que define el tipo de datos: "number" , "string" , "boolean" , "object" , "undefined"
+
