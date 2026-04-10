@@ -1,0 +1,4787 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../CSS/">
+      
+      
+        <link rel="next" href="../../JS/Angular/Bases%20Angular/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>frontend/html - Mi Cerebro Digital</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#frontendhtml" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Mi Cerebro Digital" class="md-header__button md-logo" aria-label="Mi Cerebro Digital" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mi Cerebro Digital
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              frontend/html
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mi Cerebro Digital" class="md-nav__button md-logo" aria-label="Mi Cerebro Digital" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Mi Cerebro Digital
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CONSOLA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CONSOLA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CONSOLA/vsCode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atajos de teclado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FrontEnd
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    FrontEnd
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS%20PREDEFINIDOS%20BASE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resetear estilo en el navegador "normalize.css"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../CSS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    frontend/css
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    frontend/html
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    JS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Angular
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Angular
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/Angular/Bases%20Angular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases Angular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JAVASCRIPT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    JAVASCRIPT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/JAVASCRIPT/Eventos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eventos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/JAVASCRIPT/Funciones%2C%20M%C3%A9todos%2C%20y%20Propiedades%20Comunes%20en%20JavaScript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones, Métodos, y Propiedades Comunes en JavaScript
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/JAVASCRIPT/JS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/JAVASCRIPT/js%20y%20html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Js y html
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Node JS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Node JS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/Node%20JS/Bases%20Node%20JS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases Node JS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TypeScript
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TypeScript
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/TypeScript/Bases%20TypeScript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Qué es TypeScript?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nodeJS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    nodeJS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/nodeJS/nodeJS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nodeJS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LAO
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LAO
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LAO/Frases%20y%20pensamientos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frases y pensamientos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LAO/MI%20CAMINO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CONCLUSIONES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LAO/Plataformas%20busqueda%20Empelo%20remoto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plataformas busqueda Empelo remoto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LAO/Proyectos%20Portafolio%20y%20Tecnologias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyectos Portafolio y Tecnologias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LAO/Ruta%20de%20aprendizaje%20Backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ruta de aprendizaje Backend
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../LAO/perfiles%20de%20trabajo%20bakend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perfil: Senior Bckend python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PYTHON
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PYTHON
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_1" id="__nav_6_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bases Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Algoritmo%20de%20ordenamiento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmo de ordenamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Archivos%20Externos%20%20y%20Serializaci%C3%B3n%20%28falta%20informacion%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archivos Externos  y Serialización (falta informacion)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Conceptos%20b%C3%A1sicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conceptos básicos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Convenciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Documentacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentacion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Duck%20Typing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Duck Typing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Estructura%20de%20datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estructura de datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Funciones%20o%20metodos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones o metodos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Interfaz%20grafica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interfaz grafica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Manejo%20de%20Excepciones%20y%20control%20de%20datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manejo de Excepciones y control de datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Modulos%20%28archivo%20.py%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modulos (archivo .py)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/POO%20con%20Python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POO con Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/funciones%20o%20m%C3%A9todos%20predefinidos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    No requieren importar módulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DJango
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DJango
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/Bases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/Plantillas%20-%20TEMPLATES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantillas   TEMPLATES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/controlador/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/modelo%20%28BD%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    modelo (BD)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/vista%20%28FROND%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vista (FROND)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flask
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flask
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Flask/APIs%20con%20Flask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APIs con Flask
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TI   CONOCIMIENTO BASICO
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TI   CONOCIMIENTO BASICO
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Bases%20Programaci%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases Programación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Buenas%20practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buenas practicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/POO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Redes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/TERMINOLOGIA%20para%20Anki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TERMINOLOGIA para Anki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Visual%20Estudio%20Code%20%28Extenciones%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Estudio Code (Extenciones)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/consola%20Linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    consola Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/consola%20Windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    consola Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/herramientas%20de%20IA%20utiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    herramientas de IA utiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/terminologias%20de%20redes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    fc/terminologia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_11" id="__nav_7_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Control de versiones y GIT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Control de versiones y GIT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Control%20de%20versiones%20y%20GIT/GIT%20HBU%20SPACE%20LAB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GIT HBU SPACE LAB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Control%20de%20versiones%20y%20GIT/GIT%20y%20gitbub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    softbase/GIT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_12" id="__nav_7_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicaciones escritorio
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aplicaciones escritorio
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_12_1" id="__nav_7_12_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C CHAR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_12_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C CHAR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/aplicaciones%20escritorio/C%20CHAR/Conceptos%20basicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conceptos basicos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/aplicaciones%20escritorio/C%20CHAR/Visual%20estudio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual estudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_12_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_12_2" id="__nav_7_12_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JAVA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_12_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_12_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    JAVA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/aplicaciones%20escritorio/JAVA/Bases%20java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UG BORRADOR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UG BORRADOR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UG_BORRADOR/apuntesTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    apuntesTS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelado
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelado
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UG_BORRADOR/Modelado/BPM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BPM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UG_BORRADOR/Modelado/BPMN%202.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BPMN 2.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UG_BORRADOR/Modelado/UML/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    analisisDatos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    analisisDatos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_1" id="__nav_9_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POWER BI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    POWER BI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analisisDatos/POWER%20BI/BASES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BASES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Excel
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Excel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analisisDatos/excel/Excel%20base/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Excel base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de datos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de datos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_1" id="__nav_10_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de datos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de datos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/Mongo%20DB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mongo DB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/MySQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MySQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/PostgreSQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQLite%20con%20python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQLite con python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_1_5" id="__nav_10_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL SERVER (SSMS)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_10_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SQL SERVER (SSMS)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/APUNTES%20EN%20CALSES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APUNTES EN CALSES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/COMANDOS%20SQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COMANDOS SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/CONSULTAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CONSULTAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Conexi%C3%B3n%20y%20Diagrama%20de%20entidad%20relaciona/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conexión y Diagrama de entidad relaciona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Gesti%C3%B3n%20acceso%20al%20servidor%20y%20Usuarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestión acceso al servidor y Usuarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Gestor%20SQL%20-%20SSM%20%28SQL%20SERVER%20MANAGEMENT%20ESTUDIO%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestor SQL   SSM (SQL SERVER MANAGEMENT ESTUDIO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/JOBS%20o%20%20tareas%20programadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JOBS o  tareas programadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Nueva%20instancia%20%28NO%20ENTIENDO%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nueva instancia (NO ENTIENDO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/REGISTRO%20Y%20ACTUALIZACION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REGISTRO Y ACTUALIZACION
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/RESTAURACION%20BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RESTAURACION BD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/TABLAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TABLAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/TRIGGERS%20%20%28DISPARADORES%20%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TRIGGERS  (DISPARADORES )
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Transact%20SQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transact SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/funciones%20%2C%20procedimientos%20almacenados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones , procedimientos almacenados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/teor%C3%ADa%20base%20SQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    teoría base SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markdown and style
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Markdown and style
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../markdown_and_style/markdownBase/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    markdownBase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    modulo Ingles
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    modulo Ingles
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../modulo%20Ingles/recursos%20de%20aprendizaje/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Recursos de aprendizaje
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nodeJS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    nodeJS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodeJS/nodeJS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nodeJS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="frontendhtml">frontend/html</h1>
+<hr />
+<p>NOTAS:
+- nav ?
+- el ceo en el head?
+- h1 se recomienda usar solo una ves por pagina</p>
+<hr />
+<p>html es
+?
+- Es un lenguaje de marcado , no de  programación, por que no tiene entrada de datos ni flujo de datos
+- Es un lenguaje de marcado de hipertexto
+- extensión del documento es:  .html</p>
+<!--SR:!2025-06-19,1,228-->
+
+<ul>
+<li>Estructura de la pagina: </li>
+</ul>
+<h1 id="nota-se-puede-aprovechar-el-autocompletado-para-escribir-html5-y-generar-el-cuerpo-o-estructura-de-la-pagina">nota se puede aprovechar el autocompletado para escribir html5 y generar el cuerpo o estructura de la pagina.</h1>
+<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html lang=&quot;en&quot;&gt;
+
+&lt;head&gt;
+
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+
+    &lt;title&gt;Document&lt;/title&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<ul>
+<li><code>charset="UTF-8"</code> =&gt; es un conjunto de caracteres que admiten acentos </li>
+<li>title =&gt; el nombre del documento o pagina</li>
+</ul>
+<p>Icono de la pestaña de la pagina
+- <code>&lt;head&gt; &lt;Link rel = "icon" href = "URL"&gt;  &lt;/head&gt;</code>
+    - rel = "icon" =&gt; establece la relacion entre el documento y el archivo que queremos usar 
+    - href =&gt; nos permite enlazar un archivo por medio de un url. </p>
+<hr />
+<h3 id="cuerpo-del-documento-body">Cuerpo del documento (<code>&lt;Body &gt;</code>)</h3>
+<p>![[Pasted image 20240830110207.png]]
+- <strong><code>&lt;header&gt;</code></strong>:<br />
+    El encabezado de la página contiene el título principal del sitio o el logo y, generalmente, la barra de navegación (<code>&lt;nav&gt;</code>). La navegación ayuda a los usuarios a moverse entre las diferentes secciones del sitio web.</p>
+<ul>
+<li>
+<p><strong><code>&lt;main&gt;</code></strong>:<br />
+    El contenedor principal del contenido de la página. Utiliza el elemento <code>&lt;main&gt;</code> para encerrar la parte principal del contenido de tu página. Dentro de <code>&lt;main&gt;</code>, se pueden utilizar varios elementos <code>&lt;section&gt;</code> para dividir el contenido en secciones lógicas y semánticas.</p>
+<ul>
+<li><strong><code>&lt;section&gt;</code></strong>:<br />
+    Utilizado para agrupar contenido relacionado temáticamente. Cada sección debe tener un título con <code>&lt;h2&gt;</code> o<code>&lt;h3&gt;</code>, etc., y contenido como párrafos, listas, imágenes, etc.</li>
+<li><code>&lt;article&gt;</code>  El elemento <code>&lt;article&gt;</code> se utiliza para contenido que es independiente y autónomo, lo que significa que tiene sentido por sí mismo y podría distribuirse o reutilizarse de manera independiente del resto del contenido de la página. Esto podría incluir artículos de blog, noticias, publicaciones en redes sociales, comentarios de usuarios, widgets, etc.</li>
+<li><strong><code>&lt;aside&gt;</code></strong> (opcional):<br />
+El elemento <code>&lt;aside&gt;</code> se utiliza para contener contenido relacionado o complementario, como barras laterales, citas, enlaces a artículos relacionados o noticias recientes. Generalmente se sitúa a un lado del contenido principal.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;footer&gt;</code></strong>:<br />
+    El pie de página contiene información sobre el sitio web, como derechos de autor, enlaces a términos y condiciones, política de privacidad, y cualquier otra información relevante. También puede contener otra barra de navegación o información de contacto.</p>
+<ul>
+<li><code>&lt;address&gt;</code> se utiliza para definir la información de contacto de una persona o una organización, Esta etiqueta suele colocarse en el pie de página de un sitio web o cerca del contenido que el autor ha publicado, para indicar quién es el autor o el propietario del sitio.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>&lt;script&gt;</code></strong>:<br />
+    Los scripts de JavaScript se incluyen al final del <code>&lt;body&gt;</code> para asegurar que todo el contenido del DOM se cargue antes de que el script se ejecute, mejorando el rendimiento y la experiencia del usuario.</p>
+</li>
+</ul>
+<pre><code>&lt;body&gt;
+1. Encabezado de la página
+  &lt;header&gt;
+    &lt;h1&gt;Título de la Página&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#about&quot;&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#services&quot;&gt;Servicios&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;!-- 2. Sección principal del contenido --&gt;
+  &lt;main&gt;
+    &lt;!-- 2.1 Sección de bienvenida o introducción --&gt;
+    &lt;section id=&quot;home&quot;&gt;
+      &lt;h2&gt;Bienvenido&lt;/h2&gt;
+      &lt;p&gt;Texto introductorio sobre el propósito del sitio web.&lt;/p&gt;
+    &lt;/section&gt;
+
+        &lt;!-- 2.2 Sección de artículos o publicaciones --&gt;
+    &lt;section id=&quot;articles&quot;&gt;
+      &lt;h2&gt;Artículos Recientes&lt;/h2&gt;
+
+      &lt;!-- Artículo 1 --&gt;
+      &lt;article&gt;
+        &lt;header&gt;
+          &lt;h3&gt;Título del Artículo 1&lt;/h3&gt;
+          &lt;p&gt;Publicado el 30 de Agosto, 2024 por Autor 1&lt;/p&gt;
+        &lt;/header&gt;
+        &lt;p&gt;Contenido del artículo 1. Este contenido es independiente y puede ser distribuido de forma separada.&lt;/p&gt;
+        &lt;footer&gt;
+          &lt;p&gt;Etiquetas: &lt;a href=&quot;#tag1&quot;&gt;HTML&lt;/a&gt;, &lt;a href=&quot;#tag2&quot;&gt;CSS&lt;/a&gt;&lt;/p&gt;
+        &lt;/footer&gt;
+      &lt;/article&gt;
+
+      &lt;!-- Artículo 2 --&gt;
+      &lt;article&gt;
+        &lt;header&gt;
+          &lt;h3&gt;Título del Artículo 2&lt;/h3&gt;
+          &lt;p&gt;Publicado el 29 de Agosto, 2024 por Autor 2&lt;/p&gt;
+        &lt;/header&gt;
+        &lt;p&gt;Contenido del artículo 2. Este es otro ejemplo de contenido independiente dentro de un elemento `&lt;article&gt;`.&lt;/p&gt;
+        &lt;footer&gt;
+          &lt;p&gt;Etiquetas: &lt;a href=&quot;#tag3&quot;&gt;JavaScript&lt;/a&gt;, &lt;a href=&quot;#tag4&quot;&gt;Web Development&lt;/a&gt;&lt;/p&gt;
+        &lt;/footer&gt;
+      &lt;/article&gt;
+
+    &lt;/section&gt;
+
+
+
+    &lt;!-- 2.3 Sección de información --&gt;
+    &lt;section id=&quot;about&quot;&gt;
+      &lt;h2&gt;Acerca de Nosotros&lt;/h2&gt;
+      &lt;p&gt;Descripción de la empresa, misión, visión, etc.&lt;/p&gt;
+    &lt;/section&gt;
+
+    &lt;!-- 2.4 Sección de servicios --&gt;
+    &lt;section id=&quot;services&quot;&gt;
+      &lt;h2&gt;Servicios&lt;/h2&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Servicio 1&lt;/li&gt;
+        &lt;li&gt;Servicio 2&lt;/li&gt;
+        &lt;li&gt;Servicio 3&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/section&gt;
+  &lt;/main&gt;
+
+  &lt;!-- 3. Barra lateral (opcional) --&gt;
+  &lt;aside&gt;
+    &lt;h2&gt;Noticias Recientes&lt;/h2&gt;
+    &lt;p&gt;Breve descripción de las noticias recientes o enlaces a contenido adicional.&lt;/p&gt;
+  &lt;/aside&gt;
+
+  &lt;!-- 4. Pie de página --&gt;
+  &lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2024 Tu Empresa. Todos los derechos reservados.&lt;/p&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href=&quot;#privacy&quot;&gt;Política de Privacidad&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href=&quot;#terms&quot;&gt;Términos de Servicio&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/footer&gt;
+
+  &lt;!-- 5. Scripts opcionales --&gt;
+  &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+
+</code></pre>
+<hr />
+<h1 id="etiquetas-para-mostrar-contenido">Etiquetas para mostrar contenido</h1>
+<h2 id="encabezados">Encabezados</h2>
+<p>Los encabezados se utilizan para definir la jerarquía del contenido en una página. Van desde <code>&lt;h1&gt;</code> hasta <code>&lt;h6&gt;</code>, donde <code>&lt;h1&gt;</code> es el nivel más alto y <code>&lt;h6&gt;</code> el más bajo.</p>
+<ul>
+<li><strong><code>&lt;h1&gt;</code></strong>: El encabezado principal, generalmente utilizado para el título principal de la página.</li>
+<li><strong><code>&lt;h2&gt;</code></strong>: Encabezado de segundo nivel, utilizado para subtítulos.</li>
+<li><strong><code>&lt;hgroup&gt;</code></strong> : agrupar un conjunto de elementos de encabezado (<code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>) cuando un encabezado principal está acompañado de uno o más subencabezados.</li>
+</ul>
+<h2 id="parrafos">Párrafos:</h2>
+<ul>
+<li><strong><code>&lt;p&gt;</code></strong>: Define un párrafo. Los párrafos se separan automáticamente con un espacio antes y después del texto.</li>
+<li><code>&lt;pre&gt;</code>  muestra textos preformateado ósea que se muestra tal cual se escribe, con los espacios en blanco , saltos de linea  y tabulaciones. </li>
+<li><strong><code>&lt;br&gt;</code></strong>: Inserta un salto de línea.</li>
+<li><strong><code>&lt;hr&gt;</code></strong>: Inserta una línea horizontal que se usa para separar contenido.</li>
+</ul>
+<h2 id="enlaces">Enlaces</h2>
+<ul>
+<li><strong><code>&lt;a href="https://www.example.com" target="_blank"&gt;</code></strong><ul>
+<li>Define un enlace que apunta a "<a href="https://www.example.com">https://www.example.com</a>". El atributo <code>target="_blank"</code> hace que el enlace se abra en una nueva pestaña del navegador.</li>
+</ul>
+</li>
+<li><strong><code>&lt;img src="https://via.placeholder.com/150" alt="Imagen de ejemplo" /&gt;</code></strong><ul>
+<li>Inserta una imagen. El atributo <code>src</code> especifica la URL de la imagen, mientras que el atributo <code>alt</code> proporciona un texto alternativo que describe la imagen para accesibilidad y en caso de que la imagen no se cargue.</li>
+</ul>
+</li>
+</ul>
+<p>Botones 
+- <code>&lt;button&gt;Haz clic aquí&lt;/button&gt;</code></p>
+<hr />
+<h3 id="etiquetas-de-agrupacion">Etiquetas de agrupación</h3>
+<ul>
+<li><code>&lt;div&gt;</code> no representa nada, solo agrupa contenido relacionado </li>
+</ul>
+<hr />
+<h1 id="dar-informacion-al-navegador-con-meta">Dar información al navegador con <code>&lt;meta&gt;</code></h1>
+<pre><code>&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;description&quot; content=&quot;Una descripción breve de la página para SEO.&quot;&gt;
+    &lt;meta name=&quot;keywords&quot; content=&quot;HTML, CSS, diseño web&quot;&gt;
+    &lt;meta name=&quot;author&quot; content=&quot;Tu Nombre&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+
+    &lt;title&gt;Mi Página Web&lt;/title&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;styles.css&quot;&gt;
+    &lt;link rel=&quot;icon&quot; href=&quot;favicon.ico&quot; type=&quot;image/x-icon&quot;&gt;
+
+    &lt;script src=&quot;script.js&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+</code></pre>
+<ul>
+<li>
+<p><strong><code>&lt;meta charset="UTF-8"&gt;</code></strong>: Define la codificación de caracteres utilizada en la página, asegurando que el texto se muestre correctamente.</p>
+</li>
+<li>
+<p><strong><code>&lt;meta name="description" content="..."&gt;</code></strong>: Proporciona una breve descripción del contenido de la página, utilizada por motores de búsqueda en los resultados.</p>
+</li>
+<li>
+<p><strong><code>&lt;meta name="keywords" content="..."&gt;</code></strong>: Especifica palabras clave relacionadas con el contenido de la página para ayudar en la indexación por motores de búsqueda (menos relevante hoy en día).</p>
+</li>
+<li>
+<p><strong><code>&lt;meta name="author" content="..."&gt;</code></strong>: Indica el autor de la página web.</p>
+</li>
+<li>
+<p><strong><code>&lt;meta name="viewport" content="..."&gt;</code></strong>: Configura cómo se debe mostrar la página en dispositivos móviles, controlando el ancho y la escala de la ventana de visualización.</p>
+</li>
+</ul>
+<hr />
+<h1 id="listas">Listas</h1>
+<h2 id="lista-ordenada">Lista ordenada</h2>
+<pre><code>         &lt;ol&gt;
+                 &lt;li&gt;Primero&lt;/li&gt;
+                 &lt;li&gt;Segundo&lt;/li&gt;
+                &lt;li&gt;Tercero&lt;/li&gt;
+        &lt;/ol&gt;
+</code></pre>
+<h2 id="lista-desordenada">Lista desordenada</h2>
+<pre><code>      &lt;ul&gt;
+        &lt;li&gt;Elemento A&lt;/li&gt;
+        &lt;li&gt;Elemento B&lt;/li&gt;
+        &lt;li&gt;Elemento C&lt;/li&gt;
+    &lt;/ul&gt;
+</code></pre>
+<h2 id="lista-de-definiciones">Lista de definiciones</h2>
+<pre><code> &lt;dl&gt;
+        &lt;dt&gt;HTML&lt;/dt&gt;
+        &lt;dd&gt;Lenguaje de marcado para crear páginas web.&lt;/dd&gt;
+
+        &lt;dt&gt;CSS&lt;/dt&gt;
+        &lt;dd&gt;Lenguaje de estilo HTML.&lt;/dd&gt;
+
+        &lt;dt&gt;JavaScript&lt;/dt&gt;
+        &lt;dd&gt;Lenguaje de programación&lt;/dd&gt;
+    &lt;/dl&gt;
+</code></pre>
+<h2 id="contenido-desplegable">Contenido Desplegable</h2>
+<ul>
+<li><code>&lt;details&gt;</code>: Define el contenedor para el contenido que se puede expandir o contraer.</li>
+<li><code>&lt;summary&gt;</code>: Proporciona un título o encabezado que el usuario puede hacer clic para mostrar u ocultar el contenido de <code>&lt;details&gt;</code>.</li>
+</ul>
+<pre><code>  &lt;h1&gt;Información Expandible&lt;/h1&gt;
+
+    &lt;details&gt;
+        &lt;summary&gt;Sección 1: Historia&lt;/summary&gt;
+        &lt;p&gt;La historia es el estudio de los eventos pasados, especialmente aquellos que afectan a la humanidad. Incluye el análisis de documentos, artefactos y testimonios.&lt;/p&gt;
+    &lt;/details&gt;
+
+    &lt;details&gt;
+        &lt;summary&gt;Sección 2: Ciencia&lt;/summary&gt;
+        &lt;p&gt;La ciencia es un conjunto de conocimientos sistemáticos que explican fenómenos naturales. Se basa en la observación, experimentación y el análisis.&lt;/p&gt;
+    &lt;/details&gt;
+
+    &lt;details&gt;
+        &lt;summary&gt;Sección 3: Tecnología&lt;/summary&gt;
+        &lt;p&gt;La tecnología implica la aplicación de conocimientos científicos para resolver problemas prácticos. Incluye herramientas, técnicas y sistemas desarrollados para mejorar la vida humana.&lt;/p&gt;
+    &lt;/details&gt;
+</code></pre>
+<p>![[Pasted image 20240829202926.png||400]]</p>
+<hr />
+<h1 id="iframe-videos-y-mapas">iframe (videos y mapas)</h1>
+<p>Muestra contenido de otra fuente como videos o mapa para lograr esto se debe copiar el código ifraim que va la pagina fuente. 
+<code>&lt;iframe src="URL" width="ancho" height="alto"&gt;&lt;/iframe&gt;&gt;</code></p>
+<hr />
+<h1 id="identificadores">Identificadores</h1>
+<p>es un atributo que nos permite identificar uno o mas etiquetas 
+<code>etiqueta atributo="valor&gt; &lt;/etiqueta&gt;"</code></p>
+<ul>
+<li>id = "cualNom" =&gt; son identificadores unicos que no se pueden repetir <ul>
+<li>CSS    <code>#cualNom{ aquivaElCodigo  }</code></li>
+</ul>
+</li>
+<li>class="cualNom"  =&gt; se usa mucho en CSS <ul>
+<li>CSS   <code>.cualNom{ aqui va el codigo   }</code>  `</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h1 id="ventanas-modales-o-emergentes">Ventanas modales o emergentes</h1>
+<p>Se debe de configurar el clic del evento para mostrar la ventana debemos de investigar mas sobre esto ... </p>
+<pre><code>   &lt;button id=&quot;openDialog&quot;&gt;Abrir Diálogo&lt;/button&gt;
+
+
+
+    &lt;!-- El diálogo --&gt;
+
+    &lt;dialog id=&quot;myDialog&quot;&gt;
+
+        &lt;p&gt;Este es el contenido del diálogo.&lt;/p&gt;
+
+        &lt;button id=&quot;closeDialog&quot;&gt;Cerrar&lt;/button&gt;
+
+    &lt;/dialog&gt;
+</code></pre>
+<hr />
+<h1 id="enlace-de-ruta">Enlace de ruta</h1>
+<p>La etiqueta <code>&lt;a&gt;</code> (ancla) se utiliza para crear hipervínculos que permiten a los usuarios navegar a otras páginas o recursos.</p>
+<pre><code>&lt;a href=&quot;URL&quot;&gt;Texto del enlace&lt;/a&gt;
+
+</code></pre>
+<p><strong>Usos comunes del <code>href</code> en <code>&lt;a&gt;</code>:</strong></p>
+<ul>
+<li><strong>Enlaces a otras páginas web</strong>: <code>href="https://www.ejemplo.com"</code></li>
+<li><strong>Enlaces a secciones dentro de la misma página</strong>: <code>href="#seccion"</code></li>
+</ul>
+<hr />
+<h1 id="tablas">Tablas</h1>
+<p>![[Pasted image 20240829205914.png]]</p>
+<pre><code>&lt;h1&gt;Ejemplo de Tabla HTML&lt;/h1&gt;
+
+&lt;table&gt;
+    &lt;caption&gt;Lista de Empleados&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nombre&lt;/th&gt;
+            &lt;th&gt;Puesto&lt;/th&gt;
+            &lt;th&gt;Salario&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Ana Pérez&lt;/td&gt;
+            &lt;td&gt;Desarrolladora&lt;/td&gt;
+            &lt;td&gt;$3000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Luis Gómez&lt;/td&gt;
+            &lt;td&gt;Diseñador&lt;/td&gt;
+            &lt;td&gt;$2800&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;María Fernández&lt;/td&gt;
+            &lt;td&gt;Gerente&lt;/td&gt;
+            &lt;td&gt;$3500&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+</code></pre>
+<hr />
+<h1 id="formularios">Formularios</h1>
+<p>Un formulario en HTML se define con la etiqueta <code>&lt;form&gt;</code>, y dentro de él se pueden incluir una variedad de elementos para recoger datos del usuario. Aquí está la estructura básica:</p>
+<pre><code>&lt;form action=&quot;URL&quot; method=&quot;metodo&quot;&gt;    
+
+&lt;!-- ******Elementos del formulario********* --&gt;
+
+&lt;/form&gt;
+</code></pre>
+<ul>
+<li><strong><code>action</code></strong>: Especifica la URL a la que se enviarán los datos del formulario cuando se envíen o a que servidor va a ir a parar toda la informacion.</li>
+<li><strong><code>method</code></strong>: Define el método HTTP que se utilizará para enviar los datos (<code>GET</code> o <code>POST</code>).</li>
+</ul>
+<h2 id="elementos-del-formulario">Elementos del formulario</h2>
+<ol>
+<li><strong>Campos de Texto</strong></li>
+<li><strong><code>&lt;input type="text"&gt;</code></strong>: Campo de texto para ingresar información.</li>
+</ol>
+<pre><code>&lt;label for=&quot;name&quot;&gt;Nombre:&lt;/label&gt;
+&lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot;&gt;
+
+</code></pre>
+<ul>
+<li><strong><code>&lt;textarea&gt;</code></strong>: Área de texto de varias líneas.</li>
+</ul>
+<pre><code>&lt;label for=&quot;message&quot;&gt;Mensaje:&lt;/label&gt;
+&lt;textarea id=&quot;message&quot; name=&quot;message&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;
+
+</code></pre>
+<ul>
+<li><code>&lt;label&gt;</code> se utiliza para definir una relación entre una etiqueta de texto y un elemento de formulario, como un campo de entrada (<code>&lt;input&gt;</code>), una lista desplegable (<code>&lt;select&gt;</code>), un área de texto (<code>&lt;textarea&gt;</code>), entre otros.</li>
+<li><code>for</code>  El atributo for en una etiqueta <code>&lt;label&gt;</code> debe coincidir con el valor del atributo <code>id</code> del elemento de formulario que se está etiquetando. Esto establece una relación entre la etiqueta y el campo de entrada, facilitando la interacción con el formulario.</li>
+<li>
+<p><code>name</code> El servidor usa el valor de <code>name</code> para procesar y almacenar los datos del formulario. No es posible usar el id para esta relacion. </p>
+</li>
+<li>
+<p><strong>Campos de Selección</strong></p>
+</li>
+<li>
+<p><strong><code>&lt;select&gt;</code></strong>: Menú desplegable para seleccionar una opción de una lista.</p>
+</li>
+</ul>
+<pre><code>&lt;label for=&quot;color&quot;&gt;Color favorito:&lt;/label&gt;
+&lt;select id=&quot;color&quot; name=&quot;color&quot;&gt;
+    &lt;option value=&quot;rojo&quot;&gt;Rojo&lt;/option&gt;
+    &lt;option value=&quot;verde&quot;&gt;Verde&lt;/option&gt;
+    &lt;option value=&quot;azul&quot;&gt;Azul&lt;/option&gt;
+&lt;/select&gt;
+
+</code></pre>
+<ul>
+<li><strong><code>&lt;datalist&gt;</code></strong>: Lista de opciones predefinidas para un campo de entrada.</li>
+</ul>
+<pre><code>&lt;label for=&quot;fruit&quot;&gt;Fruta:&lt;/label&gt;
+&lt;input list=&quot;fruits&quot; id=&quot;fruit&quot; name=&quot;fruit&quot;&gt;
+&lt;datalist id=&quot;fruits&quot;&gt;
+    &lt;option value=&quot;Manzana&quot;&gt;
+    &lt;option value=&quot;Banana&quot;&gt;
+    &lt;option value=&quot;Cereza&quot;&gt;
+&lt;/datalist&gt;
+
+</code></pre>
+<ol>
+<li>
+<p><strong>Botones</strong></p>
+</li>
+<li>
+<p><strong><code>&lt;button&gt;</code></strong>: Botón que puede tener diferentes tipos (<code>submit</code>, <code>reset</code>, <code>button</code>).</p>
+</li>
+</ol>
+<pre><code>&lt;button type=&quot;submit&quot;&gt;Enviar&lt;/button&gt;
+&lt;button type=&quot;reset&quot;&gt;Restablecer&lt;/button&gt;
+
+</code></pre>
+<ul>
+<li><strong><code>&lt;input type="submit"&gt;</code></strong>: Botón para enviar el formulario.</li>
+</ul>
+<pre><code>&lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+
+</code></pre>
+<ol>
+<li>Casillas de Verificación y Botones de Radio</li>
+<li><strong><code>&lt;input type="checkbox"&gt;</code></strong>: Casilla de verificación que puede estar marcada o desmarcada.</li>
+</ol>
+<pre><code>&lt;label for=&quot;subscribe&quot;&gt;
+    &lt;input type=&quot;checkbox&quot; id=&quot;subscribe&quot; name=&quot;subscribe&quot;&gt; Suscribirse al boletín
+&lt;/label&gt;
+
+</code></pre>
+<ul>
+<li><strong><code>&lt;input type="radio"&gt;</code></strong>: Botones de radio para seleccionar una opción de un grupo.</li>
+</ul>
+<pre><code>&lt;label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt; Hombre
+&lt;/label&gt;
+&lt;label&gt;
+    &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt; Mujer
+&lt;/label&gt;
+
+</code></pre>
+<ol>
+<li>Campos de Archivo</li>
+<li><strong><code>&lt;input type="file"&gt;</code></strong>: Campo para seleccionar archivos.</li>
+</ol>
+<pre><code>&lt;label for=&quot;file&quot;&gt;Seleccionar archivo:&lt;/label&gt;
+&lt;input type=&quot;file&quot; id=&quot;file&quot; name=&quot;file&quot;&gt;
+
+</code></pre>
+<ol>
+<li>
+<p><strong>Campo de Fecha y Hora</strong></p>
+</li>
+<li>
+<p><strong><code>&lt;input type="date"&gt;</code></strong>: Campo para seleccionar una fecha.</p>
+</li>
+</ol>
+<pre><code>&lt;label for=&quot;birthday&quot;&gt;Fecha de nacimiento:&lt;/label&gt;
+&lt;input type=&quot;date&quot; id=&quot;birthday&quot; name=&quot;birthday&quot;&gt;
+
+</code></pre>
+<ul>
+<li><strong><code>&lt;input type="time"&gt;</code></strong>: Campo para seleccionar una hora.</li>
+</ul>
+<pre><code>&lt;label for=&quot;appointment&quot;&gt;Hora de la cita:&lt;/label&gt;
+&lt;input type=&quot;time&quot; id=&quot;appointment&quot; name=&quot;appointment&quot;&gt;
+
+</code></pre>
+<ol>
+<li>Email  y otros elementos del formulario mas</li>
+</ol>
+<pre><code>&lt;form action=&quot;/submit&quot; method=&quot;POST&quot;&gt;
+    &lt;label for=&quot;email&quot;&gt;Correo Electrónico:&lt;/label&gt;
+    &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+    &lt;br&gt;&lt;br&gt;
+
+    &lt;input type=&quot;submit&quot; value=&quot;Suscribirse&quot;&gt;
+&lt;/form&gt;
+</code></pre>
+<ul>
+<li><strong><code>&lt;input type="text"&gt;</code></strong>: Campo de entrada de texto.</li>
+<li><strong><code>&lt;input type="password"&gt;</code></strong>: Campo de entrada para contraseñas.</li>
+<li><strong><code>&lt;input type="email"&gt;</code></strong>: Campo de entrada para correos electrónicos.</li>
+<li><strong><code>&lt;input type="number"&gt;</code></strong>: Campo de entrada para números.</li>
+<li><strong><code>&lt;input type="date"&gt;</code></strong>: Campo de entrada para seleccionar fechas.</li>
+<li><strong><code>&lt;input type="radio"&gt;</code></strong>: Botones de opción para selección única.</li>
+<li><strong><code>&lt;input type="checkbox"&gt;</code></strong>: Casillas de verificación para selección múltiple.</li>
+<li><strong><code>&lt;input type="file"&gt;</code></strong>: Campo de entrada para selección de archivos.</li>
+<li><strong><code>&lt;input type="submit"&gt;</code></strong>: Botón para enviar el formulario.</li>
+<li><strong><code>&lt;input type="reset"&gt;</code></strong>: Botón para restablecer el formulario.</li>
+<li><strong><code>&lt;input type="color"&gt;</code></strong>: Selector de color.</li>
+<li><strong><code>&lt;input type="range"&gt;</code></strong>: Control deslizante para seleccionar un valor en un rango.</li>
+<li><strong><code>&lt;textarea&gt;</code></strong>: Campo de texto de varias líneas.</li>
+<li><strong><code>&lt;select&gt;</code> y <code>&lt;option&gt;</code></strong>: Lista desplegable para seleccionar opciones.</li>
+<li><strong><code>&lt;button&gt;</code></strong>: Botón para acciones personalizadas.</li>
+<li><strong><code>&lt;fieldset&gt;</code></strong> y <strong><code>&lt;legend&gt;</code></strong>: Contenedor y título para agrupar elementos relacionados.</li>
+<li><strong><code>&lt;datalist&gt;</code></strong>: Lista de opciones sugeridas para un campo de entrada.</li>
+<li><strong><code>&lt;output&gt;</code></strong>: Contenedor para mostrar el resultado de cálculos o acciones.</li>
+<li><strong><code>&lt;label&gt;</code></strong>: Etiqueta para describir elementos de formulario.</li>
+</ul>
+<p>atributos 
+- <strong><code>required</code></strong>: Indica que el campo debe completarse antes de enviar el formulario.
+- <code>placeholder</code> :podemos poner en el input un modelo que muestre al usuario como lo queremos que llene el campo.</p>
+<pre><code>&lt;input type=&quot;email&quot; id= &quot;correoEelectronico&quot; required placeholder= &quot;email@dominio.com&quot;&gt;
+
+&lt;label for= &quot;telefono&quot;&gt; TELEFONO &lt;/label&gt;
+&lt;input type=&quot;tel&quot; id=&quot;telefono&quot; required placeholder=&quot;(XX) XXXX XXXX&quot;&gt;
+
+</code></pre>
+<ul>
+<li><strong><code>readonly</code></strong>: Hace que el campo de entrada sea de solo lectura (no se puede modificar). Útil cuando se quiere mostrar un valor que no debe ser cambiado por el usuario.</li>
+<li><strong><code>disabled</code></strong>: Deshabilita el campo de entrada (no se puede interactuar con él). Se usa cuando una entrada no debe estar disponible para la interacción del usuario.</li>
+<li><strong><code>maxlength</code></strong>: Número máximo de caracteres permitidos en el campo de entrada. Es importante para limitar la longitud del texto que puede introducirse.</li>
+<li><strong><code>min</code></strong> y <strong><code>max</code></strong>: Definen los valores mínimos y máximos permitidos para el campo de entrada (usado con tipos como "number", "date", etc.). Es esencial para la validación de rangos de entrada.</li>
+<li><strong><code>checked</code></strong>: Indica que un campo de entrada de tipo "checkbox" o "radio" está seleccionado de forma predeterminada. Es necesario para establecer valores por defecto en opciones seleccionables.</li>
+</ul>
+<p>ejemplo completo: </p>
+<pre><code>&lt;body&gt;
+
+
+
+    &lt;h1&gt;Formulario de Registro&lt;/h1&gt;
+
+
+
+    &lt;form action=&quot;/submit&quot; method=&quot;POST&quot;&gt;
+
+        &lt;label for=&quot;name&quot;&gt;Nombre:&lt;/label&gt;
+
+        &lt;input type=&quot;text&quot; id=&quot;name&quot; name=&quot;name&quot; required&gt;
+
+        &lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;email&quot;&gt;Correo electrónico:&lt;/label&gt;
+
+        &lt;input type=&quot;email&quot; id=&quot;email&quot; name=&quot;email&quot; required&gt;
+
+        &lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;gender&quot;&gt;Género:&lt;/label&gt;
+
+        &lt;input type=&quot;radio&quot; id=&quot;male&quot; name=&quot;gender&quot; value=&quot;male&quot;&gt;
+
+        &lt;label for=&quot;male&quot;&gt;Masculino&lt;/label&gt;
+
+        &lt;input type=&quot;radio&quot; id=&quot;female&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt;
+
+        &lt;label for=&quot;female&quot;&gt;Femenino&lt;/label&gt;
+
+        &lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;bio&quot;&gt;Biografía:&lt;/label&gt;
+
+        &lt;textarea id=&quot;bio&quot; name=&quot;bio&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;&lt;/textarea&gt;
+
+        &lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;country&quot;&gt;País:&lt;/label&gt;
+
+        &lt;select id=&quot;country&quot; name=&quot;country&quot;&gt;
+
+            &lt;option value=&quot;ecuador&quot;&gt;Ecuador&lt;/option&gt;
+
+            &lt;option value=&quot;colombia&quot;&gt;Colombia&lt;/option&gt;
+
+            &lt;option value=&quot;peru&quot;&gt;Perú&lt;/option&gt;
+
+        &lt;/select&gt;
+
+        &lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;subscribe&quot;&gt;
+
+            &lt;input type=&quot;checkbox&quot; id=&quot;subscribe&quot; name=&quot;subscribe&quot;&gt; Suscribirse al boletín
+
+        &lt;/label&gt;
+
+        &lt;br&gt;&lt;br&gt;
+
+        &lt;label for=&quot;file&quot;&gt;Seleccionar archivo:&lt;/label&gt;
+
+        &lt;input type=&quot;file&quot; id=&quot;file&quot; name=&quot;file&quot;&gt;
+
+        &lt;br&gt;&lt;br&gt;
+
+        &lt;input type=&quot;submit&quot; value=&quot;Enviar&quot;&gt;
+
+    &lt;/form&gt;
+
+    &lt;/body&gt;
+</code></pre>
+<p>![[Pasted image 20240830095614.png]]</p>
+<hr />
+<h1 id="canvas"><code>&lt;canvas&gt;</code></h1>
+<p>es un elemento que se utiliza para dibujar gráficos, animaciones, y otras representaciones visuales de manera dinámica mediante JavaScript. Es un espacio en blanco sobre el cual se puede "pintar" utilizando una serie de métodos y propiedades.
+Por sí solo, el elemento <code>&lt;canvas&gt;</code> es simplemente un contenedor gráfico sin contenido visual hasta que se utiliza JavaScript para dibujar en él.</p>
+<h2 id="pasted-image-20240830164150png2000">![[Pasted image 20240830164150.png||2000]]</h2>
+<h1 id="etiquetas-que-creo-que-no-son-muy-utiles">Etiquetas que creo que no son muy útiles</h1>
+<ul>
+<li><code>&lt;blockquote&gt;</code> representa texto que cita de otra fuente, el texto se mostraria con cursiva </li>
+<li><code>&lt;time&gt;</code>  o <code>&lt;datatime&gt;</code>: publicar fecha o fecha y hora</li>
+<li><code>&lt;strong&gt;</code>: marca las partes mas importantes de un texto “mucho enfasis osea con negrita”</li>
+<li></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
