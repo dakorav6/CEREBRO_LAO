@@ -39,8 +39,6 @@ Es un javaScript pero con tipado en los datos.
  ### Ejecucion del codigo. 
 
 1.  **`npx tsc`**: Compila todo el proyecto y transforma de  TS a JS. PERO luego tienes que ejecutar el node para ejecutar el archivo....
-  - Para compilar solo 1 archivo TS:
-   `tsc nombreArchivo.ts`
 
 2. **`node dist/nombrearchivo.js`**: Así es como pones a funcionar tu código en el servidor Node.js después de haberlo compilado.
 
