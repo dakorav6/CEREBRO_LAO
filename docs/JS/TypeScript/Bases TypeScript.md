@@ -15,7 +15,7 @@ Es un javaScript pero con tipado en los datos.
 
 ## Instalacion y mesa de trabajo
 
-1. Node.js: El entorno de ejecución. (se instala una sola vez y ya viene en el codeScpace instalado)
+1. **Node.js**: El entorno de ejecución. (se instala una sola vez y ya viene en el codeScpace instalado)
     1. Instalador, PowerShell: `winget install OpenJS.NodeJS.LTS` 
     2. verificar instalacion con version : `node -v`
 
