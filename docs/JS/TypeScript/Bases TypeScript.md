@@ -93,18 +93,29 @@ dato = [1, 2, 3];
 
 o valor  Desconocido , basicamente es el metodo seguro porque? simplemente tienes la limitacion de no poder usarse  como el tipo que es, desde una simple suma de 2 numeros enteros o   covertir una cadena de caracteres en mayuscula. 
 
-a menos que usemos el dichoso: 
+a menos que usemos el dichoso: `typeof` que nos retorna un string del tipo de la variable. 
 
 ```typescript
 let usuario: unknown = { nombre: "Alex" };
 
 // Primero revisamos que sea un objeto y no sea null
-if (typeof usuario === "object" && usuario !== null && "nombre" in usuario) {
+if (typeof usuario === "object") {
     // TypeScript deduce que 'usuario' tiene la propiedad 'nombre'
     console.log("El nombre es válido");
 }
 ```
 nota: si con any tambien podemos usar el typeof pero ese no es el problema, el problema es qe any no tiene limitaciones al momeno de usarse pero unknown si tiene limitantes por que primer tiene que pasar por la validacion de tipo (gracias al typeof), y tu diras pero dentro de ese bloque condicional aun sigue siendo **unknown** y eso es verdad pero typescrip **sobre entiendo que** dentro de ese bloque de la condicional solo existe un valor del tipo que corresponde. 
+
+
+### Tipo de dato - TYPE
+
+type te permite crear un alias de tipo, es decir, darle un nombre a una estructura o tipo de dato.
+
+Usa type cuando:
+- Necesitas uniones (|)
+- Necesitas combinaciones (&)
+- Trabajas con funciones
+- Haces tipos derivados o avanzados
 
 
 
@@ -230,7 +241,7 @@ function saludar(nombre?: string): string {
 
 Esta es la base para trabajar de forma profesional. Una **Interface** es como un contrato o un molde para tus objetos.
 
-```
+```typeScript
 interface Usuario {
   id: number;
   nombre: string;
