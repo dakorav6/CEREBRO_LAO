@@ -4,7 +4,6 @@
 
 Es un javaScript pero con tipado en los datos.
 
-
 - **Tipado:** Le dices a la computadora qué tipo de dato es cada cosa (número, texto, etc.).
 - **Compilación:** El navegador no entiende TypeScript, así que usamos una herramienta para convertirlo a JavaScript normal.
 
@@ -14,31 +13,27 @@ Es un javaScript pero con tipado en los datos.
 - **Backend (Servidores): Con **Node.js o NestJS** para asegurar que la base de datos y el servidor hablen el mismo "idioma".
 
 
-## Iniciar proyecto
+## Instalacion y mesa de trabajo
 
-**Paso 1: Inicializar el proyecto**
-- **Comando:** `npm init -y`
-     **¿Para qué sirve?:** Crea el archivo `package.json`. Es el "DNI" de tu proyecto donde se anotan las librerías que vas a usar. El `-y` es para aceptar todo por defecto y no perder tiempo.
+1. Node.js: El entorno de ejecución. (se instala una sola vez y ya viene en el codeScpace instalado)
+    1. Instalador, PowerShell: `winget install OpenJS.NodeJS.LTS` 
+    2. verificar instalacion con version : `node -v`
 
-
-**Paso 2: Instalar TypeScript (Local)**
-- **Comando:** `npm install typescript --save-dev`
-	- **¿Para qué sirve?:** Descarga el compilador de TypeScript específicamente para este proyecto. Usamos `--save-dev` porque TypeScript solo se necesita para **desarrollar**; cuando el código ya está en internet funcionando (producción), solo se usa el JavaScript resultante.
-	
-**Paso 3: Configurar TypeScript**
-- **Comando:** `npx tsc --init`
-	- **¿Para qué sirve?:** Genera el archivo de configuracion del TS  `tsconfig.json`. Aquí es donde debes buscar y modificar las líneas que mencionas:
-
-- `"rootDir": "./src"`: Dónde está tu código TS (src)
-
-- `"outDir": "./dist"`: Aquí le dices: "Cuando termines de traducir mi código a JavaScript, guárdalo en la carpeta `dist`".
-
-- **Habilitar el uso de decoradores:** `"experimentalDecorators": true,`    que es decorador?
+2. Puedes trabajar TS de manera LOCAL o GLOBAL, vamos a trabajar de maneral LOCAL instalando TS por proyecto.
+  - `mkdir mi-proyecto-ts` (Crea la carpeta del proyecto)
+  - `npm init -y`(dentro de la carpeta creada), Crea el archivo `package.json`. Es el "DNI" de tu proyecto donde se anotan las librerías que vas a usar. 
+  - `npm install typescript --save-dev` (Es el compilador de TS)
 
 
-**Paso 4:SRC, carpeta del los TS**
+3.`npx tsc --init` (Configurar TypeScript) , crea el archivo *tsconfig.json*. Aquí es donde debes buscar y modificar las líneas que mencionas:
+  - `"rootDir": "./src"`: Dónde está tu código TS (src)
 
-- **`mkdir src`**: Crea la carpeta donde vivirán tus archivos. (aqui escribimos nuestro codigo TS)
+  - `"outDir": "./dist"`: Aquí le dices: "Cuando termines de traducir mi código a JavaScript, guárdalo en la carpeta `dist`".
+
+  -`"experimentalDecorators": true,`  , Habilitar el uso de decoradores    que es decorador?
+
+
+4. `mkdir src` crear carpeta del los TS**(aqui escribimos nuestro codigo TS)
     
 
  ### Ejecucion del codigo. 
