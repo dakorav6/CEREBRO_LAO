@@ -5,11 +5,31 @@
 
 ## Instalacion y mesa de trabajo
 
-1. Node.js: El entorno de ejecución.
-2. Angular CLI: La herramienta de comandos. Se instala con npm install -g @angular/cli.
-3. VS Code: El editor de texto preferido por la comunidad.
+1. Node.js: El entorno de ejecución. (se instala una sola vez y ya viene en el codeScpace instalado)
+    1. Instalador, PowerShell: `winget install OpenJS.NodeJS.LTS` 
+    2. verificar instalacion con version : `node -v`
 
-Tip de Pro: Una vez instalado el CLI, solo necesitas escribir ng serve en tu terminal para ver tu aplicación funcionando en vivo en el navegador.
+2. Angular CLI: (se instala una sola vez en la maquina , no viene instalado en el codeSpace) 
+    - Se instala con `npm install -g @angular/cli`
+
+3. Iniciar nuevo proyecto Angular, dentro de la carpeta ejecutar el comando. `ng new nombre-de-tu-app`
+
+    - ¿Estas de acuerdo? si
+    - ¿Qué formato de estilos prefieres?: Puedes elegir CSS, SCSS, Sass, etc. (SCSS es muy común en entornos profesionales).
+    -  Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? (y/N) NO por ahora. 
+    - IA? 
+
+
+4. Entra a la carpeta donde esta el proyecto con `cd ` y levantamos el servidor para
+verlo en el navegador: `ng serve --open`
+
+
+## Libreria de Componentes de ANGULAR  (Recursos)
+LINK: https://material.angular.dev/components/categories
+- Angular Material
+- Bootstrap
+- Tailwind CSS ? suena interesante
+
 
 
 ## Data Binding (Vinculación de Datos) (PENDIENTE ANALIZAR)
