@@ -67,6 +67,47 @@ let nombre: string = "Alex";
 let edad: number = 25; 
 let esEstudiante: boolean = true;
 ```
+### ANY
+
+any significa:
+👉 “puede ser cualquier tipo de dato”
+en otras palabras no hay validacion de tipos aqui (typeScript deja de ser)
+
+**Resumen claro**
+- any = cualquier tipo (sin control)
+- TypeScript deja de protegerte ⚠️
+- Úsalo lo menos posible
+- Mejor usar unknown cuando puedas 
+
+
+```typescript
+let dato: any = 10;
+
+dato = "hola";
+dato = true;
+dato = [1, 2, 3];
+//Puede cambiar de tipo sin problema
+
+```
+### Unknown
+
+o valor  Desconocido , basicamente es el metodo seguro porque? simplemente tienes la limitacion de no poder usarse  como el tipo que es, desde una simple suma de 2 numeros enteros o   covertir una cadena de caracteres en mayuscula. 
+
+a menos que usemos el dichoso: 
+
+```typescript
+let usuario: unknown = { nombre: "Alex" };
+
+// Primero revisamos que sea un objeto y no sea null
+if (typeof usuario === "object" && usuario !== null && "nombre" in usuario) {
+    // TypeScript deduce que 'usuario' tiene la propiedad 'nombre'
+    console.log("El nombre es válido");
+}
+```
+nota: si con any tambien podemos usar el typeof pero ese no es el problema, el problema es qe any no tiene limitaciones al momeno de usarse pero unknown si tiene limitantes por que primer tiene que pasar por la validacion de tipo (gracias al typeof), y tu diras pero dentro de ese bloque condicional aun sigue siendo **unknown** y eso es verdad pero typescrip **sobre entiendo que** dentro de ese bloque de la condicional solo existe un valor del tipo que corresponde. 
+
+
+
 
 ## Estructura de datos:
 
@@ -125,45 +166,6 @@ usuario = ["Luis", 22];
 **Diferencia con array normal**
 - puede cambiar el orden ❌
 - puede tener más elementos
-
-### ANY
-
-any significa:
-👉 “puede ser cualquier tipo de dato”
-en otras palabras no hay validacion de tipos aqui (typeScript deja de ser)
-
-**Resumen claro**
-- any = cualquier tipo (sin control)
-- TypeScript deja de protegerte ⚠️
-- Úsalo lo menos posible
-- Mejor usar unknown cuando puedas 
-
-
-```typescript
-let dato: any = 10;
-
-dato = "hola";
-dato = true;
-dato = [1, 2, 3];
-//Puede cambiar de tipo sin problema
-
-```
-### Unknown
-
-o valor  Desconocido , basicamente es el metodo seguro porque? simplemente tienes la limitacion de no poder usarse  como el tipo que es, desde una simple suma de 2 numeros enteros o   covertir una cadena de caracteres en mayuscula. 
-
-a menos que usemos el dichoso: 
-
-```typescript
-let usuario: unknown = { nombre: "Alex" };
-
-// Primero revisamos que sea un objeto y no sea null
-if (typeof usuario === "object" && usuario !== null && "nombre" in usuario) {
-    // TypeScript deduce que 'usuario' tiene la propiedad 'nombre'
-    console.log("El nombre es válido");
-}
-```
-nota: si con any tambien podemos usar el typeof pero ese no es el problema, el problema es qe any no tiene limitaciones al momeno de usarse pero unknown si tiene limitantes por que primer tiene que pasar por la validacion de tipo (gracias al typeof), y tu diras pero dentro de ese bloque condicional aun sigue siendo **unknown** y eso es verdad pero typescrip **sobre entiendo que** dentro de ese bloque de la condicional solo existe un valor del tipo que corresponde. 
 
 
 ----
