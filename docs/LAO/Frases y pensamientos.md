@@ -19,7 +19,7 @@
 - Todo lo que escuchamos es solo una opinion, no un hecho. Lo que vemos es una perspectiva, no la verdad (Marco Aurelio)
 	- la frase nos invita a reflexionar que nuestra opiniones y juicio estan influenciados por nuestras experiencias, emociones y pensamientos lo que las convierte en interpretaciones subjetivas no en hechos absolutos.
 
-- El universo es vasto pero demasiado pequeño para mi grandeza (Para mi arrogancia.) 
+- El universo es vasto pero demasiado pequeño para mi grandeza ( mi arrogancia.) 
 	- expresa arrogancia desmesurada destacando su creencia en su propia superioridad y grandeza absoluta. 
 
 - La suerte es una cruda fantasia para los holgazanes
@@ -46,8 +46,8 @@
 
 - Es imposible que un hombre aprenda lo que cree que ya sabe  (Epicteto)
 
--  Cada dia es una oportunidad para Crecer (reflexion propia)
+-  Cada dia es una oportunidad para Crecer 
 
-- "Jamas voy a permitir que seres inferiores a mi intenten darme ordenes manipularme o inponerse sobre mi. Hay niveles y me encargare de demostrárselos" (Para mi arrogancia.) 
+- "Jamas voy a permitir que seres inferiores a mi intenten darme ordenes, manipularme o inponerse sobre mi. Hay niveles y me encargare de demostrárselos" ( mi arrogancia.) 
 
-- El poder no se pregunta, se toma (Luchy Luciano) 
+- El poder no se pregunta, se toma. (Luchy Luciano) 
