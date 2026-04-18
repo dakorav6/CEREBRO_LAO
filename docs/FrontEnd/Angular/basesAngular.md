@@ -13,17 +13,26 @@
 
 3. `ng new nombre-de-tu-app` : Iniciar nuevo proyecto Angular, dentro de la carpeta ejecutar el comando. 
 
-    *la carpeta que esta dentro del proyecto "node_modules" se crea autmaticamente gracias al comando anterior  `ng new nombre-de-tu-app` pero esta carpeta no se copia y no se traslada y cuando copiamos un nuevo proyecto o iniciamos en un nuevo entorno de trabajo debemos instalarla con:  `npm install` , que es el npm? es como una "App Store" o un "Play Store" para programadores. Es una herramienta que viene con Node.js y sirve para gestionar todas las librerías que tu proyecto necesita*
 
 4. `ng serve --open` : Entra a la carpeta donde esta el proyecto con `cd ` y levantamos el servidor para
 verlo en el navegador: 
-    *nota: si no reconoce el comando ng es por que no tiene instalado el Angular CLI*
+
+*nota: si no reconoce el comando ng es por que no tiene instalado el Angular CLI*
+
+*`npm install`: la carpeta que esta dentro del proyecto "node_modules" se crea autmaticamente gracias al comando  `ng new nombre-de-tu-app` pero esta carpeta no se copia y no se traslada y cuando copiamos un nuevo proyecto o iniciamos en un nuevo entorno de trabajo debemos instalarla con: `npm install` , que es el npm? es como una "App Store" o un "Play Store" para programadores. Es una herramienta que viene con Node.js y sirve para gestionar todas las librerías que tu proyecto necesita*
 
 5. Trabajamos dentro de la carpeta SRC/App 
 
-## Libreria de Componentes de ANGULAR  (Recursos)
-LINK: https://material.angular.dev/components/categories
-- Angular Material
+## Libreria de Componentes de ANGULAR.material  (Recursos)
+
+
+
+- Angular Material - LINK: https://material.angular.dev/components/categories
+1. debemos de seguir los requisitos de la guia de la pagina oficial de Angular matirial  como instalar el angular material: `ng add @angular/material` 
+
+
+### otros componentes de otras fuentes
+
 - Bootstrap
 - Tailwind CSS ? suena interesante
 
