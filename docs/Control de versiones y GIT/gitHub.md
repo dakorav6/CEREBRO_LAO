@@ -4,7 +4,43 @@
 
 -`winget install --id Git.Git -e --source winget` =>  Instalar Git para Windows: Es el motor que permite que tu PC hable con GitHub. Puedes descargarlo en el buscador del navegador 
 
-### Confirmacion de identidad para hacer commit fuera del entorno github como en el escritorio por ejemplo.
+## Hacer commit y push en consola
+
+1. `git add .`
+
+2. `git commit -m "Avances del día"`
+
+3. `git push origin main`
+
+
+
+
+### Como actulaizar o sincronicar con los cambios que estan subidos en el repositorio. 
+
+`git pull origin main`
+
+
+## Crear Ramas 
+
+### Opcion 1 : por consola
+1. consola: `git checkout -b nombre-de-la-rama`  (crea y te hubica en ella)
+2.  `git push -u origin nombre-de-tu-rama` cuando es la primera vez,o la rama es nueva debemos hacer un push, porque no existe en github y debemos que crearla. 
+
+### Opcion 2: Desde Visual Studio Code (Visual)
+Si prefieres no usar comandos, VS Code lo hace muy sencillo:
+
+1. Haz clic en el nombre de la rama actual (abajo a la izquierda, donde suele decir main).
+
+2. Se abrirá un menú arriba; selecciona "+ Crear nueva rama..." (o Create new branch).
+
+3. Escribe el nombre de tu rama y presiona Enter.
+
+**Y el push?**
+como la rama es nueva debemos de crearla en github
+    *Después de hacer tu Commit, verás que en la esquina inferior izquierda (donde está el nombre de tu rama) aparece un icono de una nube con una flecha hacia arriba o un botón azul que dice Publicar rama (Publish Branch).*
+
+
+## Confirmacion de identidad para hacer commit fuera del entorno github como en el escritorio por ejemplo.
 1. Configura tu nombre:
 git config --global user.name "Tu Nombre"
 
@@ -16,12 +52,12 @@ git config --global user.email "tu@email.com"
     *es solo referencial la informacion, puede ser cualquier nombre o correo*
 
 
-### Se recomienda no trabajar directamente sobre el main, como trabajamos con ramas? 
+## Se recomienda no trabajar directamente sobre el main, como trabajamos con ramas? 
 
 
 
 
-### Trabajar con otros repositorios de otr autor 
+## Trabajar con otros repositorios de otro autor 
 
 1. en la opcion **FORK** del repositorio de otro autor , copiamos el repositorio a nuestra cuenta.  
 
