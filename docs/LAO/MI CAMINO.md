@@ -4,20 +4,20 @@
 
 ## PILAR 1 — BASES DE DATOS
 
-El más importante. Aquí también vive el análisis de datos porque comparten el mismo territorio.
+El pilar más importante. Sin datos no hay backend.
 
 ---
 
-### Bases de Datos Relacionales
+### Base de Datos Principal — PostgreSQL (Relacional)
 
-**Tecnología principal:** PostgreSQL + DBeaver
+**Herramienta visual:** DBeaver
 
-PostgreSQL es tu base de datos para los tres lenguajes de tu ruta:
-- Con Python: `psycopg2` y `SQLAlchemy`
-- Con JavaScript/TypeScript: `Prisma` o `TypeORM`
-- Con C#: `Entity Framework Core`
+**Conectores por lenguaje:**
+- Python: `psycopg2` y `SQLAlchemy`
+- JavaScript/TypeScript: `Prisma` o `TypeORM`
+- C#: `Entity Framework Core` o `Dapper`
 
-**Temas SQL:**
+**Temas:**
 - CRUD: `INSERT`, `SELECT`, `UPDATE`, `DELETE`
 - JOINs: `INNER`, `LEFT`, `RIGHT`
 - Agregaciones: `SUM`, `AVG`, `COUNT`, `MIN`, `MAX`
@@ -28,38 +28,33 @@ PostgreSQL es tu base de datos para los tres lenguajes de tu ruta:
 - Window Functions: `RANK()`, `OVER()`
 - Modelado: entidades, relaciones, normalización
 - Diagramas entidad-relación (ERD)
-- Sharding y replicación de datos (nivel avanzado)
 - ACID: Atomicidad, Consistencia, Aislamiento, Durabilidad
+- Sharding y replicación (nivel avanzado)
 
 ---
 
-### Bases de Datos No Relacionales (NoSQL)
+### Base de Datos Secundaria — MongoDB (No Relacional)
 
-> Por qué MongoDB y no solo PostgreSQL: El mundo real mezcla ambos tipos. Hay proyectos donde los datos no tienen una estructura fija, cambian constantemente o necesitan escalar horizontalmente con facilidad. MongoDB cubre esos casos. Además, el mercado remoto internacional usa ambos y esperan que sepas los dos.
+**Por qué MongoDB como segunda base de datos:**
+PostgreSQL maneja datos con estructura fija y relaciones claras. MongoDB maneja datos flexibles, que cambian de forma, o que necesitan escalar horizontalmente. El mercado real usa ambos. Un backend que solo conoce uno tiene un hueco visible en cualquier entrevista. Entre las opciones NoSQL, MongoDB es la más demandada, la mejor documentada y la que más aparece en vacantes de trabajo remoto.
 
-**Tecnología principal:** MongoDB
+**Conectores por lenguaje:**
+- Python: `PyMongo` o `Motor` (asíncrono)
+- JavaScript/TypeScript: `Mongoose`
+- C#: `MongoDB .NET Driver`
 
-MongoDB se conecta a los tres lenguajes de tu ruta:
-- Con Python: `PyMongo` o `Motor` (asíncrono)
-- Con JavaScript/TypeScript: `Mongoose`
-- Con C#: `MongoDB .NET Driver`
-
-**Temas NoSQL:**
-- Diferencias fundamentales entre SQL y NoSQL: cuándo usar cada uno
+**Temas:**
 - Modelado de documentos en lugar de tablas
-- CRUD en MongoDB: `find`, `insertOne`, `updateOne`, `deleteOne`
-- Agregaciones con el Aggregation Pipeline
+- CRUD: `find`, `insertOne`, `updateOne`, `deleteOne`
+- Aggregation Pipeline
 - Índices en MongoDB
-- Relaciones entre documentos: embedding vs referencing
-- Casos de uso reales: catálogos, logs, sesiones, datos en tiempo real
-
-**Otros tipos NoSQL que debes conocer conceptualmente:**
-- **Redis** — Clave-valor en memoria. Para caché y sesiones. Está en tu Pilar 4
-- **Firebase** — Tiempo real y serverless. Útil en proyectos personales rápidos
+- Embedding vs referencing entre documentos
+- Casos de uso: catálogos, logs, sesiones, datos en tiempo real
 
 ---
 
-### Análisis de Datos Básico (vive en este pilar)
+### Análisis de Datos Básico (complemento de este pilar)
+
 - SQL avanzado para análisis: agregaciones complejas, vistas analíticas
 - Pandas y NumPy: limpiar y transformar Excel/CSV desde Python
 - ETL básico: extraer de Excel, transformar con Python, cargar a PostgreSQL
@@ -67,168 +62,162 @@ MongoDB se conecta a los tres lenguajes de tu ruta:
 
 ---
 
-## PILAR 2 — LENGUAJES BACKEND
+## PILAR 2 — PROGRAMACIÓN BACKEND
 
-Tres lenguajes. En este orden estricto.
+### Prerequisitos — Base común a los tres lenguajes
+
+Estos temas los estudias una vez, aplican a todos los lenguajes. No los repitas por cada uno.
+
+**Lógica y algoritmos:**
+- Variables, tipos de datos, operadores
+- Condicionales y bucles
+- Funciones y módulos
+- Manejo de errores y excepciones
+- Algoritmos básicos de ordenamiento y búsqueda
+- Estructuras de datos: listas, pilas, colas, diccionarios, conjuntos
+
+**Programación Orientada a Objetos (POO):**
+- Clases y objetos
+- Herencia y polimorfismo
+- Encapsulamiento y abstracción
+- Interfaces y clases abstractas
+
+**Programación asincrónica:**
+- Qué es la concurrencia y por qué importa en backend
+- Promises y async/await (el concepto aplica igual en los tres lenguajes)
+- Manejo de errores en operaciones asíncronas
 
 ---
 
-### 1. Python — Tu lenguaje principal
+### Lenguaje 1 — Python
 
-> Por qué primero: Cubre Backend, datos, automatización e IA con un solo lenguaje. Es donde construyes tus primeros proyectos.
+> Por qué primero: cubre Backend, datos e IA con un solo lenguaje. Es donde construyes todos tus proyectos iniciales.
 
-**Temas del lenguaje:**
-- Sintaxis, funciones, módulos, manejo de errores y excepciones
-- POO: clases, herencia, encapsulamiento, polimorfismo
+**Lo específico de Python (lo general ya está en prerequisitos):**
+- Sintaxis y tipado dinámico
 - Decoradores, generadores, context managers
 - Librerías estándar: `os`, `sys`, `datetime`
+- Type Hints: tipado opcional que FastAPI usa para validar datos
 
-**Frameworks y librerías:**
-- **FastAPI** — Framework principal para APIs REST. Moderno, rápido, tipado. Genera documentación Swagger automática
-- **SQLAlchemy** — ORM para conectar Python con PostgreSQL
-- **PyMongo / Motor** — Conectores para MongoDB desde Python
-- **Pydantic** — Validación de datos, viene integrado con FastAPI
-- **Django** — Lo estudias después de FastAPI. Framework completo con panel de administración, ORM propio y autenticación incluida
-- **Pandas / NumPy** — Para el análisis de datos del Pilar 1
-- **bcrypt / Passlib** — Seguridad de contraseñas
-- **slowapi** — Rate limiting para FastAPI
+**Frameworks Backend:**
+- **FastAPI** — Tu framework principal. APIs REST modernas, tipadas, con Swagger automático
+- **Django** — Lo estudias después. Framework completo con panel de administración y ORM propio
 
-**Base de datos con Python:**
-- Relacional: PostgreSQL con `psycopg2` y `SQLAlchemy`
-- No relacional: MongoDB con `PyMongo` o `Motor`
+**Librerías clave:**
+- `SQLAlchemy` — ORM para PostgreSQL
+- `PyMongo` / `Motor` — Conectores para MongoDB
+- `Pydantic` — Validación de datos, integrado con FastAPI
+- `bcrypt` / `Passlib` — Hashing de contraseñas
+- `python-jose` — JWT
+- `slowapi` — Rate limiting
 
 ---
 
-### 2. JavaScript / TypeScript — Mercado remoto internacional
+### Lenguaje 2 — JavaScript / TypeScript
 
-> Por qué segundo y no C#: Con un solo lenguaje cubres backend con Node.js y frontend con React. Domina el mercado remoto de startups en EE.UU. y Europa.
+> Por qué segundo: cubre backend con Node.js y frontend con React. Domina el mercado remoto internacional.
 
-**Temas del lenguaje:**
-- JavaScript moderno: ES6+, Promises, async/await
-- TypeScript: tipos estáticos, interfaces, clases, generics
-- Manipulación del DOM para el frontend mínimo
-- Node.js: módulos, manejo de rutas, servidores HTTP, NPM
+**Lo específico de JS/TS (lo general ya está en prerequisitos):**
+- JavaScript moderno: ES6+, destructuring, spread operator
+- TypeScript: tipos estáticos, interfaces, generics
+- Node.js: módulos, NPM, servidores HTTP
+- Manipulación del DOM (para el frontend mínimo)
 
 **Frameworks Backend:**
-- **NestJS** — Framework estructurado para APIs en TypeScript. Arquitectura similar a Angular, lo que lo hace predecible y escalable. Lo que usan empresas serias
-- **Express.js** — Lo conoces porque NestJS está construido encima de él. Más simple, menos estructura
+- **NestJS** — Framework estructurado para APIs en TypeScript. Lo que usan empresas serias
+- **Express.js** — Base de NestJS. Lo conoces por contexto
 
 **ORMs y conectores:**
-- **Prisma** — ORM moderno para TypeScript. Conecta con PostgreSQL y MongoDB
-- **TypeORM** — Alternativa a Prisma, más parecido a SQLAlchemy
-- **Mongoose** — ODM para MongoDB con Node.js
+- `Prisma` — ORM moderno para PostgreSQL y MongoDB
+- `Mongoose` — ODM para MongoDB
 
-**Base de datos con JavaScript/TypeScript:**
-- Relacional: PostgreSQL con `Prisma` o `TypeORM`
-- No relacional: MongoDB con `Mongoose`
-
-**Frontend mínimo:**
-- **React** — Componentes funcionales, hooks: `useState`, `useEffect`, llamadas a tu API con `fetch` o `axios`
+**Frontend mínimo (solo lo necesario para que tus proyectos tengan pantalla):**
+- **React** — Componentes funcionales, `useState`, `useEffect`, llamadas a tu API
 - **Next.js** — Encima de React cuando necesites SEO en proyectos públicos
 - **Tailwind CSS** — Diseño sin escribir CSS desde cero
 
-> Cuándo lo estudias: Cuando tengas un proyecto completo en Python funcionando.
 
 ---
 
-### 3. C# — Mercado corporativo local
+### Lenguaje 3 — C#
 
-> Por qué tercero: Bancos ecuatorianos, SAP Business One, empresas grandes locales. Si decides ir por ese camino, C# es la llave. No antes.
 
-**Temas del lenguaje:**
-- Sintaxis y estructuras de control
-- POO en C#: clases, interfaces, herencia, polimorfismo
-- Programación asincrónica con `async/await`
+**Lo específico de C# (lo general ya está en prerequisitos):**
+- Tipado estático y estricto
 - LINQ: consultas integradas en el lenguaje
+- Namespaces y estructura de proyectos .NET
 
 **Frameworks Backend:**
 - **ASP.NET Core** — Framework principal para APIs REST en C#
-- **Minimal APIs** — Forma moderna y ligera de construir APIs en .NET, similar a FastAPI
+- **Minimal APIs** — Forma moderna y ligera, similar a FastAPI
 
 **ORMs y conectores:**
-- **Entity Framework Core** — ORM oficial de .NET. Conecta con PostgreSQL y SQL Server
-- **MongoDB .NET Driver** — Conector oficial para MongoDB desde C#
-- **Dapper** — ORM ligero para cuando necesitas control total del SQL
-
-**Base de datos con C#:**
-- Relacional: PostgreSQL con `Entity Framework Core` o `Dapper`
-- No relacional: MongoDB con `MongoDB .NET Driver`
+- `Entity Framework Core` — ORM oficial, conecta con PostgreSQL
+- `Dapper` — ORM ligero para control total del SQL
+- `MongoDB .NET Driver` — Conector oficial para MongoDB
 
 **Testing y nube:**
-- **xUnit** — Pruebas unitarias en C#
+- `xUnit` — Pruebas unitarias
 - **Azure** — La nube natural de este lenguaje
 
-> Cuándo lo estudias: Cuando los 3 proyectos de portafolio estén terminados.
+> Cuándo: cuando los 3 proyectos de portafolio estén terminados.
 
 ---
 
-## PILAR 3 — BACKEND, APIs Y SEGURIDAD
+## PILAR 3 — APIs Y SEGURIDAD
 
-Van juntos porque la seguridad no es un módulo aparte. Es parte de cómo diseñas una API desde el primer día.
+La seguridad no es un módulo aparte. Es parte del diseño desde el primer endpoint.
 
 ---
 
 ### Diseño de APIs REST
 
 **Conceptos:**
-- Cómo funciona HTTP: métodos `GET`, `POST`, `PUT`, `DELETE`, `PATCH`
+- HTTP: métodos `GET`, `POST`, `PUT`, `DELETE`, `PATCH`
 - Códigos de respuesta: 200, 201, 400, 401, 403, 404, 500
-- Diseño coherente y predecible de endpoints
-- Versionado de rutas desde el inicio: `/api/v1/recurso`
-- Manejo estructurado de errores: mensajes genéricos al usuario, detalles en logs internos
+- Diseño coherente de endpoints
+- Versionado desde el inicio: `/api/v1/recurso`
+- Errores genéricos al usuario, detalles técnicos solo en logs internos
 
 **Tecnologías:**
-- **Postman** — Probar y documentar tus endpoints
-- **Swagger / OpenAPI** — FastAPI lo genera automáticamente. Documentación interactiva de tu API
-- **Insomnia** — Alternativa a Postman, más ligera
+- **Postman** o **Insomnia** — Probar y documentar endpoints
+- **Swagger / OpenAPI** — FastAPI lo genera automáticamente
 
 ---
 
 ### Seguridad Backend
 
-**Conceptos:**
-- OWASP Top 10: los 10 errores más comunes que abren vulnerabilidades
-- Nunca confiar en los datos que manda el cliente
-- Mostrar errores genéricos al usuario, guardar detalles en logs
-
-**Tecnologías por lenguaje:**
-
-Con Python:
-- `bcrypt` o `Passlib` — Hashing de contraseñas
-- `python-jose` — JWT en Python
-- `slowapi` — Rate limiting
-
-Con JavaScript/TypeScript:
-- `bcrypt` — Hashing de contraseñas en Node.js
-- `jsonwebtoken` — JWT en Node.js
-- `helmet` — Headers de seguridad en Express/NestJS
-- `express-rate-limit` — Rate limiting
-
-Con C#:
-- `ASP.NET Core Identity` — Autenticación y autorización integrada
-- `Microsoft.AspNetCore.Authentication.JwtBearer` — JWT en .NET
-
-**Temas de seguridad transversales (aplican a todos los lenguajes):**
-- Hashing de contraseñas: nunca guardar en texto plano
-- JWT (JSON Web Tokens): autenticación sin estado
+**Conceptos transversales (aplican a los tres lenguajes):**
+- OWASP Top 10
+- Hashing de contraseñas: nunca en texto plano
+- JWT: autenticación sin estado
 - OAuth2: estándar de autorización
-- CORS: definir quién puede consumir tu API
+- CORS: definir quién consume tu API
 - HTTPS y SSL/TLS básico
+- Validación estricta de inputs: nunca confiar en lo que el usuario manda
 - Prevención de inyección SQL
-- Rate Limiting: limitar peticiones por usuario
+- Rate Limiting: limitar peticiones para que nadie tumbe tu API
 - CSP (Content Security Policy)
+
+**Librerías por lenguaje** (referencia rápida):
+
+| Concepto | Python | JS/TS | C# |
+|----------|--------|-------|----|
+| Hashing | `bcrypt` / `Passlib` | `bcrypt` | `ASP.NET Core Identity` |
+| JWT | `python-jose` | `jsonwebtoken` | `JwtBearer` |
+| Rate Limiting | `slowapi` | `express-rate-limit` | Middleware custom |
+| Headers seguridad | — | `helmet` | Middleware integrado |
 
 ---
 
-### Arquitectura (se absorbe con la práctica, no de golpe)
+### Arquitectura (se absorbe con la práctica)
 
-**Conceptos:**
 - Principios SOLID
 - Clean Code
 - Clean Architecture básica
-- Patrones de diseño esenciales: Repository, Factory, Singleton
-- System Design: cómo fluye la información entre APIs, bases de datos y servicios externos
-- Monolito primero, microservicios después cuando el problema lo justifique
+- Patrones: Repository, Factory, Singleton
+- System Design: cómo fluye la información entre servicios
+- Monolito primero. Microservicios cuando el problema lo justifique
 
 ---
 
@@ -236,76 +225,56 @@ Con C#:
 
 Sin esto no trabajas en equipo ni en remoto.
 
-| Herramienta | Para qué sirve | Cuándo la aprendes |
-|-------------|---------------|-------------------|
-| Git + GitHub | Control de versiones y portafolio público | Desde el primer día |
-| Postman | Probar y documentar tus APIs | Cuando hagas tu primera API |
-| DBeaver | Administrar PostgreSQL y MongoDB visualmente | Cuando instales la base de datos |
-| Docker | Empaquetar tu aplicación para cualquier entorno | Al terminar el primer proyecto |
-| Terminal / Linux básico | Moverse en servidores remotos, comandos esenciales | Paralelo desde el inicio |
-| Redis | Caché en memoria para hacer tu API más rápida | En el Proyecto 2 o 3 |
-| Inglés técnico | Leer documentación oficial y conseguir trabajo remoto | 15 minutos diarios, siempre |
+| Herramienta | Para qué | Cuándo |
+|-------------|----------|--------|
+| Git + GitHub | Control de versiones y portafolio | Desde el primer día |
+| Postman / Insomnia | Probar APIs | Primera API |
+| DBeaver | Administrar PostgreSQL y MongoDB | Al instalar la base de datos |
+| Docker | Empaquetar la aplicación | Al terminar el primer proyecto |
+| Terminal / Linux básico | Servidores remotos | Paralelo desde el inicio |
+| Redis | Caché en memoria | Proyecto 2 o 3 |
+| Inglés técnico | Documentación y trabajo remoto | 15 minutos diarios, siempre |
 
 ---
 
 ## PROYECTOS DE PORTAFOLIO
 
-Estos no son ejercicios. Son productos. Cada uno va a GitHub con README claro.
+No son ejercicios. Son productos. Cada uno va a GitHub con README.
 
 ### Proyecto 1 — Sistema de clientes con autenticación
 - **Stack:** Python + FastAPI + PostgreSQL + React básico
-- **Qué demuestra:** API REST completa, base de datos relacional, seguridad con JWT, frontend mínimo funcional
+- **Demuestra:** API REST, base de datos relacional, JWT, frontend funcional
 
-### Proyecto 2 — API de análisis de gastos desde archivo
+### Proyecto 2 — API de análisis de gastos
 - **Stack:** Python + FastAPI + Pandas + PostgreSQL
-- **Qué demuestra:** Backend integrado con análisis de datos, proceso ETL real, endpoints que devuelven estadísticas
+- **Demuestra:** Backend + ETL + análisis de datos integrado
 
-### Proyecto 3 — ERP light con roles, auditoría y contenedores
+### Proyecto 3 — ERP light con roles y auditoría
 - **Stack:** Python + FastAPI + PostgreSQL + MongoDB + React + Docker
-- **Qué demuestra:** Arquitectura real, roles de usuario, lógica de negocio compleja, log de auditoría, uso de SQL y NoSQL en el mismo sistema, aplicación desplegable
+- **Demuestra:** Arquitectura real, roles, lógica de negocio, SQL y NoSQL juntos, contenedores
 
----
 
-## LO QUE NO ENTRA TODAVÍA
-
-Kubernetes, microservicios, RabbitMQ, Kafka, GraphQL, WebSockets, Go, apps móviles nativas.
-
-No porque sean inútiles. Porque tienes 12 horas semanales y dos hijos. El enfoque es tu única ventaja real contra alguien que estudia 8 horas diarias.
 
 ---
 
 ## EVOLUCIÓN — El siguiente nivel
 
-```
-Ahora          →  Año 1-2   →  Año 2-3   →  Año 3-5   →  Año 5+
-Pilares base      Proyectos    Senior        Cloud/AI      Especialista
-+ portafolio      + trabajo    Backend       Engineer      o Arquitecto
-                  local
-```
-
-### Nivel 2 — Ingeniero Backend Senior
-- Microservicios y comunicación entre servicios
-- Domain Driven Design (DDD)
-- Event Sourcing y CQRS
+### Nivel 2 — Backend Senior
+- Microservicios, DDD, Event Sourcing, CQRS
 - Message Brokers: RabbitMQ o Kafka
 - WebSockets para tiempo real
-- Observabilidad: monitoreo, logging estructurado, métricas con Grafana
+- Observabilidad: monitoreo y métricas con Grafana
 
-### Nivel 3 — Cloud / DevOps Engineer
-- AWS o Azure a nivel profesional con certificación
-- Kubernetes para orquestación de contenedores
-- Infraestructura como código con Terraform
+### Nivel 3 — Cloud / DevOps
+- AWS o Azure con certificación
+- Kubernetes, Terraform
 - CI/CD avanzado con GitHub Actions
-- Serverless: Lambda en AWS, Azure Functions
+- Serverless: Lambda, Azure Functions
 
-### Nivel 4 — Especialización (escoges uno)
+### Nivel 4 — Especialización
 
-**Ruta A — AI/ML Engineer**
-Python + integración de LLMs en APIs propias + LangChain. El perfil más buscado en el mercado actual.
+**Ruta A — AI Engineer:** Python + LLMs + LangChain integrado en APIs propias. El perfil más buscado hoy.
 
-**Ruta B — Cloud Architect**
-Diseño de infraestructura completa para sistemas grandes. Uno de los perfiles mejor pagados de la industria.
+**Ruta B — Cloud Architect:** Infraestructura completa para sistemas grandes. Uno de los perfiles mejor pagados.
 
----
-
-> El trabajo remoto internacional entra realísticamente en el Año 2 o 3, cuando tienes experiencia laboral real detrás de los proyectos. El inglés es el cuello de botella más grande para ese objetivo. Más que cualquier tecnología.
+-
