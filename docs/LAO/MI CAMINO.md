@@ -1,9 +1,5 @@
 # Temario Backend Developer — Organizado por Pilares
 
-> Plan personalizado · 1 hora/día · Nivel principiante · Objetivo: trabajo remoto
-
----
-
 ## FUENTES DE PRÁCTICA Y CONOCIMIENTO
 
 ### Backend y ruta general
@@ -441,7 +437,3 @@ Con **Python + FastAPI + PostgreSQL + React + Docker** ya puedes aplicar a traba
 4. Lee documentación oficial en inglés 15 min/día desde hoy
 
 > La diferencia entre un dev local y uno remoto suele ser el inglés técnico y la documentación del código — ambos se construyen desde el día 1.
-
----
-
-*Temario definitivo · Principiante · 1 hora/día · Trabajo remoto*
