@@ -17,17 +17,10 @@
 - **[SQLZoo](https://sqlzoo.net/wiki/SQL_Tutorial)** — Ejercicios interactivos de SQL en el navegador, sin instalar nada.
 - **[Mode SQL Tutorial](https://www.thoughtspot.com/sql-tutorial)** — Muy bueno para SQL analítico: window functions, CTEs y agregaciones complejas.
 
-### Cuándo usar cada una
+### Para ciencia de Datos 
 
-| Plataforma | Para qué | Cuándo |
-|---|---|---|
-| roadmap.sh | Guía visual de tu progreso | Desde hoy |
-| HackerRank | Practicar Python y SQL básico | Pilar 0 y 1 |
-| SQLZoo | Ejercicios de PostgreSQL y SQL estándar | Pilar de bases de datos |
-| LeetCode | Preparar entrevistas técnicas | Cuando busques trabajo |
-| The Odin Project / Full Stack Open | Proyectos guiados completos | Pilar frontend |
+- **Kaggle** : es la plataforma más grande del mundo para entusiastas y profesionales de la ciencia de datos y el aprendizaje automático (machine learning). Propiedad de Google, funciona como una red social, un centro de aprendizaje y un campo de batalla para resolver problemas complejos mediante datos.
 
-> Con 1 hora diaria no uses todas a la vez. Empieza con **roadmap.sh + HackerRank**.
 
 ---
 
@@ -286,7 +279,7 @@
 
 ---
 
-## PILAR 4 — Herramientas Profesionales
+## PILAR 4 — Herramientas TI
 > Sin esto no trabajas en equipo ni en remoto.
 
 | Herramienta | Para qué | Cuándo |
