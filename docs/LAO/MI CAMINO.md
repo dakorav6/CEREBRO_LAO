@@ -3,7 +3,7 @@
 ## FUENTES DE PRÁCTICA Y CONOCIMIENTO
 
 ### Backend y ruta general
-- **[roadmap.sh](https://roadmap.sh/dashboard)** — Rutas visuales, recursos curados y proyectos prácticos para backend developer. Tu brújula durante todo el camino.
+- **[roadmap.sh](https://roadmap.sh/dashboard)** — Rutas visuales, recursos curados y **PROYECTOS** prácticos para backend developer. Tu brújula durante todo el camino.
 
 ### Para proyectos reales guiados
 - **[The Odin Project](https://www.theodinproject.com)** — Currículo open source con proyectos reales de principio a fin.
@@ -22,33 +22,6 @@
 - **Kaggle** : es la plataforma más grande del mundo para entusiastas y profesionales de la ciencia de datos y el aprendizaje automático (machine learning). Propiedad de Google, funciona como una red social, un centro de aprendizaje y un campo de batalla para resolver problemas complejos mediante datos.
 
 
----
-
-## PILAR 0 — Lógica y Fundamentos
-> Base transversal. Se estudia una vez y aplica a todos los lenguajes. No la repitas por cada uno.
-
-### Lógica y algoritmos
-- Variables, tipos de datos y operadores
-- Condicionales (if/else) y bucles (for/while)
-- Funciones y módulos
-- Manejo de errores y excepciones
-- Algoritmos básicos de ordenamiento y búsqueda
-- Estructuras de datos: listas, pilas, colas, diccionarios, conjuntos
-
-### Programación Orientada a Objetos (POO)
-- Clases y objetos
-- Herencia y polimorfismo
-- Encapsulamiento y abstracción
-- Interfaces y clases abstractas
-
-### Programación asincrónica
-- Qué es la concurrencia y por qué importa en backend
-- Promises y async/await (el concepto aplica igual en los tres lenguajes)
-- Manejo de errores en operaciones asíncronas
-
-**Herramientas:** `Python (práctica)` · `VS Code` · `Git (desde el primer día)`
-
----
 
 ## PILAR 1 — Bases de Datos
 
@@ -102,6 +75,10 @@
 - Optimización de consultas y planes de ejecución
 - SQL Server en Azure: SQL Database y SQL Managed Instance *(nivel avanzado)*
 
+
+### SQL lite o bloc de notas para algo ligero?
+
+
 ---
 
 ### MongoDB — No Relacional
@@ -140,6 +117,32 @@
 ---
 
 ## PILAR 2 — Programación Backend
+
+### Lógica y Fundamentos
+> Base transversal. Se estudia una vez y aplica a todos los lenguajes. No la repitas por cada uno.
+
+### Lógica y algoritmos
+- Variables, tipos de datos y operadores
+- Condicionales (if/else) y bucles (for/while)
+- Funciones y módulos
+- Manejo de errores y excepciones
+- Algoritmos básicos de ordenamiento y búsqueda
+- Estructuras de datos: listas, pilas, colas, diccionarios, conjuntos
+
+### Programación Orientada a Objetos (POO)
+- Clases y objetos
+- Herencia y polimorfismo
+- Encapsulamiento y abstracción
+- Interfaces y clases abstractas
+
+### Programación asincrónica
+- Qué es la concurrencia y por qué importa en backend
+- Promises y async/await (el concepto aplica igual en los tres lenguajes)
+- Manejo de errores en operaciones asíncronas
+
+**Herramientas:** `Python (práctica)` · `VS Code` · `Git (desde el primer día)`
+
+
 
 ### Lenguaje 1 — Python `Prioridad 1`
 > Cubre backend, datos e IA con un solo lenguaje. Es donde construyes todos tus proyectos iniciales.
@@ -191,7 +194,7 @@
 
 ---
 
-### Lenguaje 3 — C# / .NET `Prioridad 3`
+### Lenguaje 3 — C# / .NET  (o lenguaje GO )  `Prioridad 3`
 > Muy solicitado en empresas enterprise. Integración natural con Azure para trabajo remoto.
 
 > Cuándo estudiarlo: cuando los 3 proyectos de portafolio estén terminados.
@@ -353,7 +356,7 @@
 - Media queries básicas (diseño responsive)
 - Variables CSS
 
-### React — Lo indispensable
+### React con Next.js como framework "ORDEN" (corrije temario aqui)
 - Componentes funcionales
 - `useState` — estado local
 - `useEffect` — efectos y ciclo de vida

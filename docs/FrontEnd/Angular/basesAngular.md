@@ -1,5 +1,9 @@
 # Angular
 
+- Angular es un framework (una forma ya establecida de como se tiene que llevar el trabajo) a diferencia de React que es un conjunto de librerias (una caja de herramientas) que te da libertad y por ende algo de desorden.
+
+>Si entras a un proyecto de Angular en cualquier parte del mundo, los archivos se ven igual.
+
 - Todo en Angular es un componente. Imagina que tu aplicación es un juego de LEGO: cada pieza (el buscador, el menú, la lista de productos) es un componente independiente que contiene su propia lógica, diseño y estructura.
 - Cada componente se divide en tres archivos principales: HTML , CSS Y TYPESCRIPT
 
