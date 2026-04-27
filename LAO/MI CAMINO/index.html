@@ -1,0 +1,5810 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Frases%20y%20pensamientos/">
+      
+      
+        <link rel="next" href="../Plataformas%20busqueda%20Empelo%20remoto/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Temario Backend Developer — Organizado por Pilares - Mi Cerebro Digital</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#temario-backend-developer-organizado-por-pilares" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="Mi Cerebro Digital" class="md-header__button md-logo" aria-label="Mi Cerebro Digital" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mi Cerebro Digital
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Temario Backend Developer — Organizado por Pilares
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mi Cerebro Digital" class="md-nav__button md-logo" aria-label="Mi Cerebro Digital" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Mi Cerebro Digital
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Control de versiones y GIT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Control de versiones y GIT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Control%20de%20versiones%20y%20GIT/gitHub/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FrontEnd
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    FrontEnd
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Angular
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Angular
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FrontEnd/Angular/angularConBoopstrap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    angularConBoopstrap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FrontEnd/Angular/basesAngular/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Angular
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FrontEnd/Angular/componentes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Componentes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FrontEnd/Angular/eventosAng/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    eventosAng
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CSS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CSS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FrontEnd/CSS/CSS%20PREDEFINIDOS%20BASE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Resetear estilo en el navegador "normalize.css"
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FrontEnd/CSS/CSS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    frontend/css
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Html
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Html
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../FrontEnd/html/HTML/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    frontend/html
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Herramientas TI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Herramientas TI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CONSOLA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    CONSOLA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Herramientas%20TI/CONSOLA/vsCode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Atajos de teclado
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    JS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JAVASCRIPT
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    JAVASCRIPT
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/JAVASCRIPT/Eventos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Eventos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/JAVASCRIPT/Funciones%2C%20M%C3%A9todos%2C%20y%20Propiedades%20Comunes%20en%20JavaScript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones, Métodos, y Propiedades Comunes en JavaScript
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/JAVASCRIPT/JS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/JAVASCRIPT/js%20y%20html/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Js y html
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TypeScript
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TypeScript
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/TypeScript/Bases%20TypeScript/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ¿Qué es TypeScript?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nodeJS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    nodeJS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../JS/nodeJS/nodeJS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nodeJS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    LAO
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    LAO
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frases%20y%20pensamientos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Frases y pensamientos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Temario Backend Developer — Organizado por Pilares
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Temario Backend Developer — Organizado por Pilares
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes-de-practica-y-conocimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FUENTES DE PRÁCTICA Y CONOCIMIENTO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FUENTES DE PRÁCTICA Y CONOCIMIENTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backend-y-ruta-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend y ruta general
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-proyectos-reales-guiados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para proyectos reales guiados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-practicar-codigo-y-algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para practicar código y algoritmos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-practicar-sql-especificamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para practicar SQL específicamente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-ciencia-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para ciencia de Datos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-1-bases-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 1 — Bases de Datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 1 — Bases de Datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-relacional-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL — Relacional Principal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sql-server-relacional-secundaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SQL Server — Relacional Secundaria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sql-lite-o-bloc-de-notas-para-algo-ligero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SQL lite o bloc de notas para algo ligero?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongodb-no-relacional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoDB — No Relacional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analisis-de-datos-complemento-de-este-pilar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análisis de Datos — Complemento de este pilar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-2-programacion-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 2 — Programación Backend
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 2 — Programación Backend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logica-y-fundamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lógica y Fundamentos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logica-y-algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lógica y algoritmos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programacion-orientada-a-objetos-poo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programación Orientada a Objetos (POO)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programacion-asincronica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programación asincrónica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lenguaje-1-python-prioridad-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lenguaje 1 — Python Prioridad 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lenguaje-2-javascript-typescript-prioridad-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lenguaje 2 — JavaScript / TypeScript Prioridad 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lenguaje-3-c-net-o-lenguaje-go-prioridad-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lenguaje 3 — C# / .NET (o lenguaje GO ) Prioridad 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-3-apis-y-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 3 — APIs y Seguridad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 3 — APIs y Seguridad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diseno-de-apis-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diseño de APIs REST
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguridad-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seguridad Backend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura de Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-4-herramientas-ti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 4 — Herramientas TI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 4 — Herramientas TI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-temas-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git — Temas clave
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-temas-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker — Temas clave
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux + Terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Redis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-5-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 5 — Testing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-6-frontend-basico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 6 — Frontend Básico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 6 — Frontend Básico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html-y-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTML y CSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react-con-nextjs-como-framework-orden-corrije-temario-aqui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        React con Next.js como framework "ORDEN" (corrije temario aqui)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conexion-frontend-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión Frontend → Backend
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proyectos-de-portafolio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyectos de Portafolio
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proyectos de Portafolio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proyecto-1-sistema-de-clientes-con-autenticacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyecto 1 — Sistema de clientes con autenticación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proyecto-2-api-de-analisis-de-gastos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyecto 2 — API de análisis de gastos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proyecto-3-erp-light-con-roles-y-auditoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyecto 3 — ERP light con roles y auditoría
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evolucion-profesional-el-siguiente-nivel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evolución Profesional — El siguiente nivel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evolución Profesional — El siguiente nivel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivel-2-backend-senior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nivel 2 — Backend Senior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-3-cloud-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nivel 3 — Cloud / DevOps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ruta-a-ai-engineer-el-perfil-mas-buscado-hoy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ruta A — AI Engineer ⭐ El perfil más buscado hoy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ruta-b-cloud-architect-uno-de-los-perfiles-mejor-pagados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ruta B — Cloud Architect 💰 Uno de los perfiles mejor pagados
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nota-sobre-trabajo-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nota sobre trabajo remoto
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Plataformas%20busqueda%20Empelo%20remoto/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plataformas busqueda Empelo remoto
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Proyectos%20Portafolio%20y%20Tecnologias/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Proyectos Portafolio y Tecnologias
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../perfiles%20de%20trabajo%20bakend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Perfil: Senior Bckend python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PYTHON
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PYTHON
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_1" id="__nav_7_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases Python
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Bases Python
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Algoritmo%20de%20ordenamiento/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Algoritmo de ordenamiento
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Archivos%20Externos%20%20y%20Serializaci%C3%B3n%20%28falta%20informacion%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Archivos Externos  y Serialización (falta informacion)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Conceptos%20b%C3%A1sicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conceptos básicos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Convenciones/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Convenciones
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Documentacion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Documentacion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Duck%20Typing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Duck Typing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Estructura%20de%20datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Estructura de datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Funciones%20o%20metodos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones o metodos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Interfaz%20grafica/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interfaz grafica
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Manejo%20de%20Excepciones%20y%20control%20de%20datos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Manejo de Excepciones y control de datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/Modulos%20%28archivo%20.py%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modulos (archivo .py)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/POO%20con%20Python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POO con Python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Bases%20Python/funciones%20o%20m%C3%A9todos%20predefinidos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    No requieren importar módulos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DJango
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    DJango
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/Bases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/Plantillas%20-%20TEMPLATES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Plantillas   TEMPLATES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/controlador/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Controlador
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/modelo%20%28BD%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    modelo (BD)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/DJango/vista%20%28FROND%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    vista (FROND)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Flask
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Flask
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../PYTHON/Flask/APIs%20con%20Flask/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APIs con Flask
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TI   CONOCIMIENTO BASICO
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    TI   CONOCIMIENTO BASICO
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Bases%20Programaci%C3%B3n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases Programación
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Buenas%20practicas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Buenas practicas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/POO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Redes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Redes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/TERMINOLOGIA%20para%20Anki/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TERMINOLOGIA para Anki
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/Visual%20Estudio%20Code%20%28Extenciones%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual Estudio Code (Extenciones)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/consola%20Linux/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    consola Linux
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/consola%20Windows/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    consola Windows
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/herramientas%20de%20IA%20utiles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    herramientas de IA utiles
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/terminologias%20de%20redes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    fc/terminologia
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_11" id="__nav_8_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Aplicaciones escritorio
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Aplicaciones escritorio
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_11_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_11_1" id="__nav_8_11_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C CHAR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_11_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_11_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C CHAR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/aplicaciones%20escritorio/C%20CHAR/Conceptos%20basicos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conceptos basicos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/aplicaciones%20escritorio/C%20CHAR/Visual%20estudio/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Visual estudio
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_11_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_8_11_2" id="__nav_8_11_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JAVA
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_11_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    JAVA
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../TI%20-%20CONOCIMIENTO%20BASICO/aplicaciones%20escritorio/JAVA/Bases%20java/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Bases java
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UG BORRADOR
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    UG BORRADOR
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UG_BORRADOR/apuntesTS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    apuntesTS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_9_2" id="__nav_9_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Modelado
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_9_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Modelado
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UG_BORRADOR/Modelado/BPM/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BPM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UG_BORRADOR/Modelado/BPMN%202.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BPMN 2.0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../UG_BORRADOR/Modelado/UML/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    UML
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    analisisDatos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    analisisDatos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analisisDatos/baseDataAnalitic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Ciencia de Datos
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_2" id="__nav_10_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    POWER BI
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    POWER BI
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analisisDatos/POWER%20BI/BASES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BASES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_10_3" id="__nav_10_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Excel
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_10_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Excel
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../analisisDatos/excel/Excel%20base/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Excel base
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11" >
+        
+          
+          <label class="md-nav__link" for="__nav_11" id="__nav_11_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de datos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de datos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1" id="__nav_11_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Base de datos
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_11_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Base de datos
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/Mongo%20DB/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Mongo DB
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/MySQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MySQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/PostgreSQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PostgreSQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQLite%20con%20python/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQLite con python
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_11_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_11_1_5" id="__nav_11_1_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SQL SERVER (SSMS)
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_11_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_11_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    SQL SERVER (SSMS)
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/APUNTES%20EN%20CALSES/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    APUNTES EN CALSES
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/COMANDOS%20SQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    COMANDOS SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/CONSULTAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CONSULTAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Conexi%C3%B3n%20y%20Diagrama%20de%20entidad%20relaciona/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Conexión y Diagrama de entidad relaciona
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Gesti%C3%B3n%20acceso%20al%20servidor%20y%20Usuarios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestión acceso al servidor y Usuarios
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Gestor%20SQL%20-%20SSM%20%28SQL%20SERVER%20MANAGEMENT%20ESTUDIO%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestor SQL   SSM (SQL SERVER MANAGEMENT ESTUDIO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/JOBS%20o%20%20tareas%20programadas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    JOBS o  tareas programadas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Nueva%20instancia%20%28NO%20ENTIENDO%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Nueva instancia (NO ENTIENDO)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/REGISTRO%20Y%20ACTUALIZACION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    REGISTRO Y ACTUALIZACION
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/RESTAURACION%20BD/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RESTAURACION BD
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/TABLAS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TABLAS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/TRIGGERS%20%20%28DISPARADORES%20%29/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    TRIGGERS  (DISPARADORES )
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/Transact%20SQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Transact SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/funciones%20%2C%20procedimientos%20almacenados/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Funciones , procedimientos almacenados
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../base%20de%20datos/base%20de%20datos/SQL%20SERVER%20%28SSMS%29/teor%C3%ADa%20base%20SQL/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    teoría base SQL
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Markdown and style
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Markdown and style
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../markdown_and_style/markdownBase/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    markdownBase
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
+        
+          
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nodeJS
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    nodeJS
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../nodeJS/nodeJS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    nodeJS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fuentes-de-practica-y-conocimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FUENTES DE PRÁCTICA Y CONOCIMIENTO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FUENTES DE PRÁCTICA Y CONOCIMIENTO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#backend-y-ruta-general" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backend y ruta general
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-proyectos-reales-guiados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para proyectos reales guiados
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-practicar-codigo-y-algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para practicar código y algoritmos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-practicar-sql-especificamente" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para practicar SQL específicamente
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-ciencia-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Para ciencia de Datos
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-1-bases-de-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 1 — Bases de Datos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 1 — Bases de Datos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgresql-relacional-principal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PostgreSQL — Relacional Principal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sql-server-relacional-secundaria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SQL Server — Relacional Secundaria
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sql-lite-o-bloc-de-notas-para-algo-ligero" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        SQL lite o bloc de notas para algo ligero?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mongodb-no-relacional" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MongoDB — No Relacional
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analisis-de-datos-complemento-de-este-pilar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Análisis de Datos — Complemento de este pilar
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-2-programacion-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 2 — Programación Backend
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 2 — Programación Backend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logica-y-fundamentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lógica y Fundamentos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#logica-y-algoritmos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lógica y algoritmos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programacion-orientada-a-objetos-poo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programación Orientada a Objetos (POO)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#programacion-asincronica" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Programación asincrónica
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lenguaje-1-python-prioridad-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lenguaje 1 — Python Prioridad 1
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lenguaje-2-javascript-typescript-prioridad-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lenguaje 2 — JavaScript / TypeScript Prioridad 2
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lenguaje-3-c-net-o-lenguaje-go-prioridad-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lenguaje 3 — C# / .NET (o lenguaje GO ) Prioridad 3
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-3-apis-y-seguridad" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 3 — APIs y Seguridad
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 3 — APIs y Seguridad">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#diseno-de-apis-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Diseño de APIs REST
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguridad-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Seguridad Backend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arquitectura-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Arquitectura de Software
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-4-herramientas-ti" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 4 — Herramientas TI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 4 — Herramientas TI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#git-temas-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Git — Temas clave
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docker-temas-clave" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Docker — Temas clave
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Linux + Terminal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Redis
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-5-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 5 — Testing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pilar-6-frontend-basico" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        PILAR 6 — Frontend Básico
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PILAR 6 — Frontend Básico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#html-y-css" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        HTML y CSS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#react-con-nextjs-como-framework-orden-corrije-temario-aqui" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        React con Next.js como framework "ORDEN" (corrije temario aqui)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conexion-frontend-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conexión Frontend → Backend
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proyectos-de-portafolio" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyectos de Portafolio
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Proyectos de Portafolio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#proyecto-1-sistema-de-clientes-con-autenticacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyecto 1 — Sistema de clientes con autenticación
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proyecto-2-api-de-analisis-de-gastos" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyecto 2 — API de análisis de gastos
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proyecto-3-erp-light-con-roles-y-auditoria" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Proyecto 3 — ERP light con roles y auditoría
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evolucion-profesional-el-siguiente-nivel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Evolución Profesional — El siguiente nivel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evolución Profesional — El siguiente nivel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nivel-2-backend-senior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nivel 2 — Backend Senior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nivel-3-cloud-devops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nivel 3 — Cloud / DevOps
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ruta-a-ai-engineer-el-perfil-mas-buscado-hoy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ruta A — AI Engineer ⭐ El perfil más buscado hoy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ruta-b-cloud-architect-uno-de-los-perfiles-mejor-pagados" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ruta B — Cloud Architect 💰 Uno de los perfiles mejor pagados
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nota-sobre-trabajo-remoto" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nota sobre trabajo remoto
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="temario-backend-developer-organizado-por-pilares">Temario Backend Developer — Organizado por Pilares</h1>
+<h2 id="fuentes-de-practica-y-conocimiento">FUENTES DE PRÁCTICA Y CONOCIMIENTO</h2>
+<h3 id="backend-y-ruta-general">Backend y ruta general</h3>
+<ul>
+<li><strong><a href="https://roadmap.sh/dashboard">roadmap.sh</a></strong> — Rutas visuales, recursos curados y <strong>PROYECTOS</strong> prácticos para backend developer. Tu brújula durante todo el camino.</li>
+</ul>
+<h3 id="para-proyectos-reales-guiados">Para proyectos reales guiados</h3>
+<ul>
+<li><strong><a href="https://www.theodinproject.com">The Odin Project</a></strong> — Currículo open source con proyectos reales de principio a fin.</li>
+<li><strong><a href="https://fullstackopen.com/es">Full Stack Open</a></strong> — De la Universidad de Helsinki. Gratuito, en español parcialmente. Cubre Node.js, React y bases de datos.</li>
+</ul>
+<h3 id="para-practicar-codigo-y-algoritmos">Para practicar código y algoritmos</h3>
+<ul>
+<li><strong><a href="https://leetcode.com">LeetCode</a></strong> — Problemas de lógica y algoritmos. Muy usado en entrevistas técnicas de trabajo remoto. Empieza con nivel "Easy".</li>
+<li><strong><a href="https://www.hackerrank.com">HackerRank</a></strong> — Tracks específicos por lenguaje (Python, JS, SQL). Ideal para principiantes.</li>
+</ul>
+<h3 id="para-practicar-sql-especificamente">Para practicar SQL específicamente</h3>
+<ul>
+<li><strong><a href="https://sqlzoo.net/wiki/SQL_Tutorial">SQLZoo</a></strong> — Ejercicios interactivos de SQL en el navegador, sin instalar nada.</li>
+<li><strong><a href="https://www.thoughtspot.com/sql-tutorial">Mode SQL Tutorial</a></strong> — Muy bueno para SQL analítico: window functions, CTEs y agregaciones complejas.</li>
+</ul>
+<h3 id="para-ciencia-de-datos">Para ciencia de Datos</h3>
+<ul>
+<li><strong>Kaggle</strong> : es la plataforma más grande del mundo para entusiastas y profesionales de la ciencia de datos y el aprendizaje automático (machine learning). Propiedad de Google, funciona como una red social, un centro de aprendizaje y un campo de batalla para resolver problemas complejos mediante datos.</li>
+</ul>
+<h2 id="pilar-1-bases-de-datos">PILAR 1 — Bases de Datos</h2>
+<h3 id="postgresql-relacional-principal">PostgreSQL — Relacional Principal</h3>
+<blockquote>
+<p>Tu base de datos principal en todos los proyectos.</p>
+</blockquote>
+<p><strong>Herramienta visual:</strong> DBeaver</p>
+<p><strong>Conectores por lenguaje:</strong>
+- Python: <code>psycopg2</code> y <code>SQLAlchemy</code>
+- JavaScript/TypeScript: <code>Prisma</code> o <code>TypeORM</code>
+- C#: <code>Entity Framework Core</code> o <code>Dapper</code></p>
+<p><strong>Temas:</strong>
+- CRUD: <code>INSERT</code>, <code>SELECT</code>, <code>UPDATE</code>, <code>DELETE</code>
+- JOINs: <code>INNER</code>, <code>LEFT</code>, <code>RIGHT</code>
+- Agregaciones: <code>SUM</code>, <code>AVG</code>, <code>COUNT</code>, <code>MIN</code>, <code>MAX</code>
+- Transacciones: <code>BEGIN</code>, <code>COMMIT</code>, <code>ROLLBACK</code>
+- Restricciones: <code>NOT NULL</code>, <code>UNIQUE</code>, <code>CHECK</code>, <code>FOREIGN KEY</code>
+- Índices y optimización de consultas
+- Vistas y procedimientos almacenados
+- <strong>Triggers:</strong> <code>BEFORE</code> vs <code>AFTER</code>, <code>FOR EACH ROW</code>, casos reales de auditoría y validación automática
+- Window Functions: <code>RANK()</code>, <code>ROW_NUMBER()</code>, <code>OVER()</code>
+- CTEs — Common Table Expressions
+- Modelado: entidades, relaciones, normalización
+- Diagramas entidad-relación (ERD)
+- ACID: Atomicidad, Consistencia, Aislamiento, Durabilidad
+- Sharding y replicación <em>(nivel avanzado)</em></p>
+<hr />
+<h3 id="sql-server-relacional-secundaria">SQL Server — Relacional Secundaria</h3>
+<blockquote>
+<p>El motor natural del ecosistema Microsoft. Si estudias C# y apuntas a trabajo remoto enterprise, SQL Server aparece en casi todas las vacantes .NET.</p>
+</blockquote>
+<p><strong>Por qué SQL Server y no MySQL:</strong> MySQL nació en el ecosistema PHP/WordPress (stack LAMP). SQL Server en cambio vive en el mismo ecosistema que C#, ASP.NET y Azure. Las empresas que usan .NET casi siempre tienen SQL Server en producción. El stack queda coherente: Python → PostgreSQL, C# → SQL Server.</p>
+<p><strong>Herramienta visual:</strong> SQL Server Management Studio (SSMS) · Azure Data Studio</p>
+<p><strong>Conectores para C#:</strong>
+- <code>Entity Framework Core</code> con proveedor <code>Microsoft.EntityFrameworkCore.SqlServer</code>
+- <code>Dapper</code> — funciona nativamente con SQL Server</p>
+<p><strong>Temas:</strong>
+- CRUD y JOINs (mismo concepto que PostgreSQL)
+- T-SQL: el dialecto SQL de Microsoft — diferencias clave vs SQL estándar
+- Procedimientos almacenados y funciones en T-SQL
+- Triggers en SQL Server: <code>AFTER</code>, <code>INSTEAD OF</code>
+- Índices: clustered vs non-clustered
+- Vistas e índices de vistas
+- Diferencias clave vs PostgreSQL
+- Optimización de consultas y planes de ejecución
+- SQL Server en Azure: SQL Database y SQL Managed Instance <em>(nivel avanzado)</em></p>
+<h3 id="sql-lite-o-bloc-de-notas-para-algo-ligero">SQL lite o bloc de notas para algo ligero?</h3>
+<hr />
+<h3 id="mongodb-no-relacional">MongoDB — No Relacional</h3>
+<blockquote>
+<p>La NoSQL más demandada. Datos flexibles y escalabilidad horizontal.</p>
+</blockquote>
+<p><strong>Por qué MongoDB:</strong> PostgreSQL maneja datos con estructura fija y relaciones claras. MongoDB maneja datos flexibles, que cambian de forma, o que necesitan escalar horizontalmente. El mercado real usa ambos. Un backend que solo conoce uno tiene un hueco visible en cualquier entrevista.</p>
+<p><strong>Herramienta visual:</strong> MongoDB Compass · MongoDB Atlas (nube gratuita)</p>
+<p><strong>Conectores por lenguaje:</strong>
+- Python: <code>PyMongo</code> o <code>Motor</code> (asíncrono)
+- JavaScript/TypeScript: <code>Mongoose</code>
+- C#: <code>MongoDB .NET Driver</code></p>
+<p><strong>Temas:</strong>
+- Modelado de documentos en lugar de tablas
+- CRUD: <code>find</code>, <code>insertOne</code>, <code>updateOne</code>, <code>deleteOne</code>
+- Aggregation Pipeline
+- Índices en MongoDB
+- Embedding vs referencing entre documentos
+- Casos de uso: catálogos, logs, sesiones, datos en tiempo real</p>
+<hr />
+<h3 id="analisis-de-datos-complemento-de-este-pilar">Análisis de Datos — Complemento de este pilar</h3>
+<p><strong>Temas:</strong>
+- SQL avanzado para análisis: agregaciones complejas, vistas analíticas
+- Pandas y NumPy: limpiar y transformar Excel/CSV desde Python
+- ETL básico: extraer de Excel → transformar con Python → cargar a PostgreSQL
+- Matplotlib básico — visualización desde Python
+- Power BI: visualización sin código, muy pedido en empresas locales y regionales</p>
+<p><strong>Herramientas:</strong> <code>Pandas</code> · <code>NumPy</code> · <code>Matplotlib</code> · <code>Power BI Desktop</code> · <code>Jupyter Notebooks</code></p>
+<hr />
+<h2 id="pilar-2-programacion-backend">PILAR 2 — Programación Backend</h2>
+<h3 id="logica-y-fundamentos">Lógica y Fundamentos</h3>
+<blockquote>
+<p>Base transversal. Se estudia una vez y aplica a todos los lenguajes. No la repitas por cada uno.</p>
+</blockquote>
+<h3 id="logica-y-algoritmos">Lógica y algoritmos</h3>
+<ul>
+<li>Variables, tipos de datos y operadores</li>
+<li>Condicionales (if/else) y bucles (for/while)</li>
+<li>Funciones y módulos</li>
+<li>Manejo de errores y excepciones</li>
+<li>Algoritmos básicos de ordenamiento y búsqueda</li>
+<li>Estructuras de datos: listas, pilas, colas, diccionarios, conjuntos</li>
+</ul>
+<h3 id="programacion-orientada-a-objetos-poo">Programación Orientada a Objetos (POO)</h3>
+<ul>
+<li>Clases y objetos</li>
+<li>Herencia y polimorfismo</li>
+<li>Encapsulamiento y abstracción</li>
+<li>Interfaces y clases abstractas</li>
+</ul>
+<h3 id="programacion-asincronica">Programación asincrónica</h3>
+<ul>
+<li>Qué es la concurrencia y por qué importa en backend</li>
+<li>Promises y async/await (el concepto aplica igual en los tres lenguajes)</li>
+<li>Manejo de errores en operaciones asíncronas</li>
+</ul>
+<p><strong>Herramientas:</strong> <code>Python (práctica)</code> · <code>VS Code</code> · <code>Git (desde el primer día)</code></p>
+<h3 id="lenguaje-1-python-prioridad-1">Lenguaje 1 — Python <code>Prioridad 1</code></h3>
+<blockquote>
+<p>Cubre backend, datos e IA con un solo lenguaje. Es donde construyes todos tus proyectos iniciales.</p>
+</blockquote>
+<p><strong>Lo específico de Python</strong> <em>(lo general ya está en el Pilar 0):</em>
+- Sintaxis y tipado dinámico
+- Decoradores, generadores, context managers
+- Librerías estándar: <code>os</code>, <code>sys</code>, <code>datetime</code>
+- Type Hints: tipado opcional que FastAPI usa para validar datos
+- Programación asincrónica con <code>asyncio</code></p>
+<p><strong>Frameworks:</strong>
+- <code>FastAPI</code> — Tu framework principal. APIs REST modernas, tipadas, con Swagger automático
+- <code>Django</code> — Lo estudias después. Framework completo con panel de administración y ORM propio</p>
+<p><strong>Librerías clave:</strong>
+- <code>SQLAlchemy</code> — ORM para PostgreSQL
+- <code>Alembic</code> — Migraciones de base de datos
+- <code>PyMongo</code> / <code>Motor</code> — Conectores para MongoDB
+- <code>Pydantic</code> — Validación de datos, integrado con FastAPI
+- <code>bcrypt</code> / <code>Passlib</code> — Hashing de contraseñas
+- <code>python-jose</code> — JWT
+- <code>slowapi</code> — Rate limiting</p>
+<hr />
+<h3 id="lenguaje-2-javascript-typescript-prioridad-2">Lenguaje 2 — JavaScript / TypeScript <code>Prioridad 2</code></h3>
+<blockquote>
+<p>Cubre backend con Node.js y frontend con React. Domina el mercado remoto internacional.</p>
+</blockquote>
+<p><strong>Lo específico de JS/TS</strong> <em>(lo general ya está en el Pilar 0):</em>
+- JavaScript moderno: ES6+, destructuring, spread operator, template literals
+- Array methods: map, filter, reduce
+- TypeScript: tipos estáticos, interfaces, generics, decoradores
+- Node.js: módulos, NPM, event loop, servidores HTTP
+- Manipulación del DOM (para el frontend mínimo)</p>
+<p><strong>Frameworks backend:</strong>
+- <code>NestJS</code> — Framework estructurado para APIs en TypeScript. Lo que usan empresas serias
+- <code>Express.js</code> — Base de NestJS. Lo conoces por contexto</p>
+<p><strong>ORMs y conectores:</strong>
+- <code>Prisma</code> — ORM moderno para PostgreSQL y SQL Server
+- <code>Mongoose</code> — ODM para MongoDB</p>
+<p><strong>Frontend mínimo</strong> <em>(solo lo necesario para que tus proyectos tengan pantalla):</em>
+- <code>React</code> — Componentes funcionales, <code>useState</code>, <code>useEffect</code>, llamadas a tu API
+- <code>Next.js</code> — Encima de React cuando necesites SEO en proyectos públicos
+- <code>Tailwind CSS</code> — Diseño sin escribir CSS desde cero</p>
+<hr />
+<h3 id="lenguaje-3-c-net-o-lenguaje-go-prioridad-3">Lenguaje 3 — C# / .NET  (o lenguaje GO )  <code>Prioridad 3</code></h3>
+<blockquote>
+<p>Muy solicitado en empresas enterprise. Integración natural con Azure para trabajo remoto.</p>
+<p>Cuándo estudiarlo: cuando los 3 proyectos de portafolio estén terminados.</p>
+</blockquote>
+<p><strong>Lo específico de C#</strong> <em>(lo general ya está en el Pilar 0):</em>
+- Tipado estático y estricto
+- LINQ: consultas integradas en el lenguaje
+- Namespaces y estructura de proyectos .NET
+- Programación asincrónica con Task/async</p>
+<p><strong>Frameworks:</strong>
+- <code>ASP.NET Core</code> — Framework principal para APIs REST en C#
+- <code>Minimal APIs</code> — Forma moderna y ligera, similar a FastAPI</p>
+<p><strong>ORMs y conectores:</strong>
+- <code>Entity Framework Core</code> — ORM oficial de .NET. SQL Server es su BD natural; también conecta con PostgreSQL
+- <code>Dapper</code> — ORM ligero para control total del T-SQL y SQL estándar
+- <code>MongoDB .NET Driver</code> — Conector oficial para MongoDB</p>
+<p><strong>Testing y nube:</strong>
+- <code>xUnit</code> — Pruebas unitarias
+- <code>Azure</code> — La nube natural de este lenguaje. SQL Server, despliegue y CI/CD viven ahí como servicios integrados</p>
+<hr />
+<h2 id="pilar-3-apis-y-seguridad">PILAR 3 — APIs y Seguridad</h2>
+<blockquote>
+<p>La seguridad no es un módulo aparte. Es parte del diseño desde el primer endpoint.</p>
+</blockquote>
+<h3 id="diseno-de-apis-rest">Diseño de APIs REST</h3>
+<p><strong>Temas:</strong>
+- HTTP: métodos <code>GET</code>, <code>POST</code>, <code>PUT</code>, <code>DELETE</code>, <code>PATCH</code>
+- Códigos de respuesta: 200, 201, 400, 401, 403, 404, 500
+- Diseño coherente y semántico de endpoints
+- Versionado desde el inicio: <code>/api/v1/recurso</code>
+- Paginación y filtros
+- Errores genéricos al usuario, detalles técnicos solo en logs internos
+- Documentación con Swagger / OpenAPI</p>
+<p><strong>Herramientas:</strong>
+- <code>Postman</code> / <code>Insomnia</code> — Probar y documentar endpoints
+- <code>Swagger UI</code> — FastAPI lo genera automáticamente</p>
+<hr />
+<h3 id="seguridad-backend">Seguridad Backend</h3>
+<blockquote>
+<p>Conceptos transversales — aplican a los tres lenguajes.</p>
+</blockquote>
+<p><strong>Temas:</strong>
+- OWASP Top 10
+- Hashing de contraseñas: nunca en texto plano
+- JWT: autenticación sin estado
+- OAuth2: estándar de autorización
+- CORS: definir quién consume tu API
+- HTTPS y SSL/TLS básico
+- Validación estricta de inputs: nunca confiar en lo que el usuario manda
+- Prevención de inyección SQL
+- Rate Limiting: limitar peticiones para que nadie tumbe tu API
+- CSP (Content Security Policy)
+- Variables de entorno para secretos: nunca en el código</p>
+<p><strong>Librerías por lenguaje:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Concepto</th>
+<th>Python</th>
+<th>JS/TS</th>
+<th>C#</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hashing</td>
+<td><code>bcrypt</code> / <code>Passlib</code></td>
+<td><code>bcrypt</code></td>
+<td><code>ASP.NET Core Identity</code></td>
+</tr>
+<tr>
+<td>JWT</td>
+<td><code>python-jose</code></td>
+<td><code>jsonwebtoken</code></td>
+<td><code>JwtBearer</code></td>
+</tr>
+<tr>
+<td>Rate Limiting</td>
+<td><code>slowapi</code></td>
+<td><code>express-rate-limit</code></td>
+<td>Middleware custom</td>
+</tr>
+<tr>
+<td>Headers seguridad</td>
+<td>—</td>
+<td><code>helmet</code></td>
+<td>Middleware integrado</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="arquitectura-de-software">Arquitectura de Software</h3>
+<blockquote>
+<p>Se absorbe con la práctica. No hay que memorizarlo — hay que aplicarlo.</p>
+</blockquote>
+<p><strong>Temas:</strong>
+- Principios SOLID
+- Clean Code
+- Clean Architecture básica
+- Patrones de diseño: Repository, Factory, Singleton
+- System Design: cómo fluye la información entre servicios
+- Monolito primero. Microservicios cuando el problema lo justifique
+- DDD — Domain Driven Design <em>(nivel avanzado)</em>
+- Event Sourcing y CQRS <em>(nivel avanzado)</em></p>
+<hr />
+<h2 id="pilar-4-herramientas-ti">PILAR 4 — Herramientas TI</h2>
+<blockquote>
+<p>Sin esto no trabajas en equipo ni en remoto.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Herramienta</th>
+<th>Para qué</th>
+<th>Cuándo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Git + GitHub</td>
+<td>Control de versiones y portafolio</td>
+<td>Desde el primer día</td>
+</tr>
+<tr>
+<td>Postman / Insomnia</td>
+<td>Probar APIs</td>
+<td>Primera API</td>
+</tr>
+<tr>
+<td>DBeaver</td>
+<td>Administrar PostgreSQL y MongoDB</td>
+<td>Al instalar la base de datos</td>
+</tr>
+<tr>
+<td>Docker</td>
+<td>Empaquetar la aplicación</td>
+<td>Al terminar el primer proyecto</td>
+</tr>
+<tr>
+<td>Terminal / Linux básico</td>
+<td>Servidores remotos</td>
+<td>Paralelo desde el inicio</td>
+</tr>
+<tr>
+<td>Redis</td>
+<td>Caché en memoria</td>
+<td>Proyecto 2 o 3</td>
+</tr>
+<tr>
+<td>Inglés técnico</td>
+<td>Documentación y trabajo remoto</td>
+<td>15 minutos diarios, siempre</td>
+</tr>
+</tbody>
+</table>
+<h3 id="git-temas-clave">Git — Temas clave</h3>
+<ul>
+<li><code>init</code>, <code>add</code>, <code>commit</code>, <code>push</code>, <code>pull</code></li>
+<li>Ramas: <code>branch</code>, <code>merge</code>, <code>rebase</code></li>
+<li>Resolución de conflictos</li>
+<li>Pull requests y revisión de código</li>
+<li>Git flow básico para trabajo en equipo</li>
+<li>README profesional en inglés para portafolio</li>
+<li>Conventional Commits</li>
+</ul>
+<h3 id="docker-temas-clave">Docker — Temas clave</h3>
+<ul>
+<li>Contenedores vs máquinas virtuales</li>
+<li><code>Dockerfile</code> básico</li>
+<li><code>docker-compose</code> para API + base de datos</li>
+<li>Variables de entorno en contenedores</li>
+<li>Imágenes y registros</li>
+</ul>
+<h3 id="linux-terminal">Linux + Terminal</h3>
+<ul>
+<li>Comandos básicos: <code>ls</code>, <code>cd</code>, <code>mkdir</code>, <code>mv</code>, <code>cp</code>, <code>rm</code></li>
+<li>Permisos: <code>chmod</code>, <code>chown</code></li>
+<li>Procesos: <code>ps</code>, <code>kill</code>, <code>top</code></li>
+<li>SSH para conectarse a servidores remotos</li>
+<li>Cron jobs básicos</li>
+</ul>
+<h3 id="redis">Redis</h3>
+<ul>
+<li>Tipos de datos: strings, hashes, listas, sets</li>
+<li>TTL — expiración de datos en caché</li>
+<li>Cachear respuestas de API</li>
+<li>Gestión de sesiones</li>
+</ul>
+<hr />
+<h2 id="pilar-5-testing">PILAR 5 — Testing</h2>
+<p><strong>Temas:</strong>
+- Tipos de tests: unitario, integración, end-to-end (E2E)
+- Pirámide de testing
+- Mocking y fixtures
+- Tests para endpoints de API
+- Cobertura de código
+- TDD — Test Driven Development</p>
+<p><strong>Herramientas por lenguaje:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Lenguaje</th>
+<th>Testing unitario</th>
+<th>Testing API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Python</td>
+<td><code>pytest</code></td>
+<td><code>httpx</code> / <code>TestClient</code> de FastAPI</td>
+</tr>
+<tr>
+<td>JS/TS</td>
+<td><code>Jest</code></td>
+<td><code>Supertest</code></td>
+</tr>
+<tr>
+<td>C#</td>
+<td><code>xUnit</code></td>
+<td><code>WebApplicationFactory</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pilar-6-frontend-basico">PILAR 6 — Frontend Básico</h2>
+<blockquote>
+<p>Solo lo necesario para que tus proyectos tengan pantalla.</p>
+</blockquote>
+<h3 id="html-y-css">HTML y CSS</h3>
+<ul>
+<li>Etiquetas semánticas: <code>div</code>, <code>section</code>, <code>form</code>, <code>button</code>, <code>input</code></li>
+<li>Flexbox y Grid para layout</li>
+<li>Box model: margin, padding, border</li>
+<li>Media queries básicas (diseño responsive)</li>
+<li>Variables CSS</li>
+</ul>
+<h3 id="react-con-nextjs-como-framework-orden-corrije-temario-aqui">React con Next.js como framework "ORDEN" (corrije temario aqui)</h3>
+<ul>
+<li>Componentes funcionales</li>
+<li><code>useState</code> — estado local</li>
+<li><code>useEffect</code> — efectos y ciclo de vida</li>
+<li>Llamadas a tu propia API con <code>fetch</code> / <code>Axios</code></li>
+<li>Props y comunicación entre componentes</li>
+<li>Formularios controlados</li>
+<li>React Router — navegación</li>
+</ul>
+<h3 id="conexion-frontend-backend">Conexión Frontend → Backend</h3>
+<ul>
+<li>Axios para peticiones HTTP</li>
+<li>Enviar y recibir JWT</li>
+<li>Manejo de estados de carga y error</li>
+<li>Variables de entorno en frontend</li>
+</ul>
+<p><strong>Herramientas:</strong> <code>React 18</code> · <code>Tailwind CSS</code> · <code>Axios</code> · <code>Vite</code> · <code>React Router</code> · <code>Next.js</code></p>
+<hr />
+<h2 id="proyectos-de-portafolio">Proyectos de Portafolio</h2>
+<blockquote>
+<p>No son ejercicios. Son productos. Cada uno va a GitHub con README en inglés.</p>
+</blockquote>
+<h3 id="proyecto-1-sistema-de-clientes-con-autenticacion">Proyecto 1 — Sistema de clientes con autenticación</h3>
+<ul>
+<li><strong>Stack:</strong> Python + FastAPI + PostgreSQL + React</li>
+<li><strong>Demuestra:</strong> API REST, base de datos relacional, JWT, frontend funcional</li>
+</ul>
+<h3 id="proyecto-2-api-de-analisis-de-gastos">Proyecto 2 — API de análisis de gastos</h3>
+<ul>
+<li><strong>Stack:</strong> Python + FastAPI + Pandas + PostgreSQL + Power BI</li>
+<li><strong>Demuestra:</strong> Backend + ETL + análisis de datos integrado</li>
+</ul>
+<h3 id="proyecto-3-erp-light-con-roles-y-auditoria">Proyecto 3 — ERP light con roles y auditoría</h3>
+<ul>
+<li><strong>Stack:</strong> Python + FastAPI + PostgreSQL + MongoDB + React + Docker</li>
+<li><strong>Stack C# (variante):</strong> ASP.NET Core + SQL Server + MongoDB + React + Docker</li>
+<li><strong>Demuestra:</strong> Arquitectura real, roles, lógica de negocio, SQL y NoSQL juntos, contenedores</li>
+</ul>
+<hr />
+<h2 id="evolucion-profesional-el-siguiente-nivel">Evolución Profesional — El siguiente nivel</h2>
+<h3 id="nivel-2-backend-senior">Nivel 2 — Backend Senior</h3>
+<ul>
+<li>Microservicios, DDD, Event Sourcing, CQRS</li>
+<li>Message Brokers: RabbitMQ o Kafka</li>
+<li>WebSockets para tiempo real</li>
+<li>Observabilidad: monitoreo y métricas con Grafana, Prometheus</li>
+</ul>
+<h3 id="nivel-3-cloud-devops">Nivel 3 — Cloud / DevOps</h3>
+<ul>
+<li>AWS o Azure con certificación</li>
+<li>Kubernetes, Terraform</li>
+<li>CI/CD avanzado con GitHub Actions</li>
+<li>Serverless: Lambda, Azure Functions</li>
+<li>Seguridad en nube: IAM, VPC, secrets</li>
+</ul>
+<h3 id="ruta-a-ai-engineer-el-perfil-mas-buscado-hoy">Ruta A — AI Engineer ⭐ <em>El perfil más buscado hoy</em></h3>
+<ul>
+<li>Python + LLMs + LangChain integrado en APIs propias</li>
+<li>LlamaIndex, RAG — Retrieval Augmented Generation</li>
+<li>Embeddings y bases de datos vectoriales</li>
+<li>OpenAI API, Anthropic API, HuggingFace</li>
+</ul>
+<h3 id="ruta-b-cloud-architect-uno-de-los-perfiles-mejor-pagados">Ruta B — Cloud Architect 💰 <em>Uno de los perfiles mejor pagados</em></h3>
+<ul>
+<li>Infraestructura completa para sistemas grandes</li>
+<li>Multi-cloud y disaster recovery</li>
+<li>Certificaciones AWS Solutions Architect</li>
+<li>FinOps — optimización de costos en nube</li>
+<li>Zero Trust Security</li>
+</ul>
+<hr />
+<h2 id="nota-sobre-trabajo-remoto">Nota sobre trabajo remoto</h2>
+<p>Con <strong>Python + FastAPI + PostgreSQL + React + Docker</strong> ya puedes aplicar a trabajos remotos junior. Para el mercado anglosajón (Upwork, Remote.com, Toptal):</p>
+<ol>
+<li>Sube el portafolio a GitHub con README en inglés</li>
+<li>Documenta el código en inglés desde el inicio</li>
+<li>Construye perfil en LinkedIn en inglés</li>
+<li>Lee documentación oficial en inglés 15 min/día desde hoy</li>
+</ol>
+<blockquote>
+<p>La diferencia entre un dev local y uno remoto suele ser el inglés técnico y la documentación del código — ambos se construyen desde el día 1.</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
