@@ -4,6 +4,25 @@
 
 -`winget install --id Git.Git -e --source winget` =>  Instalar Git para Windows: Es el motor que permite que tu PC hable con GitHub. Puedes descargarlo en el buscador del navegador 
 
+
+## Clonar un Repositorio 
+Podemos clonar cualquier repositorio de GITHUB que sea publico.
+1. en la pagina opc. "CODE" copiamos el URL
+2. consola: `git clone https://github.com/tu-usuario/tu-repositorio.git`
+
+### El flujo de trabajo completo
+Una vez que tienes tu fork en la computadora, el proceso es el mismo que con tus propios proyectos:
+
+1. Modificas el código en Visual Studio Code.
+
+2. Preparas los cambios: `git add .`
+
+3. Confirmas: `git commit -m "Mejoré el código"`
+
+4. Subes a TU copia: `git push origin main`
+
+
+
 ## Hacer commit y push en consola
 
 1. `git add .`
@@ -12,6 +31,7 @@
 
 3. `git push origin main`
 
+- `git push origin main --force` => para forzar el push :D
 
 
 
