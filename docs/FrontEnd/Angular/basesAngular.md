@@ -27,18 +27,6 @@ verlo en el navegador:
 
 5. Trabajamos dentro de la carpeta SRC/App 
 
-## Libreria de Componentes de ANGULAR.material  (Recursos)
-
-
-
-- Angular Material - LINK: https://material.angular.dev/components/categories
-1. debemos de seguir los requisitos de la guia de la pagina oficial de Angular matirial  como instalar el angular material: `ng add @angular/material` 
-
-
-### otros componentes de otras fuentes
-
-- Bootstrap
-- Tailwind CSS ? suena interesante
 
 
 
@@ -60,3 +48,14 @@ Las directivas son instrucciones que le das al HTML para que cambie su aparienci
     @for: Repite un elemento para mostrar una lista de datos.
 
     @switch: Selecciona entre varias opciones posibles
+
+
+
+
+## Enrutamiento (routing)
+
+Es lo que permite que tu aplicación cambie de "página" sin tener que recargar todo el navegador.
+Es el sistema que decide qué componente mostrar según la URL.
+
+Para que las rutas funcionen, necesitas definir un arreglo de objetos donde cada uno asocie un camino (path) con un componente.
+

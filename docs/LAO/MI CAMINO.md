@@ -348,30 +348,48 @@
 
 ## PILAR 6 — Frontend Básico
 > Solo lo necesario para que tus proyectos tengan pantalla.
-
+## PILAR 6 — FRONTEND BÁSICO
+ 
+> Solo lo necesario para que tus proyectos tengan pantalla. No es tu especialidad, es tu herramienta.
+ 
+ 
 ### HTML y CSS
+ 
 - Etiquetas semánticas: `div`, `section`, `form`, `button`, `input`
 - Flexbox y Grid para layout
 - Box model: margin, padding, border
 - Media queries básicas (diseño responsive)
 - Variables CSS
-
-### React con Next.js como framework "ORDEN" (corrije temario aqui)
-- Componentes funcionales
-- `useState` — estado local
-- `useEffect` — efectos y ciclo de vida
-- Llamadas a tu propia API con `fetch` / `Axios`
-- Props y comunicación entre componentes
-- Formularios controlados
-- React Router — navegación
-
+- **Tailwind CSS** — Diseño sin escribir CSS desde cero. Es tu herramienta principal de estilos
+---
+ 
+### React — Prerequisito de Next.js (una semana máximo)
+ 
+> React es la base técnica sobre la que está construido Next.js. Lo aprendes lo suficiente para entender qué está haciendo Next.js por ti, nada más. No profundices aquí.
+ 
+- Qué es un componente y por qué React los usa
+- `useState` — cómo React maneja el estado local
+- `useEffect` — cómo React reacciona a cambios
+- Props: cómo los componentes se pasan información entre sí
+Con eso es suficiente. La semana siguiente pasas a Next.js y no miras atrás.
+ 
+---
+ 
+### Next.js — Tu framework frontend principal
+ 
+- App Router: estructura de carpetas y routing basado en archivos
+- Server Components vs Client Components: cuándo usar cada uno
+- `fetch` en el servidor para llamar a tu propia API backend
+- Rutas dinámicas: `/clientes/[id]`
+- Layout compartido entre páginas
+- Variables de entorno en Next.js
+- Despliegue en Vercel (gratuito para proyectos personales)
 ### Conexión Frontend → Backend
-- Axios para peticiones HTTP
+- Axios para peticiones HTTP desde el cliente
 - Enviar y recibir JWT
 - Manejo de estados de carga y error
-- Variables de entorno en frontend
-
-**Herramientas:** `React 18` · `Tailwind CSS` · `Axios` · `Vite` · `React Router` · `Next.js`
+- Variables de entorno para URLs de tu API
+**Herramientas:** `Next.js 14+` · `Tailwind CSS` · `Axios` · `Vercel`
 
 ---
 
