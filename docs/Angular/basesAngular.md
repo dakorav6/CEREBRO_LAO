@@ -59,6 +59,10 @@ Las directivas son instrucciones que le das al HTML para que cambie su aparienci
 
 Para que las rutas funcionen, necesitas definir un arreglo de objetos donde cada uno asocie un camino (path) con un componente.
 
+Hay 2 formas de hacerlo...
+
+### 1. Primera Forma: Desde HTML con routerLink
+
 **Sintaxis: app.routes.ts**
 
 ```typescript
@@ -67,11 +71,21 @@ import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', redirectTo: 'login', pathMatch: 'full' }, // RUTA POR DEFECTO
+ { path: 'login', component: LoginComponent },
+ { path: 'home', component: HomeComponent },
+ { path: '**', component: NotFoundComponent } //RUTA NO ENCONTRADA
 ];
 ```
->basicamente si escribes login en el URL mostrara la componente donde? dentro de la etiqueta <router-outlet></router-outlet> en el HTML app.component.html
+>basicamente si escribes login en el URL mostrara la componente, donde? dentro de la etiqueta `<router-outlet></router-outlet>` en el HTML app.component.html
+
+ Desde TypeScript con router.navigate()
+
+### Segunda forma:  Desde TypeScript con router.navigate()
+
+Se usa cuando la navegación depende de lógica
+
+
 
 ### Navegar con botones
 
