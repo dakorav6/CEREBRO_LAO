@@ -10,7 +10,7 @@ Podemos clonar cualquier repositorio de GITHUB que sea publico.
 1. en la pagina opc. "CODE" copiamos el URL
 2. consola: `git clone https://github.com/tu-usuario/tu-repositorio.git`
 
-### El flujo de trabajo completo
+### Guardar Cambios 
 Una vez que tienes tu fork en la computadora, el proceso es el mismo que con tus propios proyectos:
 
 1. Modificas el código en Visual Studio Code.
@@ -22,16 +22,6 @@ Una vez que tienes tu fork en la computadora, el proceso es el mismo que con tus
 4. Subes a TU copia: `git push origin main`
 
 
-
-## Hacer commit y push en consola
-
-1. `git add .`
-
-2. `git commit -m "Avances del día"`
-
-3. `git push origin main`
-
-- `git push origin main --force` => para forzar el push :D
 
 
 

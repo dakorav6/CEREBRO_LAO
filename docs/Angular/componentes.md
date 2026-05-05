@@ -1,17 +1,13 @@
-## Angular Matirial(lat)
+## Componentes y  Angular Matirial(lat)
 
-No son plantillas como tal mas bien son como latrillos que podemos reusar para crear un diseño.
+- No son plantillas como tal mas bien son como latrillos que podemos reusar para crear un diseño.
+
+- Angular Material - LINK: https://material.angular.dev/components/categories
+>debemos de seguir los requisitos de la guia de la pagina oficial de Angular matirial  como instalar el angular material: `ng add @angular/material` 
+- Cada pieza de tu interfaz (el menú, el pie de página, el login) debe ser un componente independiente guardado en su propia carpeta. Esto mantiene tu proyecto organizado.
 
 
-Angular Material - LINK: https://material.angular.dev/components/categories
-1. debemos de seguir los requisitos de la guia de la pagina oficial de Angular matirial  como instalar el angular material: `ng add @angular/material` 
-
-
-## Creacion de componenetes y estructura de archivos 
-
-Cada pieza de tu interfaz (el menú, el pie de página, el login) debe ser un componente independiente guardado en su propia carpeta. Esto mantiene tu proyecto organizado.
-
-### Cómo crear un componente correctamente
+## Cómo crear un componente correctamente
 
 comando largo:`ng generate component components/navbar`
 comando corto: `ng g c components/navbar`
@@ -23,7 +19,7 @@ comando corto: `ng g c components/navbar`
 - Configura el componente como Standalone automáticamente (perfecto para tu versión de Angular).
 
 
-### Cómo "conectar" los componentes
+## Cómo "conectar" los componentes
 
 al momento de crear los componentes: `ng g c components/navbar` y generar los archivos para ese componenete dentro del TS del componenete creado tenemos:
 
