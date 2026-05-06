@@ -5,9 +5,9 @@
 
 -Se define un arreglo de objetos donde cada uno asocie un camino (path) con un componente.
 
-## Hay 2 formas de hacerlo...
 
-### 1. Primera Forma: Desde HTML con routerLink
+
+## Routing -  configuracion arreglo de las componentes 
 
 **Sintaxis: app.routes.ts**
 
@@ -26,6 +26,7 @@ export const routes: Routes = [
 ];
 ```
 >basicamente si escribes login en el URL mostrara la componente, donde? dentro de la etiqueta `<router-outlet></router-outlet>` en el HTML app.component.html
+----
 
 **app.ts**
 
@@ -42,6 +43,8 @@ import { RouterOutlet } from '@angular/router'; // IMPORTANTE
 export class AppComponent { }
 
 ```
+----
+
 **app.html**
 ```html
 <!-- app.component.html -->
@@ -51,9 +54,21 @@ export class AppComponent { }
 ```
 
 
-###  Segunda forma:  Desde TypeScript con router.navigate()
+## 2 formas de accionar el boton para redirigir
 
 Se usa cuando la navegación depende de lógica
+
+### 1. La forma declarativa: routerLink
+Es la más eficiente y la que deberías usar por defecto.
+> En el Componente donde esta en boton de accion es el que debe de importar el: import { RouterLink } from '@angular/router'; (ejem:componente LOGIN)
+
+
+```html
+<button routerLink="/componentePrincipal">Ir al Principal</button>
+```
+### 2. La forma imperativa: Router.navigate()
+
+Se usa cuando, por ejemplo, el usuario hace clic en "Login", tú validas sus credenciales en el servicio y, solo si son correctas, lo rediriges. Aquí necesitas el servicio Router.
 
 
 
