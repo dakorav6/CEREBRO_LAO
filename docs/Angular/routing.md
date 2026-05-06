@@ -69,7 +69,31 @@ Es la más eficiente y la que deberías usar por defecto.
 ### 2. La forma imperativa: Router.navigate()
 
 Se usa cuando, por ejemplo, el usuario hace clic en "Login", tú validas sus credenciales en el servicio y, solo si son correctas, lo rediriges. Aquí necesitas el servicio Router.
+>Úsalo cuando la redirección depende de una respuesta del servidor, un cálculo o una validación.
 
+
+```typescript
+import { Component } from '@angular/core';
+import { Router } from '@angular/router'; // El servicio de navegación
+
+@Component({
+  standalone: true,
+  template: `<button (click)="entrar()">Entrar al sistema</button>`
+})
+export class LoginComponent {
+  
+  // Inyectamos el servicio en el constructor
+  constructor(private router: Router) {}
+
+  entrar() {
+    console.log('Validando credenciales...');
+    // Aquí iría tu lógica de negocio
+    
+    // Navegación mediante código
+    this.router.navigate(['/principal']);
+  }
+}
+```
 
 
 ##  Navegar con botones
