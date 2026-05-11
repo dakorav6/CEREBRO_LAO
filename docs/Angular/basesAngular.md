@@ -14,7 +14,8 @@
     2. verificar instalacion con version : `node -v`
 
 2. `npm install -g @angular/cli` , instalamos Angular CLI: (se instala una sola vez en la maquina , no viene instalado en el codeSpace), no crea ninguna carpeta.
-    >`ng add @angular/material` en caso de no tener el angular Material.
+- `ng v` => tenemos angular cli? nos devulve la version. 
+>`npm install`: la carpeta que esta dentro del proyecto "node_modules" se crea autmaticamente gracias al comando  `ng new nombre-de-tu-app` pero esta carpeta no se copia y no se traslada y cuando copiamos un nuevo proyecto o iniciamos en un nuevo entorno de trabajo debemos instalarla con: `npm install` , que es el npm? es como una "App Store" o un "Play Store" para programadores. Es una herramienta que viene con Node y sirve para gestionar todas las librerías que tu proyecto necesita
 
 3. `ng new nombre-de-tu-app` : Iniciar nuevo proyecto Angular, dentro de la carpeta ejecutar el comando. 
 
@@ -24,9 +25,16 @@ verlo en el navegador:
 
 >nota: si no reconoce el comando ng es por que no tiene instalado el Angular CLI
 
->`npm install`: la carpeta que esta dentro del proyecto "node_modules" se crea autmaticamente gracias al comando  `ng new nombre-de-tu-app` pero esta carpeta no se copia y no se traslada y cuando copiamos un nuevo proyecto o iniciamos en un nuevo entorno de trabajo debemos instalarla con: `npm install` , que es el npm? es como una "App Store" o un "Play Store" para programadores. Es una herramienta que viene con Node y sirve para gestionar todas las librerías que tu proyecto necesita
 
 5. Trabajamos dentro de la carpeta SRC/App 
+
+### Extenciones con que trabajar 
+
+- Angular Language Service, Sirve para:
+    - autocompletar directivas Angular
+    - detectar errores en HTML Angular
+    - Sin esto, Angular en VS Code se siente como programar con una venda en los ojos y resentimiento acumulado.
+
 
 
 

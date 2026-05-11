@@ -8,9 +8,10 @@
 
 ## Routing -  configuracion arreglo de las componentes 
 
-**Sintaxis: app.routes.ts**
 
-Se define un arreglo de objetos donde cada uno asocie un camino (path) con un componente.
+- Se define un arreglo de objetos donde cada uno asocie un camino (path) con un componente.
+
+**app.routes.ts**
 ```typescript
 import { Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
@@ -22,11 +23,15 @@ export const routes: Routes = [
 ];
 ```
 >basicamente si escribes login en el URL mostrara la componente, donde? dentro de la etiqueta `<router-outlet></router-outlet>` en el HTML app.component.html
+
+
 ----
 
 **app.ts**
 
->debemos importar el { RouterOutlet } es el que sabe como inyectar componentes en el DOOM.
+- debemos importar el { RouterOutlet } es el que sabe como inyectar componentes en el DOOM.
+- No debemos poner o importar los componentes que ya estan declarados en el app.routes.ts
+
 ```typescript
 import { RouterOutlet } from '@angular/router'; // IMPORTANTE
 
@@ -45,7 +50,9 @@ export class AppComponent { }
 ```html
 <!-- app.component.html -->
 <main>
+  <menuPrincipal></menuPrincipal>
   <router-outlet></router-outlet> <!-- Aquí aparecerá Login o Principal -->
+  <piePagina></piePagina> 
 </main>
 ```
 
@@ -54,7 +61,7 @@ export class AppComponent { }
 
 Se usa cuando la navegación depende de lógica
 
-### 1. La forma declarativa: routerLink
+### 1. La forma declarativa: routerLink con el `<router-outlet>`
 - Es la más eficiente y la que deberías usar por defecto.
 - El routerLink en el HTML es para clics directos: el usuario hace clic y se va. Fin.
 
@@ -66,11 +73,13 @@ Se usa cuando la navegación depende de lógica
 ```
 ### 2. La forma imperativa: Router.navigate()
 
-
-- Se usa cuando, por ejemplo, el usuario hace clic en "Login", tú validas sus credenciales en el servicio y, solo si son correctas, lo rediriges. Aquí necesitas el servicio Router.
+- Se usa cuando la navegación depende de una lógica previa, como validar si el usuario existe. Si el backend responde con éxito, se ejecuta el cambio de ruta.
+-Esta ocurre en el archivo .ts. Se usa cuando necesitas que pase algo antes de cambiar de pantalla.
 - Úsalo cuando la redirección depende de una respuesta del servidor, un cálculo o una validación.
 
 -la recomendación oficial es dejar de usar el constructor para inyectar servicios y empezar a usar la función inject(). => por que si hay un metodo para hacerlo con constructor "forma antigua"
+
+Existe 2 formas: constructor (antiguo) y el inject()
 
 **nombComponente.ts**
 ```typescript
@@ -96,5 +105,12 @@ export class LoginComponent {
 ```html
 <a routerLink="/login">Ir a login</a>
 <a routerLink="/home">Ir a home</a>
+
+
+
 ```
 >En lugar de poner la URL, ponemos el componente que ya esta "ingresado" en app.routes.ts
+
+>Sin el arreglo en el TS: Tendrías que escribir cada <a routerLink="..."> a mano en el HTML. Si tienes 20 enlaces, tu HTML sería una pesadilla de mantener. (INVESTIGA FALTA SABER COMO?)
+
+
