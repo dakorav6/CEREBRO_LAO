@@ -30,6 +30,12 @@ private dialog = inject(MatDialog);
     this.dialog.open(Login )
   }
 
+/*
+this.dialog.open(LoginComponent, {
+  width: '400px',
+  height: '300px'
+});
+*/
 
 }
 
