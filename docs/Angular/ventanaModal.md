@@ -43,3 +43,9 @@ this.dialog.open(LoginComponent, {
 ```
 >No. No va en app.routes.ts. => app.routes.ts es exclusivamente para rutas — paths de URL y sus componentes correspondientes. El componente que que queremos montar en una ventana modal no tiene una URL en tu caso. No navegas hacia él. Lo montas dentro de un modal.
 
+```mermaid
+graph TD
+    A[Cliente] -->|Petición HTTP| B(API Gateway)
+    B -->|Enrutamiento| C{Servicio}
+    C -->|Lectura/Escritura| D[(Base de Datos)]
+```
