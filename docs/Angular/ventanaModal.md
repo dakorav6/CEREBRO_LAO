@@ -5,8 +5,9 @@ Una ventana modal que contenga un componente.
 >MatDialog es un servicio de Angular Material. Vive en el injector. Lo pides, te entrega un objeto que sabe abrir ventanas modales. La ventana no es HTML tuyo — es un componente que Angular monta dinámicamente encima de la vista actual.
 
 
->El MatDialog es un servicio de Angular, no un módulo. Los servicios se inyectan en el constructor de la clase (o usando la función inject() en Angular 14+), pero no deben ser listados en el array imports del decorador @Component. El módulo correcto a importar para usar el servicio MatDialog es MatDialogModule.
+>El MatDialog no deben ser listados en el array imports del decorador @Component , es un servicio de Angular, no un módulo. Los servicios se inyectan en el constructor de la clase.
 
+>El componente que queremos mostrar en la ventana modal tampoco debe ser puesto en el decorador @Component. Solo lo importamos. 
 
 ## Proceso
 
@@ -14,13 +15,13 @@ Una ventana modal que contenga un componente.
 
 >Las animaciones, el backdrop oscuro detrás, el contenedor de la ventana, el comportamiento de cierre. Todo eso viene con MatDialogModule.
 
->MatDialog es el servicio que tiene el método .open(). Sin inyectarlo no puedes llamar this.dialog.open().
+>MatDialog es el servicio que tiene el método .open(). Sin inyectarlo no puedes llamar this.dialog.open(nomComp).
 
 ```typescript
 // app.module.ts
 import { MatDialogModule , MatDialog } from '@angular/material/dialog';
-import { Login } from '../login/login';
-
+import { Login } from '../login/login'; // SOLO IMPORTAMOS EL COMPONENTE A MOSTRAR EN LA VENTANA MODAL , NO VA EN @COMPONENT
+ 
 @Component({
   imports: [
     MatDialogModule
@@ -34,7 +35,7 @@ export class NavBarComponent {
 
 login():void {
 
-  this.dialog.open(Login);
+  this.dialog.open(login);
 
 }
 
