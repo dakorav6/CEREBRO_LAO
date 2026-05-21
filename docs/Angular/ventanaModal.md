@@ -17,9 +17,11 @@ Una ventana modal que contenga un componente.
 
 >MatDialog es el servicio que tiene el método .open(). Sin inyectarlo no puedes llamar this.dialog.open(nomComp).
 
+
+*Componente que activa la ventana modal*
 ```typescript
 // app.module.ts
-import { MatDialogModule , MatDialog } from '@angular/material/dialog';
+import { MatDialogModule , MatDialog } from '@angular/material/dialog'; //ABRIR VENTANA MODAL
 import { Login } from '../login/login'; // SOLO IMPORTAMOS EL COMPONENTE A MOSTRAR EN LA VENTANA MODAL , NO VA EN @COMPONENT
  
 @Component({
@@ -31,10 +33,12 @@ import { Login } from '../login/login'; // SOLO IMPORTAMOS EL COMPONENTE A MOSTR
 export class NavBarComponent {
     public readonly appName = 'MiApp';
 
-    private dialog = inject(MatDialog);
+    private dialog = inject(MatDialog); //Variable para open()
+
+
 
 login():void {
-
+    
   this.dialog.open(login);
 
 }
@@ -59,3 +63,56 @@ this.dialog.open(LoginComponent, {
 <button (click)="login()">Iniciar sesión</button>
 
 ```
+
+
+-------
+## Cerrar ventana Modal
+
+*Componente que muestra la ventana Modal*
+
+## Login
+
+### FormsModule - [(ngModel)]
+
+- ngModel crea un enlace bidireccional entre el input del HTML y la propiedad del componente.
+- Sin ngModel tendrías que escuchar el evento (input) manualmente y asignar el valor a mano. ngModel elimina ese trabajo.
+
+**nombComponente.ts**
+```typescript
+import { Component, inject } from '@angular/core'; // Añadimos inject aquí
+import { Router } from '@angular/router';
+import { FormsModule } from '@angular/forms'; // Necesario para el manejo de formularios (ej. ngModel)
+
+@Component({ ... })
+
+export class Login {
+// AQUÍ, dentro de la clase, es donde usas inject()
+  
+miNavegacion: Router = inject(Router);
+
+usuario: string= ``;
+contrasena: string= ``;
+
+
+entrar():void {
+
+    if(this.usuario==`produ02` && this.contrasena==`erat1027`) {
+        this.dialogRef.close();    // 1. cierra el modal  
+        this.miNavegacion.navigate(['/principal']);
+      }
+  }
+}
+
+```
+----
+
+**HTML**
+
+```HTML
+<input [(ngModel)]="usuario" placeholder="Usuario">
+<input [(ngModel)]="contrasena" type="password" placeholder="Contraseña">
+<button (click)="entrar()">Entrar</button>
+```
+- placeholder: Es el texto gris que aparece dentro del input cuando está vacío — como guía para el usuario
+- solo va el mismo nombre que se establecio en el ts. 
+

@@ -6,10 +6,10 @@
 
 
 
-## Routing -  configuracion arreglo de las componentes 
+## Routing -  configuracion arreglo de las componentes  app.routes.ts
 
 
-- Se define un arreglo de objetos donde cada uno asocie un camino (path) con un componente.
+- Se define un arreglo de objetos donde se establece que componente corresponde a cada nombre para el link que nos permita acceder. Ejemplo: http:componente/Login. , estas componentes se mostraran en la etiqueta HTML : ` <router-outlet></router-outlet>`  es una etiqueda dinamica que cambia o muestra uan componente segun el URL.
 
 **app.routes.ts**
 ```typescript
@@ -57,12 +57,13 @@ export class AppComponent { }
 ```
 
 
-## 2 formas de accionar el boton para redirigir
+## 2 formas de accionar el boton para redirigir: routerLink="/nomComp" y this.router.navigate(['/cualNom']);
+
 
 Se usa cuando la navegación depende de lógica
 
-### 1. La forma declarativa: routerLink con el `<router-outlet>`
-- Es la más eficiente y la que deberías usar por defecto.
+### 1. La forma declarativa: routerLink
+
 - El routerLink en el HTML es para clics directos: el usuario hace clic y se va. Fin.
 
 > En el Componente donde esta en boton de accion es el que debe de importar el: import { RouterLink } from '@angular/router'; (ejem:componente LOGIN)
