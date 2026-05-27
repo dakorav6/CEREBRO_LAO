@@ -60,6 +60,31 @@ Las directivas son instrucciones que le das al HTML para que cambie su aparienci
 
 
 
+## @if
+
+- PARA QUÉ SIRVE: Mostrar u ocultar elementos del DOM según una condición.
+- Si es true, renderiza el bloque. Si es false, lo elimina del DOM — no lo oculta, lo elimina.
+
+>*ngIf ya no se usa como directiva de atributo en Angular moderno.Fue reemplazado por @if
 
 
+
+### Como se usa?
+
+
+```html
+
+@if (usuario.logueado) {
+  <p>Bienvenido, {{ usuario.nombre }}</p>
+} @else {
+  <p>Inicia sesión</p>
+}
+
+```
+En el componente:
+
+```typescript
+usuario = { logueado: true, nombre: 'Jordan' };
+
+```
 
