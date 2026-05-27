@@ -1,5 +1,7 @@
 >el ngif
 
+---
+
 >En Angular moderno, si utilizas la propiedad imports dentro del decorador @Component, el componente debe ser standalone. Si no lo marcas como tal, Angular no "ve" los componentes que intentas importar (como el Footer o NavBarComponent), y por eso dice que <app-footer> no es un elemento conocido.
 
 ```typescript
