@@ -68,7 +68,7 @@ this.dialog.open(LoginComponent, {
 -------
 ## Cerrar ventana Modal
 
-*Componente que muestra la ventana Modal*
+*Trabajamos en la Componente que muestra la ventana Modal*
 
 ## Login
 
