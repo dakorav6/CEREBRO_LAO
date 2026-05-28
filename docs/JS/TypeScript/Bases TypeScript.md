@@ -67,6 +67,58 @@ let nombre: string = "Alex";
 let edad: number = 25; 
 let esEstudiante: boolean = true;
 ```
+
+### Inferencia de tipos y uso de Let
+
+La inferencia de tipos es una característica del lenguaje TypeScript, no hace falta definir el tipo tal como `edad:number = 25` se infiere que es tipo entero y nos permite poner solo `edad=25` 
+
+
+
+
+
+------------
+
+**LET**
+
+
+>Let es para variables locales, no para propiedades de un objeto o clase. (Variable local → vive solo mientras el método se ejecuta, con let/const).
+
+```typescript
+export class AppComponent {
+  
+  // Propiedad de clase — sin let/const
+  isLoggedIn = false;
+
+  toggleLogin() {
+    // Variable local dentro de un método — con let/const
+    const mensaje = "sesión iniciada";
+    let contador = 0;
+  }
+}
+
+```
+-----
+**VAR**
+- El problema de var es que ignora los bloques:
+```typescript
+if (true) {
+  var numero = 5;
+}
+console.log(numero); // 5 — se filtró fuera del bloque
+```
+
+Con let:
+
+```typescript
+if (true) {
+  let numero = 5;
+}
+console.log(numero); // ❌ Error — numero no existe aquí
+
+```
+
+
+
 ### ANY
 
 any significa:
