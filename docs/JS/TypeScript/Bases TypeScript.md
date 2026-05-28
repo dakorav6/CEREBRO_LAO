@@ -81,7 +81,7 @@ La inferencia de tipos es una característica del lenguaje TypeScript, no hace f
 **LET**
 
 
->Let es para variables locales, no para propiedades de un objeto o clase. (Variable local → vive solo mientras el método se ejecuta, con let/const).
+>Let es para variables locales, no para propiedades de un objeto o clase. (Variable local → Una variable local vive en cualquier bloque donde fue declarada y sus variables locales mueren al cerrar el {}.— no solo en métodos.Un bloque es cualquier cosa entre { } sin contar el objeto o la clase).
 
 ```typescript
 export class AppComponent {
@@ -94,6 +94,27 @@ export class AppComponent {
     const mensaje = "sesión iniciada";
     let contador = 0;
   }
+
+  // En un método
+toggleLogin() {
+  const mensaje = "hola"; // local al método
+}
+
+// En un if
+if (isLoggedIn) {
+  const saludo = "bienvenido"; // local al if
+}
+
+// En un for
+for (let i = 0; i < 5; i++) {
+  const doble = i * 2; // local a cada iteración
+}
+
+// En un bloque suelto (raro pero válido)
+{
+  const temporal = "solo aquí";
+}
+
 }
 
 ```
