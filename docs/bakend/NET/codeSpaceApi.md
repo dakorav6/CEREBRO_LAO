@@ -1,7 +1,7 @@
 
-# Mesa de trabajo.
+## Mesa de trabajo.
 
-## Verificar .NET
+ **Verificar .NET**
 
 `dotnet --version`
 
@@ -13,12 +13,11 @@ sudo apt install -y dotnet-sdk-8.0
 
 ```
 
-## PASO 2: Crear WEB API
+
+**PASO 2: Crear WEB API**
 creamos y nos hubicamos en al carpeta del proyecto.
 
 ```bash
-mkdir TaskApi
-cd TaskApi
 dotnet new webapi
 
 ```
@@ -82,8 +81,3 @@ record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
 ## Paso 5 — Ejecute:
 `dotnet run`
 
-## Paso 6 — En la pestaña PORTS de VS Code:
-
-1. Busque la fila del puerto nuevo (probablemente 5000 o el que indique la consola).
-2. Clic derecho → Port Visibility → Public.
-3. Clic derecho → Copy Local Address (o clic en el ícono de globo para abrirlo directo).A la URL , agréguele /swagger al final y visítela.

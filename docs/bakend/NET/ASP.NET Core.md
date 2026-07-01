@@ -10,6 +10,9 @@ Framework de Microsoft para construir APIs HTTP con C# sobre .NET
 <!-- Instalaciones, versiones, comandos de verificación. -->
 <!-- Extensiones recomendadas con una línea de por qué cada una. -->
 
+
+
+
 # Nomenclatura y conceptos base
 <!-- Vocabulario mínimo para leer código de esa tecnología. -->
 # ESTRUCTURA DEL PROYECTO 
