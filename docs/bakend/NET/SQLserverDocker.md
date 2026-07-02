@@ -34,7 +34,7 @@ docker run -e "ACCEPT_EULA=Y" \
 
 **4. Verificar que SQL Server corre:** `docker ps`
 
-
+***
 **5. Instalar extensión SQL Server en VS Code:** SQL Server (mssql)
 
 **6. Conectarse desde VS Code**
