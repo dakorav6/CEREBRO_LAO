@@ -23,7 +23,7 @@ docker run -e "ACCEPT_EULA=Y" \
 --name sqlserver \
 -d mcr.microsoft.com/mssql/server:2022-latest
 ```
-
+ASDADADW
 **Qué hace esto**
 - ACCEPT_EULA=Y (Microsoft obligándote a aceptar términos antes de respirar.)
 - MSSQL_SA_PASSWORD  (contraseña del usuario sa.)
