@@ -30,4 +30,8 @@ BAJO LA SIGUIENTE ESTRUCTURA con comentarios que son "sugerencias" mas no requis
 <!-- que es lo que sigue? -->
 <!-- cuales son los temas mas relevantes o importantes, aplicables en un entorno de trabajo real que tenga que ver con el tema principal -->
 
+-------
+
+> esto es un cuadro de cita 
+
 

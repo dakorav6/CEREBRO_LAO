@@ -60,4 +60,3 @@ En appsettings.json:
 }
 ```
 Reemplace SU_PASSWORD_AQUI por la misma contraseña que puso en MSSQL_SA_PASSWORD cuando creó el contenedor.
-
