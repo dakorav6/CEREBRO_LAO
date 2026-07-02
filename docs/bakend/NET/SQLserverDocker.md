@@ -8,7 +8,7 @@
 >- en este caso: `mcr.microsoft.com/mssql/server:2022-latest` contiene: Linux , SQL Server instalado y configuración mínima para arrancar
 >- Cuando haces: `docker run ...` Docker crea un contenedor basado en esa imagen.
 
-**Estados del DOCKER:**
+**Estados del DOCKER**
 1. Ejecutándose: docker ps  
 2. Detenido `docker stop sqlserver`
 - Ver TODOS los contenedores `docker ps -a`
