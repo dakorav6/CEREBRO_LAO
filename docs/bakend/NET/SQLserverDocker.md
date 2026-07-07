@@ -8,28 +8,25 @@
 >- en este caso: `mcr.microsoft.com/mssql/server:2022-latest` contiene: Linux , SQL Server instalado y configuración mínima para arrancar
 >- Cuando haces: `docker run ...` Docker crea un contenedor basado en esa imagen.
 
-**Estados del DOCKER**
-1. Ejecutándose: docker ps  
-2. Detenido `docker stop sqlserver`
-- Ver TODOS los contenedores `docker ps -a`
 
 
-
-**3. Crear contenedor SQL Server**
+**3. Crear contenedor o instancia  SQL Server**
 ```bash
-docker run -e "ACCEPT_EULA=Y" \
+docker run  \
+-e "ACCEPT_EULA=Y" \
 -e "MSSQL_SA_PASSWORD=Password123!" \
 -p 1433:1433 \
 --name sqlserver \
 -d mcr.microsoft.com/mssql/server:2022-latest
 ```
-ASDADADW
+
 **Qué hace esto**
-- ACCEPT_EULA=Y (Microsoft obligándote a aceptar términos antes de respirar.)
-- MSSQL_SA_PASSWORD  (contraseña del usuario sa.)
-- p 1433:1433  (expone el puerto SQL Server.)
+- Docker run (Crear nuevo contenedor)
+- ACCEPT_EULA=Y (aceptar todas las licencias)
+- MSSQL_SA_PASSWORD  (contraseña del usuario SA )
+- p 1433:1433  (expone el puerto)
 - name sqlserver (nombre del contenedor.)
-- d (modo background.)
+- d mcr.microsoft.com/mssql/server:2022-latest (IMAGEN UTILIZADA)
 
 
 **4. Verificar que SQL Server corre:** `docker ps`
@@ -47,17 +44,27 @@ ASDADADW
 
 **7. Crear base de datos**
 
+Desde la interfas:
+
+
+
+
 Desde terminal:
 
 ```bash
 docker exec -it sqlserver /opt/mssql-tools/bin/sqlcmd \
--S localhost -U sa -P 'Password123!' \
--Q "CREATE DATABASE TaskDb"
-
+-S localhost \
+-U sa \
+-P 'Password123!' \
+-C 
 ```
+- C ("Sé que el certificado no está verificado. Conéctate de todas formas.")
 
 
 
+## Comandos DOCKER 
+- ver los contenedores: `docker ps`
+- entrar al contenedor : `docker exec -it nomContenedor bash`
 
 
 
