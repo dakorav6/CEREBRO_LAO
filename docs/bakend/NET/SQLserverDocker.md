@@ -1,8 +1,12 @@
 # SQL Server en Docker dentro del Codespace
 
 **1. Verificar Docker:** `docker --version`
+>verificar docket existente: `docker ps -a`
 
-**2. Descargar imagen de SQL Server para Docker:**`docker pull mcr.microsoft.com/mssql/server:2022-latest`
+**2. Descargar imagen de SQL Server para Docker:**
+
+`docker pull mcr.microsoft.com/mssql/server:2022-latest`
+
 >Docker trabaja con imágenes y contenedores.
 > - que es una imagen? , una plantilla inmutable que contiene:sistemas, configuración y aplicación.
 >- en este caso: `mcr.microsoft.com/mssql/server:2022-latest` contiene: Linux , SQL Server instalado y configuración mínima para arrancar
@@ -14,7 +18,7 @@
 ```bash
 docker run  \
 -e "ACCEPT_EULA=Y" \
--e "MSSQL_SA_PASSWORD=Password123!" \
+-e "MSSQL_SA_PASSWORD=Cualquiercosa123." \
 -p 1433:1433 \
 --name sqlserver \
 -d mcr.microsoft.com/mssql/server:2022-latest
@@ -23,30 +27,20 @@ docker run  \
 **Qué hace esto**
 - Docker run (Crear nuevo contenedor)
 - ACCEPT_EULA=Y (aceptar todas las licencias)
-- MSSQL_SA_PASSWORD  (contraseña del usuario SA )
+- MSSQL_SA_PASSWORD  (contraseña del usuario SA, debe tener: 8 caracteres , mayuscula , minuscula, numero y caracter especial  )
 - p 1433:1433  (expone el puerto)
 - name sqlserver (nombre del contenedor.)
 - d mcr.microsoft.com/mssql/server:2022-latest (IMAGEN UTILIZADA)
 
 
-**4. Verificar que SQL Server corre:** `docker ps`
+**4. Verificar que SQL Server corre:** `docker ps -a`
 
-***
+
 **5. Instalar extensión SQL Server en VS Code:** SQL Server (mssql)
 
-**6. Conectarse desde VS Code**
 
-- Campo:Valor
-- Server:localhost
-- User:sa
-- Password:Password123!
-- Port:1433
-
-**7. Crear base de datos**
-
-Desde la interfas:
-
-
+**6.Entrar a docker**: `docker exec -it nombContenedor bash`
+>le estás diciendo a Docker:"Dentro del contenedor sqlserver, ejecuta el programa llamado bash."
 
 
 Desde terminal:
@@ -65,7 +59,7 @@ docker exec -it sqlserver /opt/mssql-tools/bin/sqlcmd \
 ## Comandos DOCKER 
 - ver los contenedores: `docker ps`
 - entrar al contenedor : `docker exec -it nomContenedor bash`
-
+- eliminar contenedor: `docker rm nombContenedor`
 
 
 
