@@ -51,7 +51,7 @@ docker run  \
 **Qué hace esto**
 - Docker run (Crear nuevo contenedor)
 - ACCEPT_EULA=Y (aceptar todas las licencias)
-- MSSQL_SA_PASSWORD  (contraseña del usuario SA, debe tener: 8 caracteres , mayuscula , minuscula, numero y caracter especial  )
+- MSSQL_SA_PASSWORD  (contraseña del usuario SA, debe tener: 8 caracteres , mayuscula , minuscula, numero y caracter especial)
 - p 1433:1433  (expone el puerto)
 - name sqlserver (nombre del contenedor.)
 - d mcr.microsoft.com/mssql/server:2022-latest (IMAGEN UTILIZADA)
