@@ -11,7 +11,8 @@ Docker trabaja con estas piezas:
 - Contenedor → una instancia en ejecución creada a partir de esa plantilla.
 - Volumen → el lugar donde los datos persisten aunque destruyas el contenedor.
 
-
+- Regla Docker: "Un contenedor vive mientras su proceso principal esté ejecutándose, eso quiere decir que ejecutamos un contenedor con el programa."
+- un contenedor no es una maquina virtual, por que? por que No arrancar un sistema operativo completo,Solo ejecut el programa que se le indica, por eso que cuando queremos usar ubunto ejecutamos tambien el bash. 
 
 
 
@@ -68,4 +69,17 @@ docker exec -it sqlserver bash
 
 # Creacion de un contenedor Ubuntu y gestionar de archivos externos del contenedor
 
+1. Creamos una carpeta vacia 
+2. descargamos imagen ubuntu: `docker pull ubuntu`
+3. Crear el contenedor:  `docker run -it --name miubuntu ubuntu bash`
+> -it : se usa para interactuar por consola con el programa  "Conecta mi teclado y mi pantalla al programa que se va a ejecutar dentro del contenedor." osea al bash
 
+
+
+- abir contenedor ubunto : `docker start -ai miubuntu` 
+>-a  → Conéctame al proceso principal. / -i  → Permíteme escribir.
+
+
+
+
+- docker exec -it crea un proceso nuevo dentro de un contenedor que ya está ejecutándose. ???????
