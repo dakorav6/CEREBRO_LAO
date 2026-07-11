@@ -83,3 +83,12 @@ docker exec -it sqlserver bash
 
 
 - docker exec -it crea un proceso nuevo dentro de un contenedor que ya está ejecutándose. ???????
+
+
+
+---------------------------------
+## Comandos de consola
+
+
+
+-------------------------------------------------
