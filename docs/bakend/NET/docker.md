@@ -1,16 +1,18 @@
 
-
+- El problema que resuelve: "En mi computadora funciona.", Docker hace que funcione igual en cualquier máquina.
 - Docker sirve para aislar aplicaciones y hacer que funcionen igual en cualquier máquina.
-- ¿Qué pasa si borro el contenedor? Desaparece todo lo que estaba dentro. Por eso existen los volúmenes.Un volumen es una carpeta de tu computadora que Docker utiliza para guardar datos. El contenedor solo accede a ese carpeta. "El contenedor solo accede a esa carpeta."
+- ¿Qué pasa si borro el contenedor? Desaparece todo lo que estaba dentro. Por eso existen los volúmenes.Un volumen es una carpeta de tu computadora que Docker utiliza para guardar datos.  "El contenedor solo accede a esa carpeta."
 - no es una nube
 - como sabes que es mio?  no hay cuentas de por medio solo tu computadora. 
 - Cuando Docker crea un contenedor a partir de una imagen, también crea un sistema de archivos para ese contenedor en la comutadora donde estamos trabajando.
 
-Docker trabaja con estas piezas: 
+**Docker trabaja con estas piezas:**
 - Imagen → la plantilla (como un archivo ISO o una receta).
-- Contenedor → una instancia en ejecución creada a partir de esa plantilla.
-- Volumen → el lugar donde los datos persisten aunque destruyas el contenedor.
+- Contenedor → una instancia en ejecución creada a partir de esa plantilla o imagen. 
+- Datos (Volumen) → el lugar donde los datos persisten aunque destruyas el contenedor.
 
+
+**REGLA DE DOCKER:**
 - Regla Docker: "Un contenedor vive mientras su proceso principal esté ejecutándose, eso quiere decir que ejecutamos un contenedor con el programa."
 - un contenedor no es una maquina virtual, por que? por que No arrancar un sistema operativo completo,Solo ejecut el programa que se le indica, por eso que cuando queremos usar ubunto ejecutamos tambien el bash. 
 
