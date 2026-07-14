@@ -6,6 +6,11 @@
 - como sabes que es mio?  no hay cuentas de por medio solo tu computadora. 
 - Cuando Docker crea un contenedor a partir de una imagen, también crea un sistema de archivos para ese contenedor en la comutadora donde estamos trabajando.
 
+- Docker nace con la configuracion que le asignemos , eso quiere decir que si queremos trabajar con volumen o un archivo de respaldo externo tenemos que definir el comando para que sea con volumen o respaldo. "Una vez creado, Docker no permite modificar esa configuración."
+- "Los contenedores estan pensados para ser desechados"
+- en proyecto reales no creamos contenedores por la consola???? lo creamos en un archivo ????'
+
+
 **Docker trabaja con estas piezas:**
 - Imagen → la plantilla (como un archivo ISO o una receta).
 - Contenedor → una instancia en ejecución creada a partir de esa plantilla o imagen. 
@@ -32,7 +37,7 @@
 
 >No recuperas la información entrando al directorio del volumen. La recuperas montando ese volumen en otro contenedor.
 
-### Segunda forma(carpeta fuera del contenedor):
+### Segunda forma "BIND MOUNT" (carpeta fuera del contenedor):
 >Un contenedor NO tiene acceso a los archivos de tu computadora por defecto, TENEMOS QUE DARLE PERMISO.
 
 
@@ -73,7 +78,17 @@ docker exec -it sqlserver bash
 
 1. Creamos una carpeta vacia 
 2. descargamos imagen ubuntu: `docker pull ubuntu`
-3. Crear el contenedor:  `docker run -it --name miubuntu ubuntu bash`
+3. Crear el contenedor:  
+
+```bash
+docker run -it \
+--name miubuntu \
+-v $(pwd)/datos:/datos \
+ubuntu bash
+
+```
+
+
 > -it : se usa para interactuar por consola con el programa  "Conecta mi teclado y mi pantalla al programa que se va a ejecutar dentro del contenedor." osea al bash
 
 
@@ -87,9 +102,22 @@ docker exec -it sqlserver bash
 - docker exec -it crea un proceso nuevo dentro de un contenedor que ya está ejecutándose. ???????
 
 
+## Comandos CRUD archivo TXT en UBUNTO
+- Crear archivo txt: `touch notas.txt`
+- verificar lista: `ls`
+- escribir el contenedo en el archivo
+
 
 ---------------------------------
 ## Comandos de consola
+
+- existe algun contenedor? : `docker ps - a`
+- existe algun contenedor en ejecucion: `docker ps`
+- eliminar el contenedor: `docker rm cualNomb`
+- salir consola: `exit`
+- volver a iniciarlo : `docker start nombContenedor`
+- Detenerlo: `docker stop miubuntu`
+- entrar en un contenedor que ya esta encendido: `docker exec -it miubuntu bash` 
 
 
 
