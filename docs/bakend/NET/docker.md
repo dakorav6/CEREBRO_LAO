@@ -74,7 +74,7 @@ docker exec -it sqlserver bash
 
 -------
 
-# Creacion de un contenedor Ubuntu y gestionar de archivos externos del contenedor
+## Creacion de un contenedor Ubuntu y gestionar de archivos externos del contenedor
 
 1. Creamos una carpeta vacia 
 2. descargamos imagen ubuntu: `docker pull ubuntu`
@@ -102,7 +102,7 @@ ubuntu bash
 - docker exec -it crea un proceso nuevo dentro de un contenedor que ya está ejecutándose. ???????
 
 
-## Comandos CRUD archivo TXT en UBUNTO
+### Comandos CRUD archivo TXT en UBUNTO
 - Crear archivo txt: `touch notas.txt`
 - verificar lista: `ls`
 - escribir el contenedo en el archivo
@@ -115,9 +115,10 @@ ubuntu bash
 - existe algun contenedor en ejecucion: `docker ps`
 - eliminar el contenedor: `docker rm cualNomb`
 - salir consola: `exit`
-- volver a iniciarlo : `docker start nombContenedor`
-- Detenerlo: `docker stop miubuntu`
-- entrar en un contenedor que ya esta encendido: `docker exec -it miubuntu bash` 
+- encender contenedor : `docker start nombContenedor`
+- entrar en un contenedor que ya esta encendido: `docker exec -it miubuntu bash`
+- Detenerlo o apagarlo.: `docker stop miubuntu`
+
 
 
 
