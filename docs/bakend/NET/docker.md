@@ -43,7 +43,7 @@
 
 ------------------------------------------
 
-# Creacion del Contenedor con un programa 
+## Creacion del Contenedor con un programa 
 
 
 
@@ -71,10 +71,15 @@ docker exec -it sqlserver bash
 
 
 
+# SQL SERVER 
+
+
+
+
 
 -------
 
-## Creacion de un contenedor Ubuntu y gestionar de archivos externos del contenedor
+# Creacion de un contenedor Ubuntu y gestionar de archivos externos del contenedor
 
 1. Creamos una carpeta vacia 
 2. descargamos imagen ubuntu: `docker pull ubuntu`
@@ -88,25 +93,24 @@ ubuntu bash
 
 ```
 
+- Mucha gente cree que Docker crea una carpeta nueva "datos", Dentro del contenedor aparece una carpeta llamada"datos" pero esa carpeta es solamente el punto de montaje (mount point), es como google drive lo podemos ver desde mustiples dispositivos pero es el mismo archivo. 
 
-> -it : se usa para interactuar por consola con el programa  "Conecta mi teclado y mi pantalla al programa que se va a ejecutar dentro del contenedor." osea al bash
+- por parte de la carpeta fuera del contendor si tenemos que crearla , no hace falta que tengan el mismo nombre.  `mkdir datos`
 
+-  la sintaxis siempre es : `-v origen:destino` , "No existen dos archivos.Existe un único archivo físico.Tú lo puedes abrir desde dos rutas diferentes."
 
-
-- abir contenedor ubunto : `docker start -ai miubuntu` 
->-a  → Conéctame al proceso principal. / -i  → Permíteme escribir.
-
-
+-  -it : se usa para interactuar por consola con el programa  "Conecta mi teclado y mi pantalla al programa que se va a ejecutar dentro del contenedor." osea al bash
 
 
-- docker exec -it crea un proceso nuevo dentro de un contenedor que ya está ejecutándose. ???????
-
-
-### Comandos CRUD archivo TXT en UBUNTO
+## Comandos CRUD archivo TXT en UBUNTO
 - Crear archivo txt: `touch notas.txt`
 - verificar lista: `ls`
 - escribir el contenedo en el archivo
-
+- Agregar contenido sin borrar lo anterior:`echo "Segunda línea" >> archivo.txt`
+- Crear o reemplazar el contenido: `echo "Hola Mundo" > archivo.txt`
+- leer un archivo : `cat archivo.txt`
+- leer archivo: `less archivo.txt`
+- salir: `q`
 
 ---------------------------------
 ## Comandos de consola
