@@ -1,0 +1,62 @@
+
+
+/* --- CONFIGURACIÓN GENERAL (DRACULA) --- */
+:root {
+  --md-primary-fg-color: #bd93f9; /* Morado Dracula */
+  --md-accent-fg-color: #ff79c6;  /* Rosa Dracula */
+}
+
+/* Fondo principal */
+.md-main {
+    background-color: #282a36 !important;
+    color: #f8f8f2 !important;
+}
+
+/* Título principal (Morado) */
+.md-typeset h1 {
+    color: #bd93f9 !important;
+    border-bottom: 3px solid #bd93f9;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Subtítulos (Cian) */
+.md-typeset h2 {
+    color: #8be9fd !important;
+    border-bottom: 1px solid #44475a;
+    margin-top: 35px;
+}
+
+/* H3 (Naranja) */
+.md-typeset h3 {
+    color: #ffb86c !important;
+}
+
+/* Negritas (Amarillo) */
+.md-typeset strong {
+    color: #f1fa8c !important;
+    text-shadow: 1px 1px 2px #00000044;
+}
+
+/* Citas (Rosa) */
+.md-typeset blockquote {
+    border-left: .2rem solid #ff79c6 !important;
+    background-color: #44475a !important;
+    color: #f8f8f2 !important;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Bloques de código */
+.md-typeset pre code {
+    background-color: #1e1f29 !important;
+    border-radius: 10px !important;
+}
+
+/* Código en línea (Verde) */
+.md-typeset code {
+    background-color: #44475a !important;
+    color: #50fa7b !important;
+    padding: 2px 5px !important;
+    border-radius: 5px;
+}
