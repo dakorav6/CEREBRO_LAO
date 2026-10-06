@@ -18,3 +18,4 @@
 ---
 "El éxito no viene de lo que haces de vez en cuando, viene de lo que haces constantemente."
 
+"No esperes a estar preparado para avanzar, avanza y deja que el camino te prepare." 
